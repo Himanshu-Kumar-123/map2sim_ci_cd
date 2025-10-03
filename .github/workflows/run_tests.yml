@@ -1,0 +1,30 @@
+name: Run Map2Sim Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    runs-on: self-hosted  # your Windows machine
+    steps:
+      # 1️⃣ Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2️⃣ Setup Python
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      # 3️⃣ Install dependencies from requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4️⃣ Run Map2Sim test
+      - name: Run Map2Sim Test
+        working-directory: simready_test_fwk/ui_tests/map2sim
+        run: python main_runner.py ../../../map2sim_asset_mapping_table.toml --component MAP2SIM
