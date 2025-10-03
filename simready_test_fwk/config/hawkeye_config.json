@@ -1,0 +1,492 @@
+{
+    "test_light_bulb_examples": {
+        "color_of_bulb": {
+            "prompt": "What is the color of the bulb placed on top of green box?",
+            "json_schema": {
+                "name": "get_bulb_color",
+                "description": "Retrieve the color of the bulb",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "bulb_color": {
+                            "type": "string",
+                            "description": "The color of the bulb"
+                        }
+                    },
+                    "required": [
+                        "bulb_color"
+                    ]
+                }
+            }
+        }
+    },
+    "test_kit_variant_editor_material_parameter": {
+        "color_of_car": {
+            "prompt": "What is the single main color of the car?",
+            "json_schema": {
+                "name": "get_car_color",
+                "description": "Retrieve the color of the car",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "car_color": {
+                            "type": "string",
+                            "description": "The color of the car"
+                        }
+                    },
+                    "required": [
+                        "car_color"
+                    ]
+                }
+            }
+        }
+    },
+    "test_api_catalog_text_search": {
+        "search_results": {
+            "prompt": "What does the image present below 'Details' text contain? ",
+            "template_json": {
+                "image_of": "",
+                "image_name": ""
+            }
+        }
+    },
+    "test_api_catalog_image_search": {
+        "search_results": {
+            "prompt": "What does the image present below 'Details' text contain? ",
+            "template_json": {
+                "image_of": "",
+                "image_usd_name": ""
+            }
+        }
+    },
+    "test_path_tracing_max_bounces": {
+        "scene_color": {
+            "prompt": "What is the color of the screen?",
+            "json_schema": {
+                "name": "get_scene_color",
+                "description": "Retrieve the color of the scene",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "scene_color": {
+                            "type": "string",
+                            "description": "The color of the scene"
+                        }
+                    },
+                    "required": [
+                        "scene_color"
+                    ]
+                }
+            }
+        }
+    },
+    "test_backplate_texture_composite_image_lightning": {
+        "color_of_hexagon": {
+            "prompt": "Which color is hexagon in the image?",
+            "json_schema": {
+                "name": "get_hexagon_color_name",
+                "description": "Retrieve the color name of the hexagon",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "color_of_hexagon": {
+                            "type": "string",
+                            "description": "The color name of the hexagon, e.g., gray, blue, red"
+                        }
+                    },
+                    "required": [
+                        "color_of_hexagon"
+                    ]
+                }
+            }
+        }
+    },
+    "test_layers_move_asset_between_sublayers": {
+        "cube_count": {
+            "prompt": "How many cubes are visible in the image?",
+            "json_schema": {
+                "name": "get_cube_count",
+                "description": "Retrieve the count of cubes",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "cube_count": {
+                            "type": "string",
+                            "description": "The number of cubes"
+                        }
+                    },
+                    "required": [
+                        "cube_count"
+                    ]
+                }
+            }
+        }
+    },
+    "test_selection_on_instance_visibilty_change": {
+        "cube_count": {
+            "prompt": "what is the number of cubes selected and position?",
+            "json_schema": {
+                "name": "get_selected_cube_details",
+                "description": "Retrieve details about the selected cubes and their positions",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "no_of_selected_cube": {
+                            "type": "string",
+                            "description": "The number of selected cubes,starting from 0"
+                        },
+                        "position_of_cube": {
+                            "type": "string",
+                            "description": "The position of the selected cube, e.g, (row, column) total rows = 4, columns = 8 start values from 1"
+                        }
+                    },
+                    "required": [
+                        "no_of_selected_cube",
+                        "position_of_cube"
+                    ]
+                }
+            }
+        }
+    },
+    "test_missing_texture_indicator": {
+        "file_field_text_color": {
+            "prompt": "what is the color of file string field text under input section?",
+            "json_schema": {
+                "name": "get_file_field_text_color",
+                "description": "Retrieve the color of the file field text",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "file_field_text_color": {
+                            "type": "string",
+                            "description": "The color of the file field text e.g., white, blue, red"
+                        }
+                    },
+                    "required": [
+                        "file_field_text_color"
+                    ]
+                }
+            }
+        }
+    },
+    "test_extreme_mesh_count_usd": {
+        "no_of_persons": {
+            "prompt": "How many persons are present the image?",
+            "json_schema": {
+                "name": "get_no_of_persons",
+                "description": "Retrieve the number of persons",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "no_of_persons": {
+                            "type": "string",
+                            "description": "The number of persons"
+                        }
+                    },
+                    "required": [
+                        "no_of_persons"
+                    ]
+                }
+            }
+        }
+    },
+    "test_scene_with_global_volumetrics_fog": {
+        "fog_details": {
+            "prompt": "Is Fog present in the scene? What is the color of fog ?",
+            "json_schema": {
+                "name": "check_fog_conditions",
+                "description": "Determine if fog is present and its color",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_fog_present": {
+                            "type": "string",
+                            "description": "Indicates whether fog is present"
+                        },
+                        "fog_color": {
+                            "type": "string",
+                            "description": "The color of the fog"
+                        }
+                    },
+                    "required": [
+                        "is_fog_present",
+                        "fog_color"
+                    ]
+                }
+            }
+        }
+    },
+    "test_diffuse_and_specular_multiplier": {
+        "sphere_details": {
+            "prompt": "What is the color of sphere? Does sphere surface look glossy?",
+            "json_schema": {
+                "name": "get_sphere_properties",
+                "description": "Retrieve details about the sphere's color and surface appearance",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "sphere_color": {
+                            "type": "string",
+                            "description": "The color of the sphere"
+                        },
+                        "is_sphere_surface_looking_glossy": {
+                            "type": "string",
+                            "description": "Indicates whether the sphere's surface appears glossy"
+                        }
+                    },
+                    "required": [
+                        "sphere_color",
+                        "is_sphere_surface_looking_glossy"
+                    ]
+                }
+            }
+            
+        }
+    },
+    "verify_asset_validator_analysis_complete": {
+        "asset_validator_analysis_complete": {
+            "prompt": "What is the percentage value of the progress bar?",
+            "json_schema":{
+                "name": "get_progress_bar",
+                "description": "Retrieve the current progress bar percentage",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "progress_bar_percentage": {
+                            "type": "string",
+                            "description": "The current percentage of the progress bar"
+                        }
+                    },
+                    "required": ["progress_bar_percentage"]
+                }
+            }
+        }
+    },
+    "test_script_editor_tooltip": {
+        "tooltip_visible": {
+            "prompt": "Check if there is a tooltip visible in the image showing Python help text for the 'print' function. If visible, what is the exact text shown in the tooltip?",
+            "json_schema": {
+                "name": "set_tooltip",
+                "description": "Set the visibility and text content of the tooltip",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_tooltip_visible": {
+                            "type": "boolean",
+                            "description": "Indicates whether the tooltip is visible or not"
+                        },
+                        "tooltip_text": {
+                            "type": "string",
+                            "description": "The exact text content shown in the tooltip"
+                        }
+                    },
+                    "required": [
+                        "is_tooltip_visible",
+                        "tooltip_text"
+                    ]
+                }
+            }
+        }
+    },
+    "test_door_animation": {
+        "number_of_doors_opened": {
+            "prompt": "If the trunk is also considered a door, how many doors are open?",
+            "json_schema": {
+                "name": "get_number_of_opened_doors",
+                "description": "Retrieve the number of doors that are opened",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "number_of_doors_opened": {
+                            "type": "integer",
+                            "description": "The number of doors that are currently opened"
+                        }
+                    },
+                    "required": [
+                        "number_of_doors_opened"
+                    ]
+                }
+            }
+        }
+    },
+    "test_kit_physics_simulation_demo_raycast_omnigraph":{
+        "is_yellow_frame_visible": {
+            "prompt": "Is yellow rectangular frame visible?",
+            "json_schema": {
+                "name": "check_rectangular_yellow_frame_visibility",
+                "description": "Check if a rectangular yellow frame is visible",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_rectangular_yellow_frame_visible": {
+                            "type": "string",
+                            "description": "Visibility status of the rectangular yellow frame"
+                        }
+                    },
+                    "required": [
+                        "is_rectangular_yellow_frame_visible"
+                    ]
+                }
+            }
+            
+        },
+        "torus_details": {
+            "prompt": "Is red torus visible? Does it have glowing effect?",
+            "json_schema": {
+                "name": "get_torus_details",
+                "description": "Retrieve details about the torus visibility, color, and glowing effect",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "torus_visible": {
+                            "type": "string",
+                            "description": "Indicates whether the torus is visible (e.g., 'yes' or 'no')"
+                        },
+                        "torus_color": {
+                            "type": "string",
+                            "description": "The color of the torus"
+                        },
+                        "is_glowing_effect_visible": {
+                            "type": "string",
+                            "description": "Indicates whether the glowing effect is visible (e.g., 'yes' or 'no')"
+                        }
+                    },
+                    "required": [
+                        "torus_visible",
+                        "torus_color",
+                        "is_glowing_effect_visible"
+                    ]
+                }
+            }  
+        }
+    },
+    "test_kit_physics_simulation_demo_franka_brick_stack":{
+        "lego_details_after_animation": {
+            "prompt": "Provide number of blocks stacked and their colors",
+            "json_schema": {
+                "name": "get_lego_stack_details",
+                "description": "Retrieve details about the number and color of stacked LEGO blocks",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "no_of_lego_blocks_stacked": {
+                            "type": "string",
+                            "description": "The number of LEGO blocks stacked"
+                        },
+                        "color_of_lego_blocks_stacked": {
+                            "type": "string",
+                            "description": "The color of the stacked LEGO blocks"
+                        }
+                    },
+                    "required": [
+                        "no_of_lego_blocks_stacked",
+                        "color_of_lego_blocks_stacked"
+                    ]
+                }
+            }
+        },
+        "lego_details_before_animation": {
+            "prompt": "How many lego blocks are visible? List all colors",
+            "json_schema": {
+                "name": "get_lego_details",
+                "description": "Retrieve details about the number and colors of Lego blocks",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "no_of_all_lego_blocks_present": {
+                            "type": "string",
+                            "description": "The total number of Lego blocks present"
+                        },
+                        "color_of_all_legos": {
+                            "type": "string",
+                            "description": "The color of all the Lego blocks"
+                        }
+                    },
+                    "required": [
+                        "no_of_all_lego_blocks_present",
+                        "color_of_all_legos"
+                    ]
+                }
+            }
+            
+        }
+    },
+    "test_kit_physics_simulation_demo_fixed_tendon":{
+        "l_shaped_object_details": {
+            "prompt": "Check visibility of L-shaped object and its colors",
+            "json_schema": {
+                "name": "get_object_attributes",
+                "description": "Retrieve details about object presence and color attributes",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_l-shaped object_present": {
+                            "type": "string",
+                            "description": "Indicates whether an L-shaped object is present"
+                        },
+                        "colors_in_object": {
+                            "type": "string",
+                            "description": "Describes the colors present in the object"
+                        }
+                    },
+                    "required": [
+                        "is_l-shaped object_present",
+                        "colors_in_object"
+                    ]
+                }
+            }            
+        }        
+    },
+    "test_kit_unit_system_display": {
+        "unit_visible": {
+            "prompt": "is there any unit of measurement present below the XYZ axis label in the bottom left of the viewport?",
+            "json_schema": {
+                "name": "check_unit_of_measurement_presence",
+                "description": "Check if a unit of measurement is present",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "unit_of_measurement_presense": {
+                            "type": "boolean",
+                            "description": "Indicates whether a unit of measurement is present"
+                        }
+                    },
+                    "required": [
+                        "unit_of_measurement_presense"
+                    ]
+                }
+            }
+        }
+    },
+    "test_kit_physics_simulation_demo_merge_mesh_collision":{
+        "mesh_collision_details": {
+            "prompt": "Check if cube and torus is visible. Provide all colors seen",
+            "json_schema": {
+                "name": "get_shape_details",
+                "description": "Retrieve details about the presence of shapes and observed colors",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_cube_present": {
+                            "type": "string",
+                            "description": "Indicates if a cube is present (e.g., 'yes' or 'no')"
+                        },
+                        "is_torus_present": {
+                            "type": "string",
+                            "description": "Indicates if a torus is present (e.g., 'yes' or 'no')"
+                        },
+                        "colors_seen": {
+                            "type": "string",
+                            "description": "List of colors observed in the scene"
+                        }
+                    },
+                    "required": [
+                        "is_cube_present",
+                        "is_torus_present",
+                        "colors_seen"
+                    ]
+                }
+            }
+        }        
+    }
+}

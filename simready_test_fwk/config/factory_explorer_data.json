@@ -1,0 +1,540 @@
+{
+    "cube": {
+        "x": 143.56190490722656,
+        "y": -144.223876953125,
+        "z": 0.6619728803634644
+    },
+    "cube_01": {
+        "x": -143.0773162841797,
+        "y": 142.41534423828125,
+        "z": 0.6619728803634644
+    },
+    "cube_02": {
+        "x": 0.24229200184345245,
+        "y": -0.9042648673057556,
+        "z": 0.6619728803634644
+    },
+    "test_point_to_point_mode": {
+        "win": {
+            "default": "1.00 m",
+            "surface": "0.57 m",
+            "edge": "0.64 m",
+            "midpoint": "0.71 m",
+            "pivot": "2.07 m",
+            "center": "2.07 m",
+            "perpendicular": "0.59 m"
+        },
+        "linux": {
+            "default": "1.00 m",
+            "surface": "0.53 m",
+            "edge": "0.60 m",
+            "midpoint": "0.71 m",
+            "pivot": "2.11 m",
+            "center": "2.11 m",
+            "perpendicular": "0.55 m"
+        }
+    },
+    "test_multipoint_mode": {
+        "win": {
+            "default": "4.00 m",
+            "surface": "1.33 m",
+            "edge": "2.64 m",
+            "midpoint": "2.41 m",
+            "pivot": "2.07 m",
+            "center": "2.07 m",
+            "perpendicular": "272.36 m"
+        },
+        "linux": {
+            "default": "4.00 m",
+            "surface": "1.24 m",
+            "edge": "2.57 m",
+            "midpoint": "2.41 m",
+            "pivot": "2.11 m",
+            "center": "2.11 m",
+            "perpendicular": "272.36 m"
+        }
+    },
+    "test_area_mode": {
+        "win": {
+            "default": "1.00 m\u00b2",
+            "surface": "0.00 m\u00b2",
+            "edge": "0.52 m\u00b2",
+            "midpoint": "0.50 m\u00b2",
+            "pivot": "0.00 m\u00b2",
+            "center": "0.00 m\u00b2",
+            "perpendicular": "4064.83 m\u00b2"
+        },
+        "linux": {
+            "default": "1.00 m\u00b2",
+            "surface": "0.00 m\u00b2",
+            "edge": "0.52 m\u00b2",
+            "midpoint": "0.50 m\u00b2",
+            "pivot": "0.00 m\u00b2",
+            "center": "0.00 m\u00b2",
+            "perpendicular": "4064.83 m\u00b2"
+        }
+    },
+    "test_angle_mode": {
+        "win": {
+            "default": "90.00 °",
+            "surface": "180.00 °",
+            "edge": "77.05 °",
+            "midpoint": "90.00 °",
+            "pivot": "180.00 °",
+            "center": "180.00 °",
+            "perpendicular": "82.97 °"
+        },
+        "linux": {
+            "default": "90.00 °",
+            "surface": "180.00 °",
+            "edge": "74.70 °",
+            "midpoint": "90.00 °",
+            "pivot": "180.00 °",
+            "center": "180.00 °",
+            "perpendicular": "82.97 °"
+        }
+    },
+    "test_display_tab": {
+        "win": {
+            "default": "1.000 m"
+        },
+        "linux": {
+            "default": "1.000 m"
+        }
+    },
+    "test_selection_mode": {
+        "cube": {
+            "x": 143.56190490722656,
+            "y": -144.223876953125,
+            "z": 0.6619728803634644
+        },
+        "cube_01": {
+            "x": 0.24229200184345245,
+            "y": -0.9042648673057556,
+            "z": 0.6619728803634644
+        },
+        "win": {
+            "center": "2.03 m",
+            "max": "3.58 m",
+            "min": "0.61 m"
+        },
+        "linux": {
+            "center": "2.03 m",
+            "max": "3.58 m",
+            "min": "0.61 m"
+        }
+    },
+    "test_unique_waypoint": {
+        "log_to_verify": "Waypoint Waypoint_00 already exists with same settings!"
+    },
+    "test_navbar_tooltips": {
+        "present_mode": [
+            {
+                "name": "open_btn",
+                "text": "Open"
+            },
+            {
+                "name": "save_btn",
+                "text": "Save"
+            },
+            {
+                "name": "import_btn",
+                "text": "Import"
+            },
+            {
+                "name": "share_btn",
+                "text": "FileShare"
+            },
+            {
+                "name": "dolly_btn",
+                "text": "Scroll",
+                "images": [
+                    "mouseTip_middle_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "pan_btn",
+                "text": "Drag",
+                "images": [
+                    "mouseTip_middle_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "orbit_btn",
+                "text": "ALT",
+                "images": [
+                    "add_tip_dark.svg",
+                    "mouseTip_leftClick_dark.svg"
+                ]
+            },
+            {
+                "name": "look_btn",
+                "text": "Drag",
+                "images": [
+                    "mouseTip_rightClick_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "frame_btn",
+                "text": "F"
+            },
+            {
+                "name": "teleport_btn",
+                "text": "Left click on viewport to teleport instantly to that location\nupon on mouse release. Left click, and drag will alter the\norientation that you face after you've been teleported.\nThis is indicated by a pointer on the ring of the teleport gizmo."
+            },
+            {
+                "name": "waypoint_prev_btn",
+                "text": "Previous waypoint"
+            },
+            {
+                "name": "waypoint_play_btn",
+                "text": "Play waypoint"
+            },
+            {
+                "name": "waypoint_next_btn",
+                "text": "Next waypoint"
+            },
+            {
+                "name": "capture_btn",
+                "text": "Capture"
+            },
+            {
+                "name": "options_btn",
+                "text": "Options"
+            }
+        ],
+        "comment_mode": [
+            {
+                "name": "open_btn",
+                "text": "Open"
+            },
+            {
+                "name": "save_btn",
+                "text": "Save"
+            },
+            {
+                "name": "import_btn",
+                "text": "Import"
+            },
+            {
+                "name": "share_btn",
+                "text": "FileShare"
+            },
+            {
+                "name": "dolly_btn",
+                "text": "Scroll",
+                "images": [
+                    "mouseTip_middle_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "pan_btn",
+                "text": "Drag",
+                "images": [
+                    "mouseTip_middle_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "orbit_btn",
+                "text": "ALT",
+                "images": [
+                    "add_tip_dark.svg",
+                    "mouseTip_leftClick_dark.svg"
+                ]
+            },
+            {
+                "name": "look_btn",
+                "text": "Drag",
+                "images": [
+                    "mouseTip_rightClick_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "frame_btn",
+                "text": "F"
+            },
+            {
+                "name": "teleport_btn",
+                "text": "Left click on viewport to teleport instantly to that location\nupon on mouse release. Left click, and drag will alter the\norientation that you face after you've been teleported.\nThis is indicated by a pointer on the ring of the teleport gizmo."
+            },
+            {
+                "name": "markup_btn",
+                "text": "Markup"
+            },
+            {
+                "name": "waypoint_btn",
+                "text": "Waypoint"
+            },
+            {
+                "name": "capture_btn",
+                "text": "Capture"
+            },
+            {
+                "name": "options_btn",
+                "text": "Options"
+            }
+        ],
+        "modify_mode": [
+            {
+                "name": "open_btn",
+                "text": "Open"
+            },
+            {
+                "name": "save_btn",
+                "text": "Save"
+            },
+            {
+                "name": "import_btn",
+                "text": "Import"
+            },
+            {
+                "name": "share_btn",
+                "text": "FileShare"
+            },
+            {
+                "name": "dolly_btn",
+                "text": "Scroll",
+                "images": [
+                    "mouseTip_middle_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "pan_btn",
+                "text": "Drag",
+                "images": [
+                    "mouseTip_middle_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "orbit_btn",
+                "text": "ALT",
+                "images": [
+                    "add_tip_dark.svg",
+                    "mouseTip_leftClick_dark.svg"
+                ]
+            },
+            {
+                "name": "look_btn",
+                "text": "Drag",
+                "images": [
+                    "mouseTip_rightClick_dark.svg",
+                    "add_tip_dark.svg"
+                ]
+            },
+            {
+                "name": "frame_btn",
+                "text": "F"
+            },
+            {
+                "name": "teleport_btn",
+                "text": "Left click on viewport to teleport instantly to that location\nupon on mouse release. Left click, and drag will alter the\norientation that you face after you've been teleported.\nThis is indicated by a pointer on the ring of the teleport gizmo."
+            },
+            {
+                "name": "capture_btn",
+                "text": "Capture"
+            },
+            {
+                "name": "options_btn",
+                "text": "Options"
+            }
+        ]
+    },
+    "test_measure_tool_preference": {
+        "startup_settings": [
+            "NONE",
+            "POINT_TO_POINT",
+            "MULTI_POINT",
+            "ANGLE",
+            "DIAMETER",
+            "AREA"
+        ]
+    },
+    "test_omni_pbr_settings": {
+        "expected_settings": [
+            "Description",
+            "Albedo",
+            "Reflectivity",
+            "AO",
+            "Emissive",
+            "Opacity",
+            "Normal",
+            "UV",
+            "Outputs"
+        ]
+    },
+    "test_omni_kat_pbr_settings": {
+        "expected_settings": [
+            "Shader",
+            "Outputs",
+            "Displacement, Surface, Volume",
+            "Description",
+            "Albedo",
+            "Reflectivity",
+            "AO",
+            "Emissive",
+            "Opacity",
+            "Normal",
+            "UV",
+            "Geometry"
+        ]
+    },
+    "test_common_hotkeys": {
+        "asset": "/World/Stations_Positioned/Stations_Positioned/st140_02/Root/ST140/_EDC_bergreifend/Schraenke/V5UB05/ST140/_140IR003/MIG__equipment/MIG__equipment/box1/shape/mesh"
+    },
+    "test_cycle_through_different_light_rigs": {
+        "z": [
+            [
+                0,
+                1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                1,
+                0
+            ],
+            [
+                1,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                1
+            ]
+        ],
+        "y": [
+            [
+                0,
+                0,
+                1,
+                0
+            ],
+            [
+                1,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                1
+            ]
+        ]
+    },
+    "test_add_and_delete_environment": {
+        "env_path": "omniverse://apollo-prod.ov.nvidia.com/NVIDIA/Environments/2023_1/DomeLights/Dynamic",
+        "env_file": "NightSky.usd",
+        "env_name": "NightSky"
+    },
+    "test_so_deduplicate_payloads": {
+        "mesh0": [
+            [
+                10,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                10,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                10,
+                0
+            ],
+            [
+                -5,
+                0,
+                0,
+                1
+            ]
+        ],
+        "mesh1": [
+            [
+                1,
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                1,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                1,
+                0
+            ],
+            [
+                5,
+                0,
+                0,
+                1
+            ]
+        ]
+    },
+    "test_usde_dev_bundle_command_utils": [
+        "CreateInstanceCommand(self, path_from: str)",
+        "Documentation:",
+        "Instance a primitive.\n\n    It creates a new prim, adds the master object to references, and flags this prim as instanceable. It the prim is\n    Xform, this command copies the transforms from the current frame. If the source prim is already instanceable, it\n    tries to find master prim of this prim and uses it."
+    ],
+    "test_usdc_dev_bundle_command_utils": [
+        "CreateInstanceCommand(self, path_from: str)",
+        "Documentation:",
+        "Instance a primitive.\n\n    It creates a new prim, adds the master object to references, and flags this prim as instanceable. It the prim is\n    Xform, this command copies the transforms from the current frame. If the source prim is already instanceable, it\n    tries to find master prim of this prim and uses it."
+    ],
+    "test_editor_dev_bundle_command_utils": [
+        "CreateInstanceCommand(self, path_from: str)",
+        "Documentation:",
+        "Instance a primitive.\n\n    It creates a new prim, adds the master object to references, and flags this prim as instanceable. It the prim is\n    Xform, this command copies the transforms from the current frame. If the source prim is already instanceable, it\n    tries to find master prim of this prim and uses it."
+    ],
+    "test_usde_extension_measure": {
+        "win": {
+            "default": "1.00 m",
+            "surface": "0.80 m",
+            "edge": "1.02 m",
+            "midpoint": "1.00 m",
+            "pivot": "2.07 m",
+            "center": "2.07 m",
+            "perpendicular": "0.70 m"
+        },
+        "linux": {
+            "default": "1.00 m",
+            "surface": "0.82 m",
+            "edge": "1.02 m",
+            "midpoint": "1.00 m",
+            "pivot": "2.11 m",
+            "center": "2.11 m",
+            "perpendicular": "0.72 m"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "BackgroundImages": {
+        "IMAGE_1": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Avatar Configurator/Test Files/Background_Custom_1.png"
+    },
+    "OutFitLogo": {
+        "LOGO_1": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Avatar Configurator/Test Files/Logo_Custom_1.png"
+    },
+    "GoldenFilesPath": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Avatar Configurator/Golden Files/"
+}

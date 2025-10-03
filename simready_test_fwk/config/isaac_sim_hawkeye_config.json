@@ -1,0 +1,23 @@
+{
+    "test_sim_screenshot": {
+        "scene_results": {
+            "prompt": "Is there any scene present?",
+            "json_schema": {
+                "name": "is_scene_present",
+                "description": "Describe if the scene is present or not",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_scene_present": {
+                            "type": "boolean",
+                            "description": "If scene is present or not"
+                        }
+                    },
+                    "required": [
+                        "is_scene_present"
+                    ]
+                }
+            }
+        }
+    }
+}

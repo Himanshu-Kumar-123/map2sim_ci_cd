@@ -1,0 +1,422 @@
+{
+    "CATIA_V5": {
+        "Folder_TIB_9624123_AllCATPart": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "TIB_9624123_AllCATPart.CATPart",
+            "EXPORT_FILE": "TIB_9624123_AllCATPart.usd",
+            "STAGE_NAME": "TIB_9624123_AllCATPart",
+            "GOLDEN_FILE": "TIB_9624123_AllCATPart_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/TIB_9624123_AllCATPart/Geometry/_3012321__H__1__A__RR25_TIB_9624123_AllCATPart_0"
+        },
+        "Folder_UEBUNG_FELGE": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "UEBUNG_FELGE.cgr",
+            "EXPORT_FILE": "UEBUNG_FELGE.usd",
+            "STAGE_NAME": "UEBUNG_FELGE",
+            "GOLDEN_FILE": "UEBUNG_FELGE_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/UEBUNG_FELGE/Geometry/UEBUNG_FELGE_0"
+        },
+        "Folder_UEBUNG_ZUSAMMENBAU_SPANNER": {
+            "IS_ASSEMBLY": true,
+            "NATIVE_FILE": "UEBUNG_ZUSAMMENBAU_SPANNER.CATProduct",
+            "EXPORT_FILE": "UEBUNG_ZUSAMMENBAU_SPANNER.usd",
+            "STAGE_NAME": "UEBUNG_ZUSAMMENBAU_SPANNER",
+            "GOLDEN_FILE": "UEBUNG_ZUSAMMENBAU_SPANNER_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/UEBUNG_ZUSAMMENBAU_SPANNER/Geometry/Uebung_Zusammenbau_Spanner_0"
+        }
+    },
+    "STEP": {
+        "Folder_Assembly1": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Assembly1.stp",
+            "EXPORT_FILE": "Assembly1.usd",
+            "STAGE_NAME": "Assembly1",
+            "GOLDEN_FILE": "Assembly1_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Assembly1/Geometry/Assembly1_0"
+        },
+        "Folder_WRIST_CAMERA_20171116": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "WRIST_CAMERA_20171116.STEP",
+            "EXPORT_FILE": "WRIST_CAMERA_20171116.usd",
+            "STAGE_NAME": "WRIST_CAMERA_20171116",
+            "GOLDEN_FILE": "WRIST_CAMERA_20171116_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/WRIST_CAMERA_20171116/Geometry/WRIST_CAMERA_0"
+        },
+        "Folder_jetbot": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "jetbot.step",
+            "EXPORT_FILE": "jetbot.usd",
+            "STAGE_NAME": "jetbot",
+            "GOLDEN_FILE": "jetbot_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/jetbot/Geometry/jetbot_0"
+        }
+    },
+    "IFC": {
+        "Folder_Timber_roof": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Timber_roof.ifc",
+            "EXPORT_FILE": "Timber_roof.usd",
+            "STAGE_NAME": "Timber_roof",
+            "GOLDEN_FILE": "Timber_roof_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Timber_roof/Geometry/_no_name__0"
+        },
+        "Folder_Escalier": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Escalier.IFC",
+            "EXPORT_FILE": "Escalier.usd",
+            "STAGE_NAME": "Escalier",
+            "GOLDEN_FILE": "Escalier_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Escalier/Geometry/TopSolid_Project_0"
+        }
+    },
+    "JT": {
+        "Folder_Bolt": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Bolt.jt",
+            "EXPORT_FILE": "Bolt.usd",
+            "STAGE_NAME": "Bolt",
+            "GOLDEN_FILE": "Bolt_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Bolt/Bolt/Geometry/Bolt_0"
+        },
+        "Folder_Disk_Brake": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Disk_Brake.jt",
+            "EXPORT_FILE": "Disk_Brake.usd",
+            "STAGE_NAME": "Disk_Brake",
+            "GOLDEN_FILE": "Disk_Brake_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Disk_Brake/Disk_Brake/Geometry/Disk_Brake_0"
+        },
+        "Folder_Front_Wheel_Assembly": {
+            "IS_ASSEMBLY": true,
+            "NATIVE_FILE": "Front_Wheel_Assembly.jt",
+            "EXPORT_FILE": "Front_Wheel_Assembly.usd",
+            "STAGE_NAME": "Front_Wheel_Assembly",
+            "GOLDEN_FILE": "Front_Wheel_Assembly_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Front_Wheel_Assembly/Front_Wheel_Assembly/Geometry/Front_Wheel_Assembly_0"
+        },
+        "Folder_Montagem": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Montagem.jt",
+            "EXPORT_FILE": "Montagem.usd",
+            "STAGE_NAME": "Montagem",
+            "GOLDEN_FILE": "Montagem_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Montagem/Montagem/Geometry/Montagem_Maior_0"
+        }
+    },
+    "IGES": {
+        "Folder_FORKLIFT": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "FORKLIFT.IGS",
+            "EXPORT_FILE": "FORKLIFT.usd",
+            "STAGE_NAME": "FORKLIFT",
+            "GOLDEN_FILE": "FORKLIFT_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/FORKLIFT/Geometry/Assem1_0"
+        },
+        "Folder_pencil": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "pencil.igs",
+            "EXPORT_FILE": "pencil.usd",
+            "STAGE_NAME": "pencil",
+            "GOLDEN_FILE": "pencil_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/pencil/Geometry/Open_CASCADE_IGES_processor_6_8_0"
+        },
+        "Folder_PCB_production_line": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "PCB_production_line.IGS",
+            "EXPORT_FILE": "PCB_production_line.usd",
+            "STAGE_NAME": "PCB_production_line",
+            "GOLDEN_FILE": "PCB_production_line_GOLDEN_FILE.usd"
+        }
+    },
+    "NX": {
+        "Folder_Aerodesign_ExpRC_Plane": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Aerodesign_ExpRC_Plane.prt",
+            "EXPORT_FILE": "Aerodesign_ExpRC_Plane.usd",
+            "STAGE_NAME": "Aerodesign_ExpRC_Plane",
+            "GOLDEN_FILE": "Aerodesign_ExpRC_Plane_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Aerodesign_ExpRC_Plane/Geometry/Aerodesign_ExpRC_Plane_0"
+        },
+        "Folder_BRABHAM_green": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "BRABHAM_green.prt",
+            "EXPORT_FILE": "BRABHAM_green.usd",
+            "STAGE_NAME": "BRABHAM_green",
+            "GOLDEN_FILE": "BRABHAM_green_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/BRABHAM_green/Geometry/BRABHAM_green_0"
+        },
+        "Folder_McLAREMSENNA2019": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "McLAREMSENNA2019.prt",
+            "EXPORT_FILE": "McLAREMSENNA2019.usd",
+            "STAGE_NAME": "McLAREMSENNA2019",
+            "GOLDEN_FILE": "McLAREMSENNA2019_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/McLAREMSENNA2019/Geometry/McLAREMSENNA2019_0"
+        }
+    },
+    "Parasolid": {
+        "Folder_AHSAP MASA": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "AHSAP MASA.x_t",
+            "EXPORT_FILE": "AHSAP MASA.usd",
+            "STAGE_NAME": "AHSAP_MASA",
+            "GOLDEN_FILE": "AHSAP MASA_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/AHSAP_MASA/Geometry/AHSAP_MASA_0"
+        },
+        "Folder_Automatic_wire_bending_machine": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Automatic_wire_bending_machine.x_b",
+            "EXPORT_FILE": "Automatic_wire_bending_machine.usd",
+            "STAGE_NAME": "Automatic_wire_bending_machine",
+            "GOLDEN_FILE": "Automatic_wire_bending_machine_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Automatic_wire_bending_machine/Geometry/Automatic_wire_bending_machine_x_b_0"
+        },
+        "Folder_Sheet_Metal": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "Sheet_Metal.x_t",
+            "EXPORT_FILE": "Sheet_Metal.usd",
+            "STAGE_NAME": "Sheet_Metal",
+            "GOLDEN_FILE": "Sheet_Metal_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/Sheet_Metal/Geometry/Sheet_Metal_0"
+        },
+        "Folder_front_wheel": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "front_wheel.x_t",
+            "EXPORT_FILE": "front_wheel.usd",
+            "STAGE_NAME": "front_wheel",
+            "GOLDEN_FILE": "front_wheel_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/front_wheel/Geometry/front_wheel_0"
+        }
+    },
+    "Solidworks": {
+        "Folder_ARUN": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "ARUN.SLDASM",
+            "EXPORT_FILE": "ARUN.usd",
+            "STAGE_NAME": "ARUN",
+            "GOLDEN_FILE": "ARUN_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/ARUN/Geometry/ARUN_0"
+        },
+        "Folder_W07_Assembly": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "W07_Assembly.SLDASM",
+            "EXPORT_FILE": "W07_Assembly.usd",
+            "STAGE_NAME": "W07_Assembly",
+            "GOLDEN_FILE": "W07_Assembly_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/W07_Assembly/Geometry/W07_Assembly_0"
+        }
+    },
+    "AutoCAD_3D": {
+        "Folder_CIRCLES": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "CIRCLES.dwg",
+            "EXPORT_FILE": "CIRCLES.usd",
+            "STAGE_NAME": "CIRCLES",
+            "GOLDEN_FILE": "CIRCLES_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/CIRCLES/Geometry/CIRCLES_0"
+        }
+    },
+    "CreoPro": {
+        "Folder_videocamera": {
+            "IS_ASSEMBLY": true,
+            "NATIVE_FILE": "videocamera.asm.1",
+            "EXPORT_FILE": "videocamera.usd",
+            "STAGE_NAME": "videocamera",
+            "GOLDEN_FILE": "videocamera_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/videocamera/Geometry/videocamera_asm_0"
+        }
+    },
+    "Revit": {
+        "Folder_CIRCLES": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "CIRCLES.rvt",
+            "EXPORT_FILE": "CIRCLES.usd",
+            "STAGE_NAME": "CIRCLES",
+            "GOLDEN_FILE": "CIRCLES_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/CIRCLES/Geometry/CIRCLES_0"
+        },
+        "Folder_SELVARAJ": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "SELVARAJ.rvt",
+            "EXPORT_FILE": "SELVARAJ.usd",
+            "STAGE_NAME": "SELVARAJ",
+            "GOLDEN_FILE": "SELVARAJ_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/SELVARAJ/Geometry/SELVARAJ_0"
+        }
+    },
+    "Autodesk_Inventor": {
+        "Folder_IRB 6700 3.2M": {
+            "IS_ASSEMBLY": true,
+            "NATIVE_FILE": "IRB 6700 3.2M.iam",
+            "EXPORT_FILE": "IRB 6700 3.2M.usd",
+            "STAGE_NAME": "IRB_6700_3_2M",
+            "GOLDEN_FILE": "IRB 6700 3_2M_GOLDEN_FILE.usd",
+            "RENAME_PATH": "/World/IRB_6700_3_2M/Geometry/IRB_6700_3_2M_iam_0"
+        }
+    },
+    "DGN": {
+        "Folder_BAU_IST_0110": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "BAU_IST_0110_0842_G0000_GEBW_80000998_Erdgeschoss.dgn",
+            "EXPORT_FILE": "BAU_IST_0110_0842_G0000_GEBW_80000998_Erdgeschoss.usd",
+            "STAGE_NAME": "BAU_IST_0110_0842_G0000_GEBW_80000998_Erdgeschoss",
+            "GOLDEN_FILE": "BAU_IST_0110_0842_G0000_GEBW_80000998_Erdgeschoss_GOLDEN_FILE.usd",
+            "RENAME_PATH": ""
+        },
+        "Folder_FOE_IST_0610": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "FOE_IST_0610_0500_G0000_MONT_60182824_HVS_Anlieferung_EG.dgn",
+            "EXPORT_FILE": "FOE_IST_0610_0500_G0000_MONT_60182824_HVS_Anlieferung_EG.usd",
+            "STAGE_NAME": "FOE_IST_0610_0500_G0000_MONT_60182824_HVS_Anlieferung_EG",
+            "GOLDEN_FILE": "FOE_IST_0610_0500_G0000_MONT_60182824_HVS_Anlieferung_EG_GOLDEN_FILE.usd",
+            "RENAME_PATH": ""
+        },
+        "Folder_KOPIE_STR_Layout": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "KOPIE_STR_Layout_220307_V6A_Teilbereich_Hochzeit.dgn",
+            "EXPORT_FILE": "KOPIE_STR_Layout_220307_V6A_Teilbereich_Hochzeit.usd",
+            "STAGE_NAME": "KOPIE_STR_Layout_220307_V6A_Teilbereich_Hochzeit",
+            "GOLDEN_FILE": "KOPIE_STR_Layout_220307_V6A_Teilbereich_Hochzeit_GOLDEN_FILE.usd",
+            "RENAME_PATH": ""
+        },
+        "Folder_STA_BZD_1510": {
+            "IS_ASSEMBLY": false,
+            "NATIVE_FILE": "STA_BZD_1510_0500_G0010_MONT_80000733_Siemens_HEMS_Steelwork_Platform_30u.dgn",
+            "EXPORT_FILE": "STA_BZD_1510_0500_G0010_MONT_80000733_Siemens_HEMS_Steelwork_Platform_30u.usd",
+            "STAGE_NAME": "STA_BZD_1510_0500_G0010_MONT_80000733_Siemens_HEMS_Steelwork_Platform_30u",
+            "GOLDEN_FILE": "STA_BZD_1510_0500_G0010_MONT_80000733_Siemens_HEMS_Steelwork_Platform_30u_GOLDEN_FILE.usd",
+            "RENAME_PATH": ""
+        }
+    },
+    "SPECIAL_CHARACTER_CHECK": {
+        "CATIA_V5": {
+            "[Folder] TIB_9624123_AllCATPart": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "[File] TIB $9624123@ AllCATPart w!th specia% char.CATPart",
+                "EXPORT_FILE": "[File] TIB $9624123@ AllCATPart w!th specia% char.usd",
+                "STAGE_NAME": "_File__TIB__9624123__AllCATPart_w_th_specia__char"
+            }
+        },
+        "JT": {
+            "[Folder] Disk_Brake": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "[File] Di$k Br@ke w!th specia% char.jt",
+                "EXPORT_FILE": "[File] Di$k Br@ke w!th specia% char.usd",
+                "STAGE_NAME": "_File__Di_k_Br_ke_w_th_specia__char"
+            }
+        },
+        "Solidworks": {
+            "[Folder] ARUN": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "[File] ARUN RENAMED.SLDASM",
+                "EXPORT_FILE": "[File] ARUN RENAMED.usd",
+                "STAGE_NAME": "_File__ARUN_RENAMED"
+            }
+        },
+        "Autodesk_Inventor": {
+            "[Folder] IRB 6700 3.2M": {
+                "IS_ASSEMBLY": true,
+                "NATIVE_FILE": "[File] IRB 6700 3.2M.iam",
+                "EXPORT_FILE": "[File] IRB 6700 3.2M.usd",
+                "STAGE_NAME": "_File__IRB_6700_3_2M"
+            }
+        },
+        "DGN": {
+            "[Folder] STA_BZD_1510": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "[File] STA_BZD $1510_0500_G00!0@ MONT_80000733 % Siemens_HEMS_Steelwork_Platform_30u.dgn",
+                "EXPORT_FILE": "[File] STA_BZD $1510_0500_G00!0@ MONT_80000733 % Siemens_HEMS_Steelwork_Platform_30u.usd",
+                "STAGE_NAME": "_File__STA_BZD__1510_0500_G00_0__MONT_80000733___Siemens_HEMS_Steelwork_Platform_30u"
+            }
+        }
+    },
+    "SUPPORTED_FILE_FORMATS": [
+        "All Supported Files (*.fbx, *.obj, ...)",
+        "FBX Files (*.fbx)",
+        "OBJ Files (*.obj)",
+        "glTF Files (*.gltf)",
+        "glb Files (*.glb)",
+        "LXO Files (*.lxo)",
+        "MD5 Files (*.md5)",
+        "STL Files (*.stl)",
+        "BVH Files (*.bvh)",
+        "CATIA V5 Files (*.CATPart, *.CATProduct, *.CGR)",
+        "IFC Files (*.ifc, *.ifczip)",
+        "Siemens NX Files (*.prt)",
+        "Parasolid Files (*.xmt, *.x_t, *.x_b, *.xmt_txt)",
+        "SolidWorks Files (*.sldprt, *.sldasm)",
+        "STL Files (*.stl)",
+        "Autodesk Inventor Files (*.IPT, *.IAM)",
+        "CATIA V6 Files (*.3DXML)",
+        "AutoCAD 3D Files (*.DWG, *.DXF)",
+        "Creo - Pro/E Files (*.ASM, *.PRT))",
+        "Revit Files (*.RVT, *.RFA)",
+        "Solid Edge Files (*.ASM, *.PAR, *.PWD, *.PSM)",
+        "Step/Iges (*.STEP, *.STP, *.IGES, *.IGS)",
+        "JT Files (*.jt)",
+        "DGN Files (*.DGN)",
+        "e57 Files (*.e57)"
+    ],
+    "QUICK_CHECK": {
+        "CATIA_V5": {
+            "Folder_UEBUNG_ZUSAMMENBAU_SPANNER": {
+                "IS_ASSEMBLY": true,
+                "NATIVE_FILE": "UEBUNG_ZUSAMMENBAU_SPANNER.CATProduct",
+                "EXPORT_FILE": "UEBUNG_ZUSAMMENBAU_SPANNER.usd",
+                "STAGE_NAME": "UEBUNG_ZUSAMMENBAU_SPANNER"
+            }
+        },
+        "JT": {
+            "Folder_Bolt": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "Bolt.jt",
+                "EXPORT_FILE": "Bolt.usd",
+                "STAGE_NAME": "Bolt"
+            },
+            "Folder_Front_Wheel_Assembly": {
+                "IS_ASSEMBLY": true,
+                "NATIVE_FILE": "Front_Wheel_Assembly.jt",
+                "EXPORT_FILE": "Front_Wheel_Assembly.usd",
+                "STAGE_NAME": "Front_Wheel_Assembly"
+            }
+        },
+        "Solidworks": {
+            "Folder_ARUN": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "ARUN.SLDASM",
+                "EXPORT_FILE": "ARUN.usd",
+                "STAGE_NAME": "ARUN"
+            }
+        },
+        "NX": {
+            "Folder_Aerodesign_ExpRC_Plane": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "Aerodesign_ExpRC_Plane.prt",
+                "EXPORT_FILE": "Aerodesign_ExpRC_Plane.usd",
+                "STAGE_NAME": "Aerodesign_ExpRC_Plane"
+            }
+        },
+        "DGN": {
+            "Folder_KOPIE_STR_Layout": {
+                "IS_ASSEMBLY": false,
+                "NATIVE_FILE": "KOPIE_STR_Layout_220307_V6A_Teilbereich_Hochzeit.dgn",
+                "EXPORT_FILE": "KOPIE_STR_Layout_220307_V6A_Teilbereich_Hochzeit.usd",
+                "STAGE_NAME": "KOPIE_STR_Layout_220307_V6A_Teilbereich_Hochzeit"
+            }
+        }
+    },
+    "Tessellation_Level": {
+        "DGN": {
+            "Folder_MTP_SPB_Model": {
+                "NATIVE_FILE": "MTP_SPB_Model_MF_L1.dgn",
+                "EXPORT_FILE": "MTP_SPB_Model_MF_L1.usd",
+                "STAGE_NAME": "MTP_SPB_Model_MF_L1",
+                "GOLDEN_FILE_Low": "MTP_SPB_Model_MF_L1_GOLDEN_FILE_Low.usd",
+                "GOLDEN_FILE_ExtraLow": "MTP_SPB_Model_MF_L1_GOLDEN_FILE_ExtraLow.usd",
+                "GOLDEN_FILE_Medium": "MTP_SPB_Model_MF_L1_GOLDEN_FILE_Medium.usd",
+                "GOLDEN_FILE_High": "MTP_SPB_Model_MF_L1_GOLDEN_FILE_High.usd",
+                "GOLDEN_FILE_ExtraHigh": "MTP_SPB_Model_MF_L1_GOLDEN_FILE_ExtraHigh.usd"
+            }
+        }
+    }
+}

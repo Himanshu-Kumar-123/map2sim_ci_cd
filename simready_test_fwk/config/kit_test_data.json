@@ -1,0 +1,1785 @@
+{
+    "test_kit_replicator_kitti_writer": {
+        "replicator_examples": {
+            "name": "kitti_writer",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "Camera",
+                    "type": "folder",
+                    "children": [
+                        {
+                            "name": "depth",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "0.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "1.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "2.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "3.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "4.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "5.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "instance_segmentation",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "0.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "1.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "2.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "3.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "4.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "5.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "object_detection",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "0.txt",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "1.txt",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "2.txt",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "3.txt",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "4.txt",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "5.txt",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "rgb",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "0.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "1.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "2.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "3.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "4.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "5.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "semantic",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "0.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "1.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "2.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "3.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "4.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "5.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "semantic_segmentation",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "0.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "1.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "2.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "3.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "4.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "5.png",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "metadata.txt",
+                    "type": "file"
+                }
+            ]
+        }
+    },
+    "test_kit_replicator_multiple_renderer": {
+        "replicator_examples_renderer": {
+            "name": "basic",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "metadata.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "RenderProduct_Replicator",
+                    "type": "folder",
+                    "children": [
+                        {
+                            "name": "bounding_box_2d_loose",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "bounding_box_2d_loose_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0005.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bounding_box_2d_tight",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "bounding_box_2d_tight_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0005.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bounding_box_3d",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "bounding_box_3d_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0005.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "distance_to_camera",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "distance_to_camera_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0005.npy",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "distance_to_image_plane",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "distance_to_image_plane_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0005.npy",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "instance_segmentation",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "instance_segmentation_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0005.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "normals",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "normals_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0005.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "rgb",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "rgb_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0005.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "semantic_segmentation",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "semantic_segmentation_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0005.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RenderProduct_Replicator_01",
+                    "type": "folder",
+                    "children": [
+                        {
+                            "name": "bounding_box_2d_loose",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "bounding_box_2d_loose_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_0005.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_labels_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_loose_prim_paths_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bounding_box_2d_tight",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "bounding_box_2d_tight_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_0005.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_labels_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_2d_tight_prim_paths_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bounding_box_3d",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "bounding_box_3d_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_0005.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_labels_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "bounding_box_3d_prim_paths_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "distance_to_camera",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "distance_to_camera_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_camera_0005.npy",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "distance_to_image_plane",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "distance_to_image_plane_0000.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0001.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0002.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0003.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0004.npy",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "distance_to_image_plane_0005.npy",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "instance_segmentation",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "instance_segmentation_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_0005.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_mapping_0005.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "instance_segmentation_semantics_mapping_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "normals",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "normals_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "normals_0005.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "rgb",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "rgb_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "rgb_0005.png",
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "semantic_segmentation",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "semantic_segmentation_0000.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0001.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0002.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0003.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0004.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_0005.png",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0000.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0001.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0002.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0003.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0004.json",
+                                    "type": "file"
+                                },
+                                {
+                                    "name": "semantic_segmentation_labels_0005.json",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "test_kit_replicator_multiple_render_kitti_writer": {
+        "replicator_examples_renderer": {
+            "name": "kitti",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "metadata.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "RenderProduct_Replicator",
+                    "type": "folder",
+                    "children": [
+                        {
+                            "name": "Camera",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "depth",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "instance_segmentation",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "object_detection",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.txt",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "rgb",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "semantic",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "semantic_segmentation",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RenderProduct_Replicator_01",
+                    "type": "folder",
+                    "children": [
+                        {
+                            "name": "Camera",
+                            "type": "folder",
+                            "children": [
+                                {
+                                    "name": "depth",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "instance_segmentation",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "object_detection",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.txt",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.txt",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "rgb",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "semantic",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "semantic_segmentation",
+                                    "type": "folder",
+                                    "children": [
+                                        {
+                                            "name": "0.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "1.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "2.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "3.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "4.png",
+                                            "type": "file"
+                                        },
+                                        {
+                                            "name": "5.png",
+                                            "type": "file"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "docs_details": {
+        "omn_ui_scene": {
+            "summary": "SceneUI helps build great-looking 3d manipulators and 3d helpers with as little code as possible. It provides shapes and controls for declaring the UI in 3D space.",
+            "window_name": "Omni UI Scene"
+        },
+        "omni_ui_style": {
+            "summary": "OmniUI style allows users to build customized widgets, make these widgets visually pleasant and functionally indicative with user interactions.",
+            "window_name": "Omni.UI Style Documentation"
+        },
+        "omni_viewport": {
+            "summary": "Viewport Next is a preview of the next generation of Kit's Viewport.  It was designed to be as light as possible, providing a way to isolate features and compose them as needed to create unique experiences.",
+            "window_name": "omni.kit.viewport.docs-104.0.3"
+        }
+    },
+    "apollo_test_folder": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/"
+    },
+    "base_usd_file": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/NVIDIA/Samples/",
+        "astronaut_file": "Astronaut.usd"
+    },
+    "large_usd_file": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/LargeUSDFile/Collected_666_5th_Avenue/",
+        "file_name": "666_5th_Avenue.usdc"
+    },
+    "issac_robot": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Physics/",
+        "file_name": "Issac_Robots.usd"
+    },
+    "kit_test_plan_path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/",
+    "issac_robot_joints": {
+        "ANYmal_C_joints": [
+            "base_LF_HAA",
+            "LF_HAA",
+            "LF_HIP_LF_hip_fixed",
+            "LF_hip_fixed_LF_HFE",
+            "LF_HFE",
+            "LF_THIGH_LF_thigh_fixed",
+            "LF_thigh_fixed_LF_KFE",
+            "LF_KFE",
+            "LF_shank_LF_shank_fixed",
+            "LF_shank_fixed_LF_FOOT",
+            "base_LH_HAA",
+            "LH_HAA",
+            "LH_HIP_LH_hip_fixed",
+            "LH_hip_fixed_LH_HFE",
+            "LH_HFE",
+            "LH_THIGH_LH_thigh_fixed",
+            "LH_thigh_fixed_LH_KFE",
+            "LH_KFE",
+            "LH_shank_LH_shank_fixed",
+            "LH_shank_fixed_LH_FOOT",
+            "base_RF_HAA",
+            "RF_HAA",
+            "RF_HIP_RF_hip_fixed",
+            "RF_hip_fixed_RF_HFE",
+            "RF_HFE",
+            "RF_THIGH_RF_thigh_fixed",
+            "RF_thigh_fixed_RF_KFE",
+            "RF_KFE",
+            "RF_shank_RF_shank_fixed",
+            "RF_shank_fixed_RF_FOOT",
+            "base_RH_HAA",
+            "RH_HAA",
+            "RH_HIP_RH_hip_fixed",
+            "RH_hip_fixed_RH_HFE",
+            "RH_HFE",
+            "RH_THIGH_RH_thigh_fixed",
+            "RH_thigh_fixed_RH_KFE",
+            "RH_KFE",
+            "RH_shank_RH_shank_fixed",
+            "RH_shank_fixed_RH_FOOT",
+            "base_battery",
+            "base_bottom_shell",
+            "base_face_front",
+            "face_front_to_depth_camera_front_camera",
+            "face_front_to_wide_angle_camera_front_camera",
+            "base_face_rear",
+            "face_rear_to_depth_camera_rear_camera",
+            "face_rear_to_wide_angle_camera_rear_camera",
+            "base_handle",
+            "base_hatch",
+            "base_remote",
+            "base_to_depth_camera_left_camera",
+            "base_to_depth_camera_right_camera",
+            "base_to_docking_hatch_cover",
+            "base_to_lidar_cage",
+            "lidar_cage_to_lidar",
+            "base_top_shell",
+            "imu_joint"
+        ],
+        "UR10_joints": [
+            "shoulder_pan_joint",
+            "shoulder_lift_joint",
+            "elbow_joint",
+            "wrist_1_joint",
+            "wrist_2_joint",
+            "wrist_3_joint",
+            "ee_joint"
+        ]
+    },
+    "test_rcca_ompe_14733_open_scene_crash_issue": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Collected_ovd-kv-platform-09d/",
+        "file_name": "ovd-kv-platform-09db.usd"
+    },
+    "ur10_robot": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/NVIDIA/Assets/Isaac/2023.1.1/Isaac/Robots/UR10/",
+        "file_name": "ur10.usd"
+    },
+    "test_kit_physics_test_per_iteration_gravity": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Physics/",
+        "file_name": "NutContainersMeter.usd"
+    },
+    "test_kit_tiled_rendering": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/RTX_QA_test_scenes/Collected_hands/",
+        "file_name": "hands1.usd",
+        "script": "import omni.kit.commands\nfrom omni.kit.viewport.utility import get_active_viewport\nomni.kit.commands.execute('ChangeSetting', path='/rtx-transient/dlssg/enabled', value=False)\ndefaultVp = get_active_viewport()\ndefaultVp.render_product_path = '/Render/MultiProd'"
+    },
+    "test_backplate_texture_composite_image": {
+        "path_1": "omniverse://rc-r15.ov.nvidia.com/NVIDIA/Assets/Skies/Clear/",
+        "file_name_1": "evening_road_01_4k.hdr",
+        "path_2": "omniverse://rc-r15.ov.nvidia.com/NVIDIA/Assets/Skies/Indoor/",
+        "file_name_2": "bathroom_4k.hdr"
+    },
+    "test_toggle_mesh_light_sampling": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/Test/Collected_OM-122648/",
+        "file_name": "OM-122648.usd"
+    },
+    "test_multiple_movie_capture": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/3860172/",
+        "file_name": "error.usd"
+    },
+    "test_subdiv_creases_visibility": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/QA/KIT SDK/",
+        "file_name": "creases2.usda"
+    },
+    "test_primvars_on_curve": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/hair/",
+        "file_name": "curveMeshPrimvarTest.usd"
+    },
+    "test_fractional_opacity_render": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/3941215/",
+        "file_name": "opacity_param_test.usda"
+    },
+    "test_materialsx_shader_rendering": {
+        "path_1": "omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/OMPE-25096/signs_with_textures/",
+        "file_name_1": "sign_mtlx.usd",
+        "path_2": "omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/OMPE-25096/grass_block_blocky/",
+        "file_name_2": "grass_block_blocky.usda"
+
+    },
+    "test_selection_on_instance_visibilty_change": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/QA/KIT SDK/",
+        "file_name": "instanced_cube.usd"
+    },
+    "test_missing_texture_indicator": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/NVIDIA/Samples/OldAttic/",
+        "file_name": "Attic_NVIDIA.usd"
+    },
+    "test_materials_mdl_reloading": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/3940613/MDL Reloading/",
+        "file_name": "scene.usda"
+    },
+    "test_rendering_with_applied_material": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/scene/scene/",
+        "file_name": "BRDF_test.usda"
+    },
+    "test_door_animation": {
+        "path": "omniverse://workflows.ov.nvidia.com/Projects/",
+        "file_name": "test_automation_modified.usd"
+    },
+    "test_script_editor_navigation_and_ui": {
+        "Console Box": {
+            "height": 136,
+            "width": 792
+        },
+        "Editor": {
+            "height": 318,
+            "width": 792
+        },
+        "Run Button": {
+            "height": 32,
+            "width": 117
+        },
+        "Editor Summary": {
+            "height": 32,
+            "width": 142
+        }
+    },
+    "stage_creation_script": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Rohan Tests/scripts/add_script.py",
+        "script": "from pxr import Usd, UsdUtils\nimport omni.usd\nnew_stage = Usd.Stage.CreateInMemory()\ncache = UsdUtils.StageCache.Get()\ncache.Insert(new_stage)\nnew_stage_id = cache.GetId(new_stage).ToLongInt()\nprint(new_stage)\nomni.usd.get_context().attach_stage_with_callback(new_stage_id, None)\nprint(new_stage)\nomni.usd.get_context().close_stage()\nprint(new_stage)"
+    }
+}

@@ -1,0 +1,273 @@
+[Assets]
+root = "{/app/drivesim/defaultNucleusRoot}/"
+sets = [
+    "ego.toml",
+    "dynamic_traffic_vehicles.toml",
+    "dynamic_traffic_large_vehicles.toml",
+    "static_traffic_vehicles.toml"
+]
+
+[Events.config]
+enable_script = true
+enable_periodic = true
+periodic_start_frame = 0
+collisions_enabled = true
+enable_ego_teleportation = false
+
+[[Events.setup]]
+type='EgoRand'
+func='set_pop_speed'
+pop_name='ego'
+speed=15
+
+[[Events.setup]]
+type= 'VehicleRandStat'
+func= 'setup'
+pop_name='parked_vehicles'
+asset_file='static_traffic_vehicles.toml'
+asset_sel_type='all'
+asset_qty=10
+
+[[Events.scripted.1]]
+type='VehicleRandStat'
+func='randomize_position'
+region_diameter=45
+pop_name='parked_vehicles'
+surface_type='parking'
+region_center='surround_ego' # 'ahead_ego', 'surround_ego', 'behind_ego'
+orientation='mixed'  # 'forward', 'reverse', 'mixed'
+num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandStat'
+func='set_all_lights'
+pop_name='parked_vehicles'
+enable=false
+
+#[[Events.scripted.1]]
+#type='VehicleRandStat'
+#func='set_all_lights'
+#pop_name='parked_vehicles'
+#enable=false
+
+[[Events.setup]]
+type='VehicleRandStat'
+func='randomize_color'
+pop_name='parked_vehicles'
+
+[[Events.scripted.1]]
+type='VehicleRandStat'
+func='randomize_color'
+pop_name='parked_vehicles'
+
+[[Events.setup]]
+type= 'VehicleRandDyn'
+func= 'setup'
+pop_name='traffic_vehicles'
+asset_file='dynamic_traffic_vehicles.toml'
+asset_sel_type='all'
+asset_qty=1
+#asset_sel_type='index'
+#asset_sel=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_position'
+pop_name='traffic_vehicles'
+region_center='surround_ego'
+region_diameter=40
+shuffle_order=true
+offset=5
+min_distance=10
+num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_speed'
+pop_name='traffic_vehicles'
+speed_range=[10, 15]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='set_all_lights'
+pop_name='traffic_vehicles'
+enable=false
+
+#[[Events.scripted.1]]
+#type='VehicleRandDyn'
+#func='set_all_lights'
+#pop_name='traffic_vehicles'
+#enable=false
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='traffic_vehicles'
+
+[[Events.scripted.1]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='traffic_vehicles'
+
+[[Events.setup]]
+type= 'VehicleRandDyn'
+func= 'setup'
+pop_name='large_traffic_vehicles'
+asset_file='dynamic_traffic_large_vehicles.toml'
+asset_sel_type='index'
+asset_sel=[0,1,2,3,4,5,6,7,8]
+asset_qty=[2,0,0,1,0,0,0,0,0]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_position'
+pop_name='large_traffic_vehicles'
+region_center='ahead_ego'
+region_diameter=30
+shuffle_order=true
+offset=5
+min_distance=14
+num_placements=2
+#num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_speed'
+pop_name='large_traffic_vehicles'
+speed_range=[10, 15]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='set_all_lights'
+pop_name='large_traffic_vehicles'
+enable=false
+
+#[[Events.scripted.1]]
+#type='VehicleRandDyn'
+#func='set_all_lights'
+#pop_name='large_traffic_vehicles'
+#enable=false
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='large_traffic_vehicles'
+
+[[Events.scripted.1]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='large_traffic_vehicles'
+
+# WEATHERRAND SETUP AND DEMO:
+# Setting up events can be done one of two ways:
+# If no preset_name is specified the Environment System defaults are populated
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+
+# Or if preset_name is specified, any existing preset name will be updated
+# with the parameters passed as arguments
+# WeatherRand setup define presets with 5 values in addition to preset_name:
+# azimuth:[0,360] elevation:[-20,?] cloudiness:[0.0,1.0],road_wetness:[0.0,1.0], fog:[0.0,1.0]
+# NOTE: Fog is only supported in PathTracing render mode
+
+#[[Events.setup]]
+#type='WorldRand.weather'
+#func='setup'
+#preset_name='_dawn_wet'
+#azimuth=180
+#elevation=0
+#cloudiness=0.25
+#road_wetness=1.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_noon_wet'
+azimuth=180
+elevation=10
+cloudiness=0.25
+road_wetness=0.5
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_stormday_wet'
+azimuth=150
+elevation=50
+cloudiness=1.0
+road_wetness=1.0
+fog=1.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_afternoon_wet'
+azimuth=270
+elevation=50
+cloudiness=0.5
+road_wetness=1.0
+fog=0.5
+
+#[[Events.setup]]
+#type='WorldRand.weather'
+#func='setup'
+#preset_name='_dawn_dry'
+#azimuth=180
+#elevation=0
+#cloudiness=0.25
+#road_wetness=0.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_noon_dry'
+azimuth=180
+elevation=10
+cloudiness=0.25
+road_wetness=0.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_stormday_dry'
+azimuth=150
+elevation=50
+cloudiness=1.0
+road_wetness=0.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_afternoon_dry'
+azimuth=270
+elevation=50
+cloudiness=0.25
+road_wetness=0.0
+
+# Once defined, presets can be set in one of three ways:
+# Either through randomize_environment, which selects from presets from a
+# seeded psuedorandom sequence
+# (called in setup here to start before frame 0)
+[[Events.setup]]
+type='WorldRand.weather'
+#func='randomize_environment'
+func='set_environment'
+preset_name='_afternoon_wet'
+
+#### PERIODIC EVENTS ####
+
+#[[Events.periodic.4]]
+#type='VehicleRandStat'
+#func='randomize_color'
+#pop_name='parked_vehicles'
+
+#[[Events.periodic.5]]
+#type='VehicleRandDyn'
+#func='randomize_color'
+#pop_name='traffic_vehicles'
+
+#[[Events.periodic.7]]
+#type='VehicleRandDyn'
+#func='randomize_color'
+#pop_name='large_traffic_vehicles'

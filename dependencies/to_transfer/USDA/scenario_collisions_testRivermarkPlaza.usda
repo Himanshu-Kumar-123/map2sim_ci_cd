@@ -1,0 +1,136 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            string boundCamera = "/Entities/Ego/Sensors/camera_front_wide_120fov"
+        }
+        dictionary omni_layer = {
+            dictionary locked = {
+                bool "ds2-nucleus-root://Projects/ds2_scenarios/production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda" = 1
+            }
+        }
+    }
+    defaultPrim = "World"
+    endTimeCode = 100
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @ds2-nucleus-root://Projects/ds2_scenarios/production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda@
+    ]
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Scope "Scenario"
+    {
+        custom token app_build_version = "105.2+drivesim.192981.791ed29b.tc"
+    }
+}
+
+def Xform "EntityPoolSpec"
+{
+    custom token[] assets
+    custom token[] poolNames
+    custom uint[] poolSizes
+    custom token[] poolTypes
+}
+
+def Xform "Actions"
+{
+    def Control "SetMap_1"
+    {
+        custom token[] action:enabledPayloads = ["/World/drivable_surfaces/islands", "/World/fences", "/World/foliage", "/World/grass/field_grass", "/World/grass/island_grass", "/World/painted_foliage", "/World/props", "/World/signs", "/World/sub_parking"]
+        custom bool action:forceReload = 0
+        custom token action:map = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_rivermark_plaza/levels/main/main.usd"
+        custom int action:status = 1
+        custom token action:type = "actionSetMap"
+        custom token action:xodr = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_rivermark_plaza/levels/main/main.xodr"
+        custom token action_strict_type = "actionSetMap"
+        custom uint64 controlId = 1
+    }
+
+    over "Generic_Sedan___ego"
+    {
+        custom double action:driverModel:desiredTimeGap = 1.6574129282100216
+        custom double action:driverModel:freeRoadExponent = 8.685174143579957
+        custom double action:driverModel:interactionExponent = 8.685174143579957
+        custom bool action:driverModel:laneOffsetClampToLaneWidth = 1
+        custom double action:driverModel:minimumDistance = 1.3287064641050108
+        custom bool action:driverModel:olcEnabled = 1
+        custom double action:driverModel:olcSpeedupThresholdKPH = 9.108830801312635
+        custom double action:driverModel:speedLimitRatio = 1.2424763687816232
+        custom token action:forward:paint_color = "Synergy_Green"
+        custom int action:status = 1
+        custom double3 action:transform:coordinate = (37.39554537047636, -121.94559723033103, 5.623981770981853)
+        custom int action:transform:laneId = 1
+        custom double action:transform:laneS = 35.6997
+        custom quatd action:transform:orientation = (1, 0, 0, 0)
+        custom int action:transform:roadId = 36
+        custom double3 action:transform:translation = (97.4037423544183, 183.58920048522626, 5.623981770981853)
+        custom token action:transform:type = "transformRls"
+    }
+
+    over "CreateCameraSystem_1000002"
+    {
+        custom int action:status = 1
+    }
+}
+
+def "ScenarioParameters"
+{
+    def "Weather"
+    {
+        custom double cloudCoverage = 0
+        custom bool default = 1
+        custom token group = "Environment"
+        custom double limitedVisibility = 0
+    }
+
+    def "Sun"
+    {
+        custom double azimuth = 0
+        custom bool default = 1
+        custom double elevation = 30
+        custom token group = "Environment"
+    }
+
+    def "NdasValSubscriptions"
+    {
+        custom bool default = 1
+        custom token group = "NdasVal"
+    }
+
+    def "TimeOfDay"
+    {
+        custom int64 datetime = 0
+        custom bool default = 1
+        custom token group = "Environment"
+        custom double latitude = 0
+        custom double longitude = 0
+    }
+
+    def "MaterialFriction"
+    {
+        custom bool default = 1
+        custom double friction = 0
+        custom token group = "Physics"
+        custom token materialName = ""
+    }
+
+    def "GlobalOLC"
+    {
+        custom bool default = 1
+        custom bool enabled = 0
+        custom token group = "Traffic"
+    }
+
+    def "TimeRatio"
+    {
+        custom bool default = 1
+        custom uint64 denominator = 1
+        custom token group = "Simulation"
+        custom uint64 numerator = 1
+    }
+}

@@ -1,0 +1,304 @@
+{
+    "git_branch": "feature/107.2",
+    "usd_explorer": {
+        "win": {
+            "app_name": "My USD Explorer",
+            "build": "Yes;Application>;[omni_usd_explorer]: USD Explorer;usd_explorer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_explorer.kit",
+            "package": "my_usd_explorer@0.1.0-windows-x86_64.zip",
+            "launch_file": "_build/windows-x86_64/release/usd_explorer.kit.bat",
+            "connection_details": "connection_details_usde"
+        },
+        "ubuntu": {
+            "app_name": "My USD Explorer",
+            "build": "Yes;Application>;[omni_usd_explorer]: USD Explorer;usd_explorer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_explorer.kit",
+            "package": "my_usd_explorer@0.1.0-linux-x86_64.zip",
+            "launch_file": "_build/linux-x86_64/release/usd_explorer.kit.sh",
+            "connection_details": "connection_details_usde"
+        }
+    },
+    "kit_simple_editor": {
+        "win": {
+            "app_name": "My Editor",
+            "build": "Yes;Application>;[kit_base_editor]: Kit Base Editor;kit_simple_editor;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "kit_simple_editor.kit",
+            "package": "my_kit_simple_editor@0.1.0-windows-x86_64.zip",
+            "launch_file": "_build/windows-x86_64/release/kit_simple_editor.kit.bat",
+            "connection_details": "connection_details"
+        },
+        "ubuntu": {
+            "app_name": "My Editor",
+            "build": "Yes;Application>;[kit_base_editor]: Kit Base Editor;kit_simple_editor;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "kit_simple_editor.kit",
+            "package": "my_kit_simple_editor@0.1.0-linux-x86_64.zip",
+            "launch_file": "_build/linux-x86_64/release/kit_simple_editor.kit.sh",
+            "connection_details": "connection_details"
+        }
+    },
+    "kit_service": {
+        "win": {
+            "app_name": "My kit service",
+            "build": "Yes;Application>;[kit_service]: Kit Service;kit_service;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "kit_service.kit",
+            "package": "my_kit_service@0.1.0-windows-x86_64.zip",
+            "launch_file": "_build/windows-x86_64/release/kit_service.kit.bat"
+        },
+        "ubuntu": {
+            "app_name": "My kit service",
+            "build": "Yes;Application>;[kit_service]: Kit Service;kit_service;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "kit_service.kit",
+            "package": "my_kit_service@0.1.0-linux-x86_64.zip",
+            "launch_file": "_build/linux-x86_64/release/kit_service.kit.sh"
+        }
+    },
+    "basic_python": {
+        "win": {
+            "app_name": "Basic Python Extension",
+            "build": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;basic_python_ext;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "basic_python_ext/basic_python_ext/extension.py",
+            "extension_id": "basic_python_ext",
+            "extension_name": "MY PYTHON EXTENSION"
+        },
+        "ubuntu": {
+            "app_name": "Basic Python Extension",
+            "build": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;basic_python_ext;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "basic_python_ext/basic_python_ext/extension.py",
+            "extension_id": "basic_python_ext",
+            "extension_name": "MY PYTHON EXTENSION"
+        }
+    },
+    "python_ui": {
+        "win": {
+            "app_name": "Basic Python UI Extension",
+            "build": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;python_ui_ext;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "python_ui_ext/python_ui_ext/extension.py",
+            "extension_id": "python_ui_ext",
+            "extension_name": "MY PYTHON UI EXTENSION"
+        },
+        "ubuntu": {
+            "app_name": "Basic Python UI Extension",
+            "build": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;python_ui_ext;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "python_ui_ext/python_ui_ext/extension.py",
+            "extension_id": "python_ui_ext",
+            "extension_name": "MY PYTHON UI EXTENSION"
+        }
+    },
+    "basic_cpp": {
+        "win": {
+            "app_name": "Basic Cpp Extension",
+            "build": "Yes;Extension>;[basic_cpp_extension]: Basic C++ Extension;basic_cpp_ext;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "basic_cpp_ext/config/extension.toml",
+            "extension_id": "basic_cpp_ext",
+            "extension_name": "MY C++ EXTENSION"
+        },
+        "ubuntu": {
+            "app_name": "Basic Cpp Extension",
+            "build": "Yes;Extension>;[basic_cpp_extension]: Basic C++ Extension;basic_cpp_ext;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "basic_cpp_ext/config/extension.toml",
+            "extension_id": "basic_cpp_ext",
+            "extension_name": "MY C++ EXTENSION"
+        }
+    },
+    "dev_bundle_extensions": [
+        "omni.kit.window.extensions",
+        "omni.kit.window.script_editor",
+        "omni.kit.window.commands",
+        "omni.kit.debug.settings",
+        "omni.kit.window.console"
+    ],
+    "user_input_commands": {
+        "basic_python": {
+            "build_0": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;basic_python_ext 1;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;basic_python_ext A;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;basic_python_ext?;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;Basic_python_ext;DEFAULT;DEFAULT;DEFAULT"
+        },
+        "basic_cpp": {
+            "build_0": "Yes;Extension>;[basic_cpp_extension]: Basic C++ Extension;basic_cpp_ext 1;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Extension>;[basic_cpp_extension]: Basic C++ Extension;basic_cpp_ext A;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Extension>;[basic_cpp_extension]: Basic C++ Extension;basic_cpp_ext?;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Extension>;[basic_cpp_extension]: Basic C++ Extension;Basic_cpp_ext;DEFAULT;DEFAULT;DEFAULT"
+        },
+        "python_ui": {
+            "build_0": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;python_ui_ext 1;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;python_ui_ext A;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;python_ui_ext?;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;Python_ui_ext;DEFAULT;DEFAULT;DEFAULT"
+        },
+        "usd_explorer": {
+            "build_0": "Yes;Application>;[omni_usd_explorer]: USD Explorer;usd_explorer 1;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Application>;[omni_usd_explorer]: USD Explorer;usd_explorer A;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Application>;[omni_usd_explorer]: USD Explorer;usd_explorer?;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Application>;[omni_usd_explorer]: USD Explorer;Usd_explorer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT"
+        },
+        "kit_simple_editor": {
+            "build_0": "Yes;Application>;[kit_base_editor]: Kit Base Editor;kit_simple_editor 1;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Application>;[kit_base_editor]: Kit Base Editor;kit_simple_editor A;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Application>;[kit_base_editor]: Kit Base Editor;kit_simple_editor?;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Application>;[kit_base_editor]: Kit Base Editor;Kit_simple_editor;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT"
+        },
+        "kit_service": {
+            "build_0": "Yes;Application>;[kit_service]: Kit Service;kit_service 1;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Application>;[kit_service]: Kit Service;kit_service A;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Application>;[kit_service]: Kit Service;kit_service?;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Application>;[kit_service]: Kit Service;Kit_service;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT"
+        },
+        "usd_composer": {
+            "build_0": "Yes;Application>;[omni_usd_composer]: USD Composer;usd_composer 1;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Application>;[omni_usd_composer]: USD Composer;usd_composer A;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Application>;[omni_usd_composer]: USD Composer;usd_composer?;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Application>;[omni_usd_composer]: USD Composer;Usd_composer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT"
+        },
+        "usd_viewer": {
+            "build_0": "Yes;Application>;[omni_usd_viewer]: USD Viewer;usd_viewer 1;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_1": "Yes;Application>;[omni_usd_viewer]: USD Viewer;usd_viewer A;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_2": "Yes;Application>;[omni_usd_viewer]: USD Viewer;usd_viewer?;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "build_3": "Yes;Application>;[omni_usd_viewer]: USD Viewer;Usd_viewer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT"
+        }
+    },
+    "usd_composer": {
+        "win": {
+            "app_name": "My USD Composer",
+            "build": "Yes;Application>;[omni_usd_composer]: USD Composer;usd_composer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_composer.kit",
+            "package": "my_usd_composer@0.1.0-windows-x86_64.zip",
+            "launch_file": "_build/windows-x86_64/release/usd_composer.kit.bat",
+            "connection_details": "connection_details_usdc"
+        },
+        "ubuntu": {
+            "app_name": "My USD Composer",
+            "build": "Yes;Application>;[omni_usd_composer]: USD Composer;usd_composer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_composer.kit",
+            "package": "my_usd_composer@0.1.0-linux-x86_64.zip",
+            "launch_file": "_build/linux-x86_64/release/usd_composer.kit.sh",
+            "connection_details": "connection_details_usdc"
+        }
+    },
+    "xr_composer": {
+        "win": {
+            "app_name": "My USD Composer",
+            "build": "Yes;Application>;[omni_usd_composer]: USD Composer;usd_composer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_composer.kit",
+            "package": "my_usd_composer@0.1.0-windows-x86_64.zip",
+            "launch_file": "_build/windows-x86_64/release/usd_composer.kit.bat",
+            "connection_details": "connection_details_usdc",
+            "extension_dependencies": "# XR extensions for AVP development\n\"omni.kit.xr.ogn\" = {} # omnigraph nodes\n\"omni.kit.xr.profile.vr\" = {} # VR panel\n# XR Simulator Extensions\n\"omni.kit.xr.system.simulatedxr\" = {} # xr simulator plugin\n# Environment Core\n\"omni.kit.environment.core\" = {} # changing background enviroments",
+            "extension_settings": "# XR Settings for AVP development\nxr.cloudxr.version = 4.1\nxr.depth.aov = \"GBufferDepth\"\nxr.simulatedxr.enabled = true\n# Performance Settings\npersistent.renderer.raytracingOmm.enabled = true\nrtx-transient.resourcemanager.enableTextureStreaming = false\nxr.ui.enabled=false\n# Default AR mode to \"Stage\" render quality\ndefaults.xr.profile.ar.renderQuality = \"off\"\n# Enable CloudXR 4.1 by default\ndefaults.xr.profile.ar.system.display = \"CloudXR41\"\n# Set near clipping plane for AR to 0.15 meters\npersistent.xr.profile.ar.render.nearPlane = 0.15\n# Avoid some glass artifacts\npersistent.rtx.sceneDb.allowDuplicateAhsInvocation = false"
+        },
+        "ubuntu": {
+            "app_name": "My USD Composer",
+            "build": "Yes;Application>;[omni_usd_composer]: USD Composer;usd_composer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_composer.kit",
+            "package": "my_usd_composer@0.1.0-linux-x86_64.zip",
+            "launch_file": "_build/linux-x86_64/release/usd_composer.kit.sh",
+            "connection_details": "connection_details_usdc",
+            "extension_dependencies": "# XR extensions for AVP development\n\"omni.kit.xr.ogn\" = {} # omnigraph nodes\n\"omni.kit.xr.profile.vr\" = {} # VR panel\n# XR Simulator Extensions\n\"omni.kit.xr.system.simulatedxr\" = {} # xr simulator plugin\n# Environment Core\n\"omni.kit.environment.core\" = {} # changing background enviroments",
+            "extension_settings": "# XR Settings for AVP development\nxr.cloudxr.version = 4.1\nxr.depth.aov = \"GBufferDepth\"\nxr.simulatedxr.enabled = true\n# Performance Settings\npersistent.renderer.raytracingOmm.enabled = true\nrtx-transient.resourcemanager.enableTextureStreaming = false\nxr.ui.enabled=false\n# Default AR mode to \"Stage\" render quality\ndefaults.xr.profile.ar.renderQuality = \"off\"\n# Enable CloudXR 4.1 by default\ndefaults.xr.profile.ar.system.display = \"CloudXR41\"\n# Set near clipping plane for AR to 0.15 meters\npersistent.xr.profile.ar.render.nearPlane = 0.15\n# Avoid some glass artifacts\npersistent.rtx.sceneDb.allowDuplicateAhsInvocation = false"
+        }
+    },
+    "dev_bundle_extensions_usdc": [
+        "omni.kit.window.extensions",
+        "omni.kit.window.script_editor",
+        "omni.kit.dev.utilities.bundle",
+        "omni.kit.window.commands",
+        "omni.kit.debug.settings",
+        "omni.kit.window.console"
+    ],
+    "usd_viewer": {
+        "win": {
+            "app_name": "My USD Viewer",
+            "build": "Yes;Application>;[omni_usd_viewer]: USD Viewer;usd_viewer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_viewer.kit",
+            "package": "my_usd_viewer@0.1.0-windows-x86_64.zip",
+            "launch_file": "_build/windows-x86_64/release/usd_viewer.kit.bat",
+            "connection_details": "connection_details"
+        },
+        "ubuntu": {
+            "app_name": "My USD Viewer",
+            "build": "Yes;Application>;[omni_usd_viewer]: USD Viewer;usd_viewer;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT;DEFAULT",
+            "launch": "usd_viewer.kit",
+            "package": "my_usd_viewer@0.1.0-linux-x86_64.zip",
+            "launch_file": "_build/linux-x86_64/release/usd_viewer.kit.sh",
+            "connection_details": "connection_details"
+        }
+    },
+    "warp_kernel_ui": {
+        "win": {
+            "app_name": "Warp Kernel UI",
+            "build": "Yes;Extension>;[warp_kernel_ui]: Warp Kernel UI;my_company.warp_kernel_ui;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "my_company.warp_kernel_ui/config/extension.toml",
+            "extension_id": "my_company.warp_kernel_ui",
+            "extension_name": "Warp Kernel UI"
+        },
+        "ubuntu": {
+            "app_name": "Warp Kernel UI",
+            "build": "Yes;Extension>;[warp_kernel_ui]: Warp Kernel UI;my_company.warp_kernel_ui;DEFAULT;DEFAULT;DEFAULT",
+            "search_path": "my_company.warp_kernel_ui/config/extension.toml",
+            "extension_id": "my_company.warp_kernel_ui",
+            "extension_name": "Warp Kernel UI"
+        }
+    },
+    "custom_template_creation": {
+        "code": "import omni.ext\nimport omni.ui as ui\nimport warp as wp\nimport numpy as np\n\n\n# Warp kernel to computes the lengths of 3D vectors\n@wp.kernel\ndef length(points: wp.array(dtype=wp.vec3),\n           lengths: wp.array(dtype=float)):\n\n    # thread index\n    tid = wp.tid()\n\n    # compute distance of each point from origin\n    lengths[tid] = wp.length(points[tid])\n\n\n# Any class derived from `omni.ext.IExt` in the top level module (defined in `python.modules` of `extension.toml`) will\n# be instantiated when the extension gets enabled, and `on_startup(ext_id)` will be called.\n# Later when the extension gets disabled on_shutdown() is called.\nclass MyExtension(omni.ext.IExt):\n    # ext_id is the current extension id. It can be used with the extension manager to query additional information,\n    # like where this extension is located on the filesystem.\n    def on_startup(self, ext_id):\n        print(\"[{{ extension_name }}] Extension startup\")\n\n        wp.init()\n        self._count = 0\n        self._num_points = 1024\n\n        self._window = ui.Window(\"{{ extension_display_name }}\", width=300, height=300)\n        with self._window.frame:\n            with ui.VStack():\n                label = ui.Label(\"\")\n\n                def on_click():\n                    self._count += 1\n                    label.text = f\"# Runs: {self._count}\"\n                    # allocate an array of 3d points\n                    points = wp.array(np.random.rand(self._num_points, 3), dtype=wp.vec3)\n                    lengths = wp.zeros(self._num_points, dtype=float)\n\n                    # launch kernel\n                    wp.launch(kernel=length,\n                            dim=len(points),\n                            inputs=[points, lengths])\n\n                    print(lengths)\n\n\n\n                with ui.HStack():\n                    ui.Button(\"Run Kernel\", clicked_fn=on_click)\n\n    def on_shutdown(self):\n        print(\"[{{ extension_name }}] Extension shutdown\")",
+        "template_config": "\n\n[templates.\"warp_kernel_ui\"]\nclass = \"ExtensionTemplate\"\nname = \"Warp Kernel UI\"\nurl = \".\"\nsubpath = \"extensions/warp_kernel_ui/template\"\nvariables.extension_name = \"my_company.warp_kernel_ui\"\nvariables.extension_display_name = \"Warp Kernel UI\"\nvariables.version = \"0.1.0\""
+    },
+    "random_prim_ui": {
+        "win": {
+            "app_name": "Basic Python UI Extension",
+            "build": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;random_prim_ui;Random Prim UI;DEFAULT;DEFAULT",
+            "search_path": "random_prim_ui/random_prim_ui/extension.py",
+            "extension_id": "random_prim_ui",
+            "extension_name": "Random Prim UI"
+        },
+        "ubuntu": {
+            "app_name": "Basic Python UI Extension",
+            "build": "Yes;Extension>;[basic_python_ui_extension]: Python UI Extension;random_prim_ui;Random Prim UI;DEFAULT;DEFAULT",
+            "search_path": "random_prim_ui/random_prim_ui/extension.py",
+            "extension_id": "random_prim_ui",
+            "extension_name": "Random Prim UI"
+        }
+    },
+    "random_prim_ui_code": {
+        "cone_generation_code": "# SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.\n# SPDX-License-Identifier: LicenseRef-NvidiaProprietary\n#\n# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual\n# property and proprietary rights in and to this material, related\n# documentation and any modifications thereto. Any use, reproduction,\n# disclosure or distribution of this material and related documentation\n# without an express license agreement from NVIDIA CORPORATION or\n# its affiliates is strictly prohibited.\n\nimport omni.ext\nimport omni.ui as ui\nimport omni.kit.commands\nimport omni.usd\n\nfrom pxr import Sdf, Usd\nimport random\n\n# Functions and vars are available to other extensions as usual in python:\n# `random_prim_ui.some_public_function(x)`\ndef scatter_cones(quantity: int):\n\n    usd_context = omni.usd.get_context()\n    stage = usd_context.get_stage()\n\n    for _ in range(quantity):\n        prim_path = omni.usd.get_stage_next_free_path(\n            stage,\n            str(stage.GetPseudoRoot().GetPath().AppendPath(\"Cone\")),\n            False\n        )\n\n        omni.kit.commands.execute(\n            \"CreatePrimCommand\",\n            prim_path=prim_path,\n            prim_type=\"Cone\",\n            attributes={\"radius\": 50, \"height\": 100},\n            select_new_prim=True,\n        )\n\n        bound = 500\n        rand_x = random.uniform(-bound, bound)\n        rand_z = random.uniform(-bound, bound)\n\n        translation = (rand_x, 0, rand_z)\n        omni.kit.commands.execute(\n            \"TransformPrimSRT\",\n            path=prim_path,\n            new_translation=translation,\n        )\n\ndef clear_cones():\n    usd_context = omni.usd.get_context()\n    stage = usd_context.get_stage()\n\n    # Empty list to hold paths of matching primitives\n    matched_cones = []\n\n    # Iterate over all prims in the stage\n    for prim in stage.TraverseAll():\n        # Check if the prim's name starts with the pattern\n        if prim.GetName().startswith(\"Cone\"):\n            matched_cones.append(prim.GetPath())\n\n    # Delete all the Cone prims\n    omni.kit.commands.execute(\"DeletePrims\", paths=matched_cones)\n\n\n# Any class derived from `omni.ext.IExt` in the top level module (defined in\n# `python.modules` of `extension.toml`) will be instantiated when the extension\n# gets enabled, and `on_startup(ext_id)` will be called. Later when the\n# extension gets disabled on_shutdown() is called.\nclass MyExtension(omni.ext.IExt):\n    \"\"\"This extension manages a simple counter UI.\"\"\"\n    # ext_id is the current extension id. It can be used with the extension\n    # manager to query additional information, like where this extension is\n    # located on the filesystem.\n    def on_startup(self, _ext_id):\n        \"\"\"This is called every time the extension is activated.\"\"\"\n        print(\"[random_prim_ui] Extension startup\")\n\n        self._count = 0\n        self._window = ui.Window(\"Random Prim UI\", width=300, height=150)\n        with self._window.frame:\n            with ui.VStack():\n                label = ui.Label(\"\", height=ui.Percent(15), style={\"alignment\": ui.Alignment.CENTER})\n\n                def on_click():\n                    step = self._step_size_model.as_int\n                    self._count += step\n                    label.text = f\"count: {self._count}\"\n                    scatter_cones(step)\n\n                def on_reset():\n                    self._count = 0\n                    label.text = \"empty\"\n                    clear_cones()\n\n\n                with ui.HStack():\n                    ui.Button(\"Add\", clicked_fn=on_click)\n                    ui.Button(\"Reset\", clicked_fn=on_reset)\n\n                with ui.HStack(height=0):\n                    ui.Label(\"Step Size\", style={\"alignment\": ui.Alignment.RIGHT_CENTER})\n                    ui.Spacer(width=8)\n                    self._step_size_model = ui.IntDrag(min=1, max=10).model\n                    self._step_size_model.set_value(1)\n\n    def on_shutdown(self):\n        \"\"\"This is called every time the extension is deactivated. It is used\n        to clean up the extension state.\"\"\"\n        print(\"[random_prim_ui] Extension shutdown\")"
+    },
+    "tutorial_editor_actions": {
+        "win": {
+            "app_name": "Basic Python Extension",
+            "build": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;tutorial_editor_actions;Tutorial Editor Actions;DEFAULT;DEFAULT",
+            "search_path": "tutorial_editor_actions/tutorial_editor_actions/extension.py",
+            "extension_id": "tutorial_editor_actions",
+            "extension_name": "Tutorial Editor Actions"
+        },
+        "ubuntu": {
+            "app_name": "Basic Python Extension",
+            "build": "Yes;Extension>;[basic_python_extension]: Basic Python Extension;tutorial_editor_actions;Tutorial Editor Actions;DEFAULT;DEFAULT",
+            "search_path": "tutorial_editor_actions/tutorial_editor_actions/extension.py",
+            "extension_id": "tutorial_editor_actions",
+            "extension_name": "Tutorial Editor Actions"
+        }
+    },
+    "tutorial_editor_actions_code": {
+        "hotkeys_code": "# SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES.\n# All rights reserved.\n# SPDX-License-Identifier: LicenseRef-NvidiaProprietary\n#\n# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual\n# property and proprietary rights in and to this material, related\n# documentation and any modifications thereto. Any use, reproduction,\n# disclosure or distribution of this material and related documentation\n# without an express license agreement from NVIDIA CORPORATION or\n# its affiliates is strictly prohibited.\n\nimport omni.ext\nimport omni.kit.actions.core\nimport omni.kit.hotkeys.core as hotkeys\n\n# Functions and vars are available to other extensions as usual in python:\n# `tutorial_editor_actions.some_public_function(x)`\ndef some_public_function(x: int):\n    \"\"\"This is a public function that can be called from other extensions.\"\"\"\n    print(f\"[tutorial_editor_actions] some_public_function was called with {x}\")\n    return x**x\n\ndef register_actions(extension_id: str):\n   import random_prim_ui  # Change to the name of your extension\n   action_registry = omni.kit.actions.core.get_action_registry()\n   actions_tag = \"My Actions\"\n\n   action_registry.register_action(\n      extension_id,   # extension_id: The id of the source extension registering the action.\n      \"scatter_8_cones\",  # action_id: Id of the action, unique to the extension registering it.\n      lambda: random_prim_ui.scatter_cones(8),  # The Python object called when the action is executed. (Change to use the name of your extension)\n      display_name=\"Scatter 8 Cones\",  # The name of the action for display purposes.\n      description=\"Scatter 8 Cones in random positions\",  # A brief description of what the action does.\n      tag=actions_tag,  # Arbitrary tag used to group sets of related actions.\n   )\n\ndef deregister_actions(extension_id: str):\n   action_registry = omni.kit.actions.core.get_action_registry()\n   action_registry.deregister_all_actions_for_extension(extension_id)\n\n\ndef register_hotkeys(extension_id: str):\n   hotkey_registry = hotkeys.get_hotkey_registry()\n   action_registry = omni.kit.actions.core.get_action_registry()\n   ext_actions = action_registry.get_all_actions_for_extension(extension_id)\n\n   hotkey_registry.register_hotkey(\n      hotkey_ext_id=extension_id,\n      key=\"CTRL+8\",\n      action_ext_id=ext_actions[0].extension_id,\n      action_id=ext_actions[0].id,\n   )\n   \n\ndef deregister_hotkeys(extension_id: str):\n   hotkey_registry = hotkeys.get_hotkey_registry()\n   hotkey_registry.deregister_all_hotkeys_for_extension(extension_id)\n\n# Any class derived from `omni.ext.IExt` in the top level module (defined in\n# `python.modules` of `extension.toml`) will be instantiated when the extension\n# gets enabled, and `on_startup(ext_id)` will be called. Later when the\n# extension gets disabled on_shutdown() is called.\nclass MyExtension(omni.ext.IExt):\n    \"\"\"This is a blank extension template.\"\"\"\n    # ext_id is the current extension id. It can be used with the extension\n    # manager to query additional information, like where this extension is\n    # located on the filesystem.\n    def on_startup(self, ext_id):\n        # add actions\n        self._ext_name = omni.ext.get_extension_name(ext_id)\n        register_actions(self._ext_name)\n\n        # add hotkeys\n        register_hotkeys(self._ext_name)\n\n        print(\"[tutorial.editor.actions] MyExtension startup.  Registered Actions and Hotkeys\")\n\n    def on_shutdown(self):\n        deregister_hotkeys(self._ext_name)\n        deregister_actions(self._ext_name)\n        print(\"[tutorial.editor.actions] MyExtension shutdown.  Deregistered Actions and Hotkeys\")"
+    },
+    "ui_extension_menu": {
+        "ui_extension_menu_code": "# SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.\n# SPDX-License-Identifier: LicenseRef-NvidiaProprietary\n#\n# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual\n# property and proprietary rights in and to this material, related\n# documentation and any modifications thereto. Any use, reproduction,\n# disclosure or distribution of this material and related documentation\n# without an express license agreement from NVIDIA CORPORATION or\n# its affiliates is strictly prohibited.\n\nimport omni.ext\nimport omni.ui as ui\nimport omni.kit.commands\nimport omni.usd\nfrom omni.kit.menu.utils import MenuItemDescription\nfrom pxr import Sdf, Usd\nimport random\n\n# Functions and vars are available to other extensions as usual in python:\n# `random_prim_ui.some_public_function(x)`\ndef scatter_cones(quantity: int):\n\n    usd_context = omni.usd.get_context()\n    stage = usd_context.get_stage()\n\n    for _ in range(quantity):\n        prim_path = omni.usd.get_stage_next_free_path(\n            stage,\n            str(stage.GetPseudoRoot().GetPath().AppendPath(\"Cone\")),\n            False\n        )\n\n        omni.kit.commands.execute(\n            \"CreatePrimCommand\",\n            prim_path=prim_path,\n            prim_type=\"Cone\",\n            attributes={\"radius\": 50, \"height\": 100},\n            select_new_prim=True,\n        )\n\n        bound = 500\n        rand_x = random.uniform(-bound, bound)\n        rand_z = random.uniform(-bound, bound)\n\n        translation = (rand_x, 0, rand_z)\n        omni.kit.commands.execute(\n            \"TransformPrimSRT\",\n            path=prim_path,\n            new_translation=translation,\n        )\n\ndef clear_cones():\n    usd_context = omni.usd.get_context()\n    stage = usd_context.get_stage()\n\n    # Empty list to hold paths of matching primitives\n    matched_cones = []\n\n    # Iterate over all prims in the stage\n    for prim in stage.TraverseAll():\n        # Check if the prim's name starts with the pattern\n        if prim.GetName().startswith(\"Cone\"):\n            matched_cones.append(prim.GetPath())\n\n    # Delete all the Cone prims\n    omni.kit.commands.execute(\"DeletePrims\", paths=matched_cones)\n\n\n\n# Any class derived from `omni.ext.IExt` in the top level module (defined in\n# `python.modules` of `extension.toml`) will be instantiated when the extension\n# gets enabled, and `on_startup(ext_id)` will be called. Later when the\n# extension gets disabled on_shutdown() is called.\nclass MyExtension(omni.ext.IExt):\n    \"\"\"This extension manages a simple counter UI.\"\"\"\n    # ext_id is the current extension id. It can be used with the extension\n    # manager to query additional information, like where this extension is\n    # located on the filesystem.\n    def on_startup(self, _ext_id):\n        \"\"\"This is called every time the extension is activated.\"\"\"\n        print(\"[random_prim_ui] Extension startup\")\n\n        print(\"[tutorial.editor.random_prim_ui] Extension startup\")\n\n        self._menu_list = [\n            MenuItemDescription(\n                    name=\"Random Prim UI\",\n                    onclick_fn=self.create_window,\n            )\n        ]\n\n        omni.kit.menu.utils.add_menu_items(self._menu_list, \"Tutorial Menu\")\n\n        self._count = 0\n        self._window = None\n\n\n    def on_shutdown(self):\n        \"\"\"This is called every time the extension is deactivated. It is used\n        to clean up the extension state.\"\"\"\n        print(\"[tutorial.editor.random_prim_ui] Extension shutdown\")\n\n        if self._window:\n            self._window.destroy()\n\n    def create_window(self):\n        self._window = ui.Window(\"Random Prim UI\", width=300, height=150)\n\n        with self._window.frame:\n            with ui.VStack():\n                    label = ui.Label(\"\", height=ui.Percent(15), style={\"alignment\": ui.Alignment.CENTER})\n\n                    def on_click():\n                        step = self._step_size_model.as_int\n                        self._count += step\n                        label.text = f\"count: {self._count}\"\n                        scatter_cones(step)\n\n                    def on_reset():\n                        self._count = 0\n                        label.text = \"empty\"\n                        clear_cones()\n\n\n                    with ui.HStack():\n                        ui.Button(\"Add\", clicked_fn=on_click)\n                        ui.Button(\"Reset\", clicked_fn=on_reset)\n\n\n                    with ui.HStack(height=0):\n                        ui.Label(\"Step Size\", style={\"alignment\": ui.Alignment.RIGHT_CENTER})\n                        ui.Spacer(width=8)\n                        self._step_size_model = ui.IntDrag(min=1, max=10).model\n                        self._step_size_model.set_value(1)"
+    },
+    "service_data": {
+        "service_data_code": "# SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.\n# SPDX-License-Identifier: LicenseRef-NvidiaProprietary\n#\n# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual\n# property and proprietary rights in and to this material, related\n# documentation and any modifications thereto. Any use, reproduction,\n# disclosure or distribution of this material and related documentation\n# without an express license agreement from NVIDIA CORPORATION or\n# its affiliates is strictly prohibited.\n\nfrom pathlib import Path\nfrom pydantic import BaseModel, Field\n\nimport omni.kit.commands\nimport omni.usd\nfrom omni.services.core.routers import ServiceAPIRouter\nfrom pxr import Gf, Sdf, UsdGeom, UsdShade\n\nrouter = ServiceAPIRouter(tags=[\"My Service Setup Extension\"])\n\n\nclass SceneDataModel(BaseModel):\n    \"\"\"Model of a request for generating a scene of primitives.\"\"\"\n\n    asset_write_location: str = Field(\n        default=\"/asset_write_path\",\n        title=\"Asset Path\",\n        description=\"Location on device to write generated asset\",\n    )\n\n    asset_name: str = Field(\n        default=\"scene\",\n        title=\"Asset Name\",\n        description=\"Name of the asset to be generated, .usda will be appended to the name\",\n    )\n\n    num_cubes: int = Field(\n        default=5,\n        ge=1,\n        le=20,\n        title=\"Number of Cubes\",\n        description=\"Number of cubes to create\",\n    )\n\n    cube_spacing: float = Field(\n        default=50,\n        ge=1,\n        le=100,\n        title=\"Cube Spacing\",\n        description=\"Distance between each cube\",\n    )\n\n    cube_scale: float = Field(\n        default=10,\n        ge=1,\n        le=100,\n        title=\"Cube Scale\",\n        description=\"Scale of the cubes\",\n    )\n\n    num_spheres: int = Field(\n        default=4,\n        ge=1,\n        le=20,\n        title=\"Number of Spheres\",\n        description=\"Number of spheres to create\",\n    )\n\n    sphere_spacing: float = Field(\n        default=20,\n        ge=1,\n        le=100,\n        title=\"Sphere Spacing\",\n        description=\"Distance between each sphere\",\n    )\n\n    sphere_scale: float = Field(\n        default=8,\n        ge=1,\n        le=100,\n        title=\"Sphere Scale\",\n        description=\"Scale of the spheres\",\n    )\n\n    ground_plane_scale: float = Field(\n        default=40,\n        ge=1,\n        le=100,\n        title=\"Ground Plane Scale\",\n        description=\"Scale of the ground plane\",\n    )\n\n\ndef create_prims(stage, prim_type: str, quantity: int, spacing: float, prim_scale: float):\n\n    # Offset Cubes and Spheres\n    if prim_type == \"Cube\":\n        start = (prim_scale * 2, prim_scale, 0)\n    else:  # if prim_type == \"Sphere\":\n        start = (-prim_scale * 2, prim_scale, 0)\n\n    for i in range(quantity):\n        prim_path = omni.usd.get_stage_next_free_path(\n            stage,\n            f\"/World/{prim_type}\",\n            False\n        )\n\n        omni.kit.commands.execute(\n            \"CreatePrimCommand\",\n            prim_path=prim_path,\n            prim_type=prim_type,\n            select_new_prim=False,\n        )\n\n        translation = (start[0], start[1], start[2] + (i * spacing))\n        scale = (prim_scale, prim_scale, prim_scale)\n        omni.kit.commands.execute(\n            \"TransformPrimSRT\",\n            path=prim_path,\n            new_translation=translation,\n            new_scale=scale,\n        )\n\n\ndef create_ground_plane(stage, plane_scale: float):\n    prim_type = \"Plane\"\n    prim_path = f\"/World/{prim_type}\"\n\n    omni.kit.commands.execute(\n        \"CreateMeshPrim\",\n        prim_path=prim_path,\n        prim_type=prim_type,\n        select_new_prim=False,\n    )\n\n    prim = stage.GetPrimAtPath(prim_path)\n    xform = UsdGeom.Xformable(prim)\n    xform_ops = {op.GetBaseName(): op for op in xform.GetOrderedXformOps()}\n    scale = xform_ops[\"scale\"]\n    scale.Set(Gf.Vec3d(plane_scale, 1, plane_scale))\n\n\ndef apply_material(stage):\n    prim = stage.GetPrimAtPath('/World/Sphere')\n    materials_path = \"/World/Looks\"\n    material_path = f\"{materials_path}/OmniPBR\"\n\n    omni.kit.commands.execute('CreatePrim',\n        prim_path=materials_path,\n        prim_type=\"Scope\",\n        select_new_prim=False,\n    )\n\n    omni.kit.commands.execute('CreateMdlMaterialPrim',\n        mtl_url=\"OmniPBR.mdl\",\n        mtl_name=\"OmniPBR\",\n        mtl_path=material_path,\n        select_new_prim=True,\n    )\n\n\n    custom_shader = UsdShade.Shader(stage.GetPrimAtPath(f\"{material_path}/Shader\"))\n    custom_shader.CreateInput(\"diffuse_color_constant\", Sdf.ValueTypeNames.Color3f).Set(Gf.Vec3f(.46, .73, 0))\n    custom_shader.CreateInput(\"reflection_roughness_constant\", Sdf.ValueTypeNames.Float).Set(.25)\n\n    omni.kit.commands.execute(\n        \"BindMaterial\",\n        prim_path=prim.GetPrimPath(),\n        material_path=material_path\n    )\n    \n\n@router.post(\n    \"/generate_scene\",\n    summary=\"Generate a scene of primitives\",\n    description=\"An endpoint to generate a usda file containing cubes, spheres and a groundplane.\",\n)\nasync def generate_scene(scene_data: SceneDataModel):\n    print(\"tutorial.service.setup generate_scene was called\")\n\n    # Create a new stage\n    usd_context = omni.usd.get_context()\n    usd_context.new_stage()\n    stage = omni.usd.get_context().get_stage()\n\n    # Set the default prim\n    default_prim_path = \"/World\"\n    stage.DefinePrim(default_prim_path, \"Xform\")\n    prim = stage.GetPrimAtPath(default_prim_path)\n    stage.SetDefaultPrim(prim)\n\n    # Create Cubes\n    create_prims(\n        stage,\n        \"Cube\",\n        scene_data.num_cubes,\n        scene_data.cube_spacing,\n        scene_data.cube_scale,\n    )\n    # Create Spheres\n    create_prims(\n        stage,\n        \"Sphere\",\n        scene_data.num_spheres,\n        scene_data.sphere_spacing,\n        scene_data.sphere_scale,\n    )\n\n    # Create a Ground Plane\n    create_ground_plane(\n        stage,\n        scene_data.ground_plane_scale)\n\n    # Apply a material to a Sphere\n    apply_material(stage)\n\n    # save stage\n    asset_file_path = str(Path(scene_data.asset_write_location).joinpath(f\"{scene_data.asset_name}.usda\"))\n    stage.GetRootLayer().Export(asset_file_path)\n    msg = f\"tutorial.service.setup Wrote a scene to this path: {asset_file_path}\"\n    print(msg)\n    return msg",
+        "service_tut_scene_data": {
+            "asset_write_location": "/path/of/your/choosing",
+            "asset_name": "tutorial_scene",
+            "num_cubes": 5,
+            "cube_spacing": 50,
+            "cube_scale": 10,
+            "num_spheres": 4,
+            "sphere_spacing": 20,
+            "sphere_scale": 8,
+            "ground_plane_scale": 40
+        },
+        "usda_data": "#usda 1.0\n(\n    customLayerData = {\n        int refinementOverrideImplVersion = 0\n    }\n    defaultPrim = \"World\"\n    endTimeCode = 100\n    metersPerUnit = 0.01\n    startTimeCode = 0\n    timeCodesPerSecond = 60\n    upAxis = \"Y\"\n)\n\ndef Xform \"World\"\n{\n    def Cube \"Cube\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (10, 10, 10)\n        double3 xformOp:translate = (20, 10, 0)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Cube \"Cube_01\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (10, 10, 10)\n        double3 xformOp:translate = (20, 10, 50)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Cube \"Cube_02\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (10, 10, 10)\n        double3 xformOp:translate = (20, 10, 100)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Cube \"Cube_03\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (10, 10, 10)\n        double3 xformOp:translate = (20, 10, 150)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Cube \"Cube_04\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (10, 10, 10)\n        double3 xformOp:translate = (20, 10, 200)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Sphere \"Sphere\" (\n        prepend apiSchemas = [\"MaterialBindingAPI\"]\n    )\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        rel material:binding = </World/Looks/OmniPBR> (\n            bindMaterialAs = \"weakerThanDescendants\"\n        )\n        custom bool refinementEnableOverride = 1\n        custom int refinementLevel = 2\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (8, 8, 8)\n        double3 xformOp:translate = (-16, 8, 0)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Sphere \"Sphere_01\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        custom bool refinementEnableOverride = 1\n        custom int refinementLevel = 2\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (8, 8, 8)\n        double3 xformOp:translate = (-16, 8, 20)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Sphere \"Sphere_02\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        custom bool refinementEnableOverride = 1\n        custom int refinementLevel = 2\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (8, 8, 8)\n        double3 xformOp:translate = (-16, 8, 40)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Sphere \"Sphere_03\"\n    {\n        float3[] extent = [(-1, -1, -1), (1, 1, 1)]\n        custom bool refinementEnableOverride = 1\n        custom int refinementLevel = 2\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (8, 8, 8)\n        double3 xformOp:translate = (-16, 8, 60)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Mesh \"Plane\"\n    {\n        float3[] extent = [(-50, 0, -50), (50, 0, 50)]\n        int[] faceVertexCounts = [4]\n        int[] faceVertexIndices = [0, 2, 3, 1]\n        normal3f[] normals = [(0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)] (\n            interpolation = \"faceVarying\"\n        )\n        point3f[] points = [(-50, 0, -50), (50, 0, -50), (-50, 0, 50), (50, 0, 50)]\n        texCoord2f[] primvars:st = [(0, 1), (0, 0), (1, 0), (1, 1)] (\n            interpolation = \"faceVarying\"\n        )\n        uniform token subdivisionScheme = \"none\"\n        float3 xformOp:rotateXYZ = (0, 0, 0)\n        float3 xformOp:scale = (40, 1, 40)\n        float3 xformOp:translate = (0, 0, 0)\n        uniform token[] xformOpOrder = [\"xformOp:translate\", \"xformOp:rotateXYZ\", \"xformOp:scale\"]\n    }\n\n    def Scope \"Looks\"\n    {\n        def Material \"OmniPBR\"\n        {\n            token outputs:mdl:displacement.connect = </World/Looks/OmniPBR/Shader.outputs:out>\n            token outputs:mdl:surface.connect = </World/Looks/OmniPBR/Shader.outputs:out>\n            token outputs:mdl:volume.connect = </World/Looks/OmniPBR/Shader.outputs:out>\n\n            def Shader \"Shader\"\n            {\n                uniform token info:implementationSource = \"sourceAsset\"\n                uniform asset info:mdl:sourceAsset = @OmniPBR.mdl@\n                uniform token info:mdl:sourceAsset:subIdentifier = \"OmniPBR\"\n                color3f inputs:diffuse_color_constant = (0.46, 0.73, 0)\n                float inputs:reflection_roughness_constant = 0.25\n                token outputs:out (\n                    renderType = \"material\"\n                )\n            }\n        }\n    }\n}"
+    },
+    "new_project_cmd": "Yes;Repository>;[kit-repo-empty]: Kit-App-Template Repository/Project;{}",
+    "kit_sdk_omni_package": "https://omnipackages.nvidia.com/api/v3/packages/kit-sdk/?version=107.0&remote=cloudfront&page=1&pageSize=1"
+}

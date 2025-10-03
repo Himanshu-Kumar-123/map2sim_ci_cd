@@ -1,0 +1,9 @@
+{
+    "usd_prebuilt_lib_url_win": "https://developer.download.nvidia.com/USD/usd_binaries/22.11/usd.py37.windows-x86_64.release@0.22.11.zip",
+    "usd_prebuilt_lib_url_linux": "https://developer.nvidia.com/downloads/usd/usd_binaries/23.08/usd.py310.linux-x86_64.usdview.release@0.23.08-tc.18+v23.08.10b62439.zip",
+    "diff_tool_repo_name": "omniverse/usdrt.git",
+    "diff_tool_repo_branch": "develop",
+    "diff_tool_clone_folder_name": "usdrt",
+    "diff_tool_file_location": "usdrt{0}source{0}tests{0}diffTool",
+    "diff_tool_file_name": "pydiff.py"
+}

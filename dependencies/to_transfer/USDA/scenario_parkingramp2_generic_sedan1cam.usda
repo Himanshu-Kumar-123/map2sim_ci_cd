@@ -1,0 +1,231 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            string boundCamera = "/Entities/Ego/Sensors/camera_front_center_60fov"
+        }
+        dictionary omni_layer = {
+            dictionary locked = {
+                bool "ds2-nucleus-root://Projects/ds2_scenarios/production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda" = 1
+            }
+        }
+    }
+    defaultPrim = "World"
+    endTimeCode = 0
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @ds2-nucleus-root://Projects/ds2_scenarios/production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda@
+    ]
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Scope "Scenario"
+    {
+        custom token app_build_version = "106.0+drivesim-2024-1.201008.c54c53ea.tc"
+    }
+}
+
+def Xform "EntityPoolSpec"
+{
+    custom token[] assets
+    custom token[] poolNames
+    custom uint[] poolSizes
+    custom token[] poolTypes
+}
+
+def Xform "Actions"
+{
+    def Control "SetMap_1"
+    {
+        custom token[] action:enabledPayloads = []
+        custom bool action:forceReload = 0
+        custom token action:map = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_parking/levels/main/main.usd"
+        custom int action:status = 1
+        custom token action:type = "actionSetMap"
+        custom token action:xodr = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_parking/levels/main/main.xodr"
+        custom token action_strict_type = "actionSetMap"
+        custom uint64 controlId = 1
+    }
+
+    over "Generic_Sedan___ego"
+    {
+        custom double action:driverModel:desiredTimeGap = 1.6574129282100216
+        custom double action:driverModel:freeRoadExponent = 8.685174143579957
+        custom double action:driverModel:interactionExponent = 8.685174143579957
+        custom bool action:driverModel:laneOffsetClampToLaneWidth = 1
+        custom double action:driverModel:minimumDistance = 1.3287064641050108
+        custom bool action:driverModel:olcEnabled = 1
+        custom double action:driverModel:olcSpeedupThresholdKPH = 9.108830801312635
+        custom double action:driverModel:speedLimitRatio = 1.2424763687816232
+        custom token action:forward:paint_color = "Johnny_Silverhand"
+        custom double action:initialSpeedKph = 0
+        custom int action:status = 1
+        custom double3 action:transform:coordinate = (0.0016096357735744173, -140.00001572051747, 48.895293)
+        custom int action:transform:laneId = 1
+        custom double action:transform:laneS = 22.98431
+        custom quatd action:transform:orientation = (1, 0, 0, 0)
+        custom int action:transform:roadId = 103
+        custom double3 action:transform:translation = (-1.7499999999999891, 177.98430999999997, 48.895293)
+        custom token action:transform:type = "transformRls"
+    }
+
+    over "CreateCameraSystem_1000002"
+    {
+        custom int action:status = 1
+    }
+
+    over "AddFrontWideFOV60ECU"
+    {
+        custom int action:status = 1
+    }
+
+    over "CreateCameraSystem_1000003"
+    {
+        custom int action:status = 1
+    }
+
+    over "AddLidarECU"
+    {
+        custom int action:status = 1
+    }
+
+    over "CreateCameraSystem_1000015"
+    {
+        custom int action:status = 1
+    }
+
+    over "add_radar_front_center_ecu"
+    {
+        custom int action:status = 1
+    }
+}
+
+def "ScenarioParameters"
+{
+    def "NdasValSubscriptions"
+    {
+        custom bool default = 1
+        custom token group = "NdasVal"
+        custom bool NDAS_CLIENT_SUBS_DI_ABSM_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_ACC_BREAKING_EVENTS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_ACC_PERFORMANCE_MODE = 0
+        custom bool NDAS_CLIENT_SUBS_DI_ACCELERATOR_OVERRIDE = 0
+        custom bool NDAS_CLIENT_SUBS_DI_AEB_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_AES_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_AS_VAL_READINESS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_AVAILABILITY_STATUS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_BSM_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_CPM_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_CURRENT_SETSPEED = 0
+        custom bool NDAS_CLIENT_SUBS_DI_DEGRADATIONS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_DOW_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_EGO_SPEED = 0
+        custom bool NDAS_CLIENT_SUBS_DI_ELK_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_ENGAGED_STATUS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_ESS_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_HOLD_STATE = 0
+        custom bool NDAS_CLIENT_SUBS_DI_L2_SILC_SIGNALS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_L2_VAL_READINESS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_L3_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_L3_VAL_READINESS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LANE_CHANGE = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LANE_CHANGE_CONFIGURATION = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LANE_CHANGE_PROPOSAL = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LANE_CHANGE_PROPOSAL_REASON = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LANE_CHANGE_UNAVAILABILITY_REASON = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LATERAL_OUTPUTS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LDW_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LKA_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LKV = 0
+        custom bool NDAS_CLIENT_SUBS_DI_LONGITUDINAL_MODE = 0
+        custom bool NDAS_CLIENT_SUBS_DI_NAVMAP_COVERAGE = 0
+        custom bool NDAS_CLIENT_SUBS_DI_NAVMAP_MISSION_STATE = 0
+        custom bool NDAS_CLIENT_SUBS_DI_NAVMAP_VAL_READINESS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_NPW_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_PCW_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_PDC_OUTPUTS = 0
+        custom bool NDAS_CLIENT_SUBS_DI_SSRLA_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_TIME_UNTIL_HOLD = 0
+        custom bool NDAS_CLIENT_SUBS_DI_TIMEGAP_SETTING = 0
+        custom bool NDAS_CLIENT_SUBS_DI_TOR = 0
+        custom bool NDAS_CLIENT_SUBS_DI_TSA_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DI_TSA_PROPOSED_SPEED = 0
+        custom bool NDAS_CLIENT_SUBS_DI_WWW_NOTICES = 0
+        custom bool NDAS_CLIENT_SUBS_DXIS_DRIVER_DISTRACTION_ALARM_STATE = 0
+        custom bool NDAS_CLIENT_SUBS_DXIS_DRIVER_FATIGUE_ALARM_STATE = 0
+        custom bool NDAS_CLIENT_SUBS_DXIS_DRIVERSTATE_STATUS = 0
+        custom bool NDAS_CLIENT_SUBS_PARKING_FUNCTION_READINESS = 0
+        custom bool NDAS_CLIENT_SUBS_PERCEPTION_LIGHTFUNCTION_DATA = 0
+        custom bool NDAS_CLIENT_SUBS_PERCEPTION_LUMINANCE_DATA = 0
+        custom bool NDAS_CLIENT_SUBS_PERCEPTION_PRECRASH_DATA = 0
+        custom bool NDAS_CLIENT_SUBS_SAMPLE = 0
+        custom bool NDAS_CLIENT_SUBS_SVS_PARKING_STATES = 0
+        custom bool NDAS_CLIENT_SUBS_SVS_PARKING_VAL_READINESS = 0
+        custom bool NDAS_CLIENT_SUBS_SVS_PARKINGIDS = 0
+    }
+
+    def "GlobalCoordinates"
+    {
+        custom bool default = 1
+        custom token group = "Environment"
+        custom double latitude = 0
+        custom double longitude = 0
+    }
+
+    def "Weather"
+    {
+        custom double cloudCoverage = 0
+        custom bool default = 1
+        custom token group = "Environment"
+        custom double limitedVisibility = 0
+    }
+
+    def "TimeOfDay"
+    {
+        custom int day3 = 1
+        custom bool default = 1
+        custom token group = "Environment"
+        custom int hour4 = 0
+        custom int minute5 = 0
+        custom int month2 = 1
+        custom int64 nanosecond7 = 0
+        custom int second6 = 0
+        custom int year1 = 1970
+    }
+
+    def "GlobalOLC"
+    {
+        custom bool default = 1
+        custom bool enabled = 0
+        custom token group = "Traffic"
+    }
+
+    def "MaterialFriction"
+    {
+        custom bool default = 1
+        custom double friction = 0
+        custom token group = "Physics"
+        custom token materialName = ""
+    }
+
+    def "Sun"
+    {
+        custom double azimuth = 0
+        custom bool default = 1
+        custom double elevation = 30
+        custom token group = "Environment"
+        custom bool overrideTimeOfDay1 = 0
+    }
+
+    def "TimeRatio"
+    {
+        custom bool default = 1
+        custom uint64 denominator = 1
+        custom token group = "Simulation"
+        custom uint64 numerator = 1
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "requestv2": {
+        "url": "omniverse://pod04-002.cloud.omniverse.nvidia.com",
+        "access_token": "",
+        "username": "",
+        "spec": {
+            "image": "nvcr.io/nv-drive-internal/driveconst-qa/drivesim-ov:drivesim-ov2-production-internal-ovc-20240122-bd927049bc",
+            "kit_args": [],
+            "kit_env": {
+                "OMNI_DEPLOYMENT": "internal",
+                "PXR_WORK_THREAD_LIMIT": "12",
+                "ACCEPT_EULA": "Y",
+                "OMNI_USER": "svc-drivesim-unit-tests",
+                "OMNI_PASS": "9suS2PapEnsAhRn5"
+            },
+            "node_labels": {
+                "nodeOVEnv": "cicd-saas"
+            },
+            "node_name": "",
+            "streamingMode": "secure",
+            "user_ports": [
+                {
+                    "name": "user0",
+                    "number": "9682",
+                    "type": "TCP"
+                },
+                {
+                    "name": "user1",
+                    "number": "22",
+                    "type": "TCP"
+                }
+            ],
+            "num_gpus": "1",
+            "user_labels": {
+                "name": "qa-test"
+            },
+            "user_group_tag": "qa-test"
+        }
+    },
+    "baseurlV2": "https://session.pod04-002.az.cloud.omniverse.nvidia.com/session",
+    "cockpit_url": "https://cockpit.pod04-002.az.cloud.omniverse.nvidia.com"
+}

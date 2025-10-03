@@ -1,0 +1,3 @@
+{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/germany/scene_ottosuhrallee_intersection/levels/main/main.usd
+{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_oval/levels/main/main.usd
+{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_loop_merge/levels/main/main.usd

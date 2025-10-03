@@ -1,0 +1,126 @@
+{
+    "test_ragnarok_example_paint_color_visual_validation": {
+        "_variant_label": "Paint",
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ZStack[0]/VStack[0]/VStack[0]/HStack[0]/ButtonProxy[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/**/ScrollingFrame[0]/VStack[0]/**/Label[0].text=='option'",
+        "variants" : [
+            "RED",  
+            "BLUE",  
+            "DARK GREY",  
+            "TAN",  
+            "GREEN",  
+            "NVIDIA GREEN",  
+            "OLIVE",  
+            "SILVER",  
+            "WHITE",  
+            "YELLOW",  
+            "WINE BLUE",  
+            "WINE RED",  
+            "WINE GREEN"  
+        ]
+    },
+    "test_ragnarok_example_wheels_visual_validation":{
+        "_variant_label": "Wheels",
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ZStack[0]/VStack[0]/VStack[0]/HStack[1]/ButtonProxy[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/**/ScrollingFrame[0]/VStack[0]/**/Label[0].text=='option'",
+        "variants" : [
+            "Multispoke",
+            "5 Spoke",
+            "Forked Spoke"
+        ]
+    },
+    "test_ragnarok_example_interior_visual_validation":{
+        "_variant_label": "Interior",
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ZStack[0]/VStack[0]/VStack[0]/HStack[2]/ButtonProxy[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/**/ScrollingFrame[0]/VStack[0]/**/Label[0].text=='option'",
+        "variants" : [
+           "Blue Shock",
+            "Cream Cappuccino",
+            "Mocha",
+            "Noir",
+            "Nvidia Green",
+            "Orange Black",
+            "Red Sport",
+            "Red Velvet",
+            "Warm Leather",
+            "Yellow Sport"
+        ]
+    },
+    "test_ragnarok_example_stripe_visual_validation":{
+        "_variant_label": "Stripe",
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ZStack[0]/VStack[0]/VStack[0]/HStack[3]/ButtonProxy[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/**/ScrollingFrame[0]/VStack[0]/**/Label[0].text=='option'",
+        "variants" : [
+            "None",
+            "Black Black",
+            "Black Grey",
+            "Black Orange",
+            "Blue White",
+            "Nvidia Green Orange",
+            "Olive White",
+            "Red Grey",
+            "White Blue",
+            "Yellow Orange",
+            "Yellow White"
+        ]
+    },
+    "test_ragnarok_example_roof_visual_validation":{
+        "_variant_label": "Roof",
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ZStack[0]/VStack[0]/VStack[0]/HStack[4]/ButtonProxy[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/**/ScrollingFrame[0]/VStack[0]/**/Label[0].text=='option'",
+        "variants" : [
+            "Roof On",
+            "Roof Off",
+            "Lights On",
+            "Lights Off"
+        ]
+    },
+    "test_ragnarok_example_env_visual_validation":{
+        "_variant_label": "Env",
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ZStack[0]/VStack[0]/VStack[1]/HStack[0]/ButtonProxy[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/**/ScrollingFrame[0]/VStack[0]/**/Label[0].text=='option'",
+        "variants" : [
+           "Salt Flats",
+            "Trackday",
+            "Desert Highway",
+            "LA Overlook",
+            "Tundra Valley"
+        ]
+    },
+    "test_ragnarok_example_camera_visual_validation":{
+        "_variant_label": "Env",
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ZStack[0]/VStack[0]/VStack[1]/HStack[1]/ButtonProxy[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/**/ScrollingFrame[0]/VStack[0]/**/Label[0].text=='option'",
+        "variants" : [
+            "Exterior Orbit",
+            "Interior Orbit",
+            "Wheel Detail",
+            "Taillight Detail",
+            "Door Detail"
+        ]
+    },
+    "test_bag_example_color_visual_validation":{
+        "_variant_label": "Color",           
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ScrollingFrame[0]/VStack[0]/Label[0]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ScrollingFrame[0]/VStack[0]/ButtonProxy[*].text=='option'",
+        "variants" : ["Beige", "Black", "BlackEmboss", "Orange", "Tan", "White"]
+    },
+    "test_bag_example_backdrop_visual_validation":{
+        "_variant_label": "Backdrop",           
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ScrollingFrame[0]/VStack[0]/Label[1]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ScrollingFrame[0]/VStack[0]/ButtonProxy[*].text=='option'",
+        "variants" : ["Desk","Marble Wall","Plinths"]
+    },
+    "test_bag_example_keyring_visual_validation":{
+        "_variant_label": "KeyRing",           
+        "_variant_configurator_button" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ScrollingFrame[0]/VStack[0]/Label[2]",
+        "_variant_configurator_menu" : "Viewport//Frame/ZStack[0]/Frame[4]/ZStack[0]/Frame[0]/Frame[0]/HStack[0]/ScrollingFrame[0]/VStack[0]/ButtonProxy[*].text=='option'",
+        "variants" : ["Yellow, Triangle, No Keyring","White, Ring, With Keyring","Pink, Ring, With Keyring"]
+    }
+}
+        
+        
+
+        
+        
+      

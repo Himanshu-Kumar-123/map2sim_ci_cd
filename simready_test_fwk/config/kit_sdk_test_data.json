@@ -1,0 +1,64 @@
+{
+    "test_kit_variant_editor_material_parameter": {
+        "Colors": {
+            "RED": "#ff0000",
+            "GREEN": "#238e00",
+            "BLUE": "#0000ff",
+            "PURPLE": "#2b004e"
+        },
+        "base_colors_rgb": {
+            "white": [
+                0.9999904036521912,
+                0.9999899864196777,
+                1.0
+            ],
+            "blue": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "green": [
+                0.13725490868091583,
+                0.5568627715110779,
+                0.0
+            ],
+            "purple": [
+                0.16862745583057404,
+                0.0,
+                0.30588236451148987
+            ],
+            "red": [
+                1.0,
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "test_collect_tool": {
+        "collection_name": "test_collection",
+        "files": {
+            "Adobe_Brick.mdl": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/",
+            "Adobe_Brick_BaseColor.png": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/Adobe_Brick/",
+            "Adobe_Brick_N.png": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/Adobe_Brick/",
+            "Adobe_Brick_ORM.png": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/Adobe_Brick/",
+            "Brick_Pavers.mdl": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/",
+            "Brick_Pavers_BaseColor.png": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/Brick_Pavers/",
+            "Brick_Pavers_N.png": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/Brick_Pavers/",
+            "Brick_Pavers_ORM.png": "/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Masonry/Brick_Pavers/",
+            "CarLight_512x256.hdr": "/omniverse-content-production.s3.us-west-2.amazonaws.com/Assets/Scenes/Templates/Default/SubUSDs/textures/",
+            "ov_uv_grids_basecolor_1024.png": "/omniverse-content-production.s3.us-west-2.amazonaws.com/Assets/Scenes/Templates/Default/SubUSDs/textures/",
+            "collect_test.usd": "/"
+        }
+    },
+    "test_auto_node_external_python_script": {
+        "script_path": "omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/Kit_SDK_Scripts/autonode_walkthrough.py",
+        "output": "Test success = True"
+    },
+    "test_kit_warp_script_deformer": {
+        "script_path": "omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/Kit_SDK_Scripts/script_deformer.py",
+        "script_path2": "omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/Kit_SDK_Scripts/mesh_points.py"
+    },
+    "test_kit_warp_script_dynamic_texture": {
+        "script_path": "omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/Kit_SDK_Scripts/script_dynamic_texture.py"
+    }
+}

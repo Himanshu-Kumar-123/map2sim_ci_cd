@@ -1,0 +1,14 @@
+{
+    "request_type": [
+        "blackframe",
+        "blockcorruption",
+        "overlay",
+        "tear",
+        "ghosting",
+        "colorcorruption",
+        "macroblocking",
+        "framefreeze",
+        "flicker",
+        "stutter"
+    ]
+}

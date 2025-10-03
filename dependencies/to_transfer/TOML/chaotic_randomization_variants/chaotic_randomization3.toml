@@ -1,0 +1,35 @@
+# Example TOML demonstrating randomizing/setting driver model parameters from TOML.
+# These parameters can be set on the ego and dynamic vehicles.
+  # Example: driver_model.lane_offset - To drive off centered.
+  # Example: driver_model.speed_limit_ratio - To model vehicles driving over/under the speed limit
+  # Example: driver_model.aggressiveness - To model overall aggressiveness of vehicle. # Controls speed limit ratio, following distance etc
+  # Example: ref_traffic_model_vehicle.driving_state - 'parked', 'reverse', 'drive'
+
+# This toml to cover parameters (driving_state=reverse)  only applied on ego.
+
+[Assets]
+root = "{/app/drivesim/defaultNucleusRoot}/"
+sets = [
+    "ego.toml",
+    "dynamic_traffic_vehicles.toml",
+]
+
+# driving_state= "reverse"
+
+[Events.config]
+enable_script = true
+enable_periodic = true
+periodic_start_frame = 0
+collisions_enabled = true
+enable_ego_teleportation = false
+
+[[Events.setup]]
+type='EgoRand'
+func='setup'
+pop_name='ego'
+asset_file='ego.toml'
+asset_sel_type='index'
+asset_sel=[0]
+driver_model.lane_offset=true
+driver_model.speed_limit_ratio=3
+ref_traffic_model_vehicle.driving_state="reverse"

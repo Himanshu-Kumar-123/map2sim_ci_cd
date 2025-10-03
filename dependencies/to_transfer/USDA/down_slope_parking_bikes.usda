@@ -1,0 +1,154 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (50000.000000000015, -1.1102230246251565e-11, 0)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (40.285576227278405, 1.6794004065762125, 9.765478161809988)
+                double3 target = (21.968148897377223, 1.0394756419740374, 4.661670496323019)
+            }
+            dictionary Right = {
+                double3 position = (0, -50000, -1.1102230246251565e-11)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            string boundCamera = "/Entities/Ego/Sensors/camera_front_wide_120fov"
+        }
+        dictionary omni_layer = {
+            dictionary locked = {
+                bool "../../production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda" = 1
+            }
+        }
+    }
+    defaultPrim = "World"
+    endTimeCode = 0
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @ds2-nucleus-root://Projects/ds2_scenarios/production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda@
+    ]
+    timeCodesPerSecond = 24
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Scope "Scenario"
+    {
+        custom token app_build_version = "107.0.0+drivesim.207571.3b6f7197.tc"
+    }
+}
+
+def Xform "EntityPoolSpec"
+{
+    custom token[] assets
+    custom token[] poolNames
+    custom uint[] poolSizes
+    custom token[] poolTypes
+}
+
+def Xform "Actions"
+{
+    def Control "SetMap_1"
+    {
+        custom token[] action:enabledPayloads = ["/World/drivable_surfaces/islands", "/World/fences", "/World/foliage", "/World/grass/field_grass", "/World/grass/island_grass", "/World/props"]
+        custom bool action:forceReload = 0
+        custom token action:map = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_parking/levels/main/main.usd"
+        custom int action:status = 1
+        custom token action:type = "actionSetMap"
+        custom token action:xodr = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/usa/scene_parking/levels/main/main.xodr"
+        custom token action_strict_type = "actionSetMap"
+        custom uint64 controlId = 1
+    }
+
+    over "Generic_Sedan___ego"
+    {
+        custom token action:asset = "{/app/drivesim/defaultNucleusRoot}/Projects/ds2_scenarios/production/ego/generic/ego_generic_sedan.usda"
+        custom double action:driverModel:aggressiveness = 1.6712935358949892
+        custom double action:driverModel:desiredTimeGap = 1.6574129282100216
+        custom double action:driverModel:freeRoadExponent = 8.685174143579957
+        custom double action:driverModel:interactionExponent = 8.685174143579957
+        custom double action:driverModel:laneOffset = 0.0027540121160022357
+        custom bool action:driverModel:laneOffsetClampToLaneWidth = 1
+        custom double action:driverModel:minimumDistance = 1.3287064641050108
+        custom bool action:driverModel:olcEnabled = 1
+        custom double action:driverModel:olcSpeedupThresholdKPH = 9.108830801312635
+        custom double action:driverModel:speedLimitRatio = 1.2424763687816232
+        custom double action:driverModel:throttleOvershootCorrection = 1
+        custom bool action:driverModel:unlinkAggressiveness = 0
+        custom token action:forward:paint_color = "Amber_Yellow" (
+            allowedTokens = ["Amber_Yellow", "Atomic_Teal", "Chalky_Blue", "Dark_Grey", "Johnny_Silverhand", "Magenta", "Midnight_Black", "Soul_Red", "Synergy_Green", "White"]
+        )
+        custom token action:forward:refTrafficModelVehicle:drivingState = "drive" (
+            allowedTokens = ["drive", "parked", "reverse"]
+        )
+        custom double action:initialSpeedKph = 0
+        custom token action:name = "Ego"
+        custom int action:status = 1
+        custom double3 action:transform:coordinate = (0.0017414315, -140.0000080368, 50.9702005719)
+        custom int action:transform:laneId = 1
+        custom double action:transform:laneS = 3.6678027976119645
+        custom quatd action:transform:orientation = (-0.7066843758, 0, 0, 0.7075289383)
+        custom int action:transform:roadId = 346
+        custom double3 action:transform:translation = (-0.894654934, 192.5575285162, 50.9702005719)
+        custom token action:transform:type = "transformWgs" (
+            allowedTokens = ["transformRls", "transformWgs", "transformWaypoint", "transformCartesian"]
+        )
+        custom token action:transform:waypoint = ""
+        custom token action:transform:waypointGraph = ""
+        custom token asset_name = "Ford_Fusion_2017"
+        custom token asset_type = "vehicle"
+    }
+
+    over "CreateCameraSystem_1000002"
+    {
+        custom uint64 action:id = 1000002
+        custom int action:status = 1
+    }
+
+    def Control "VehicleMoveTo_16"
+    {
+        custom int[] action:destinationLaneIds = [-1]
+        custom int[] action:destinationRoadIds = [103]
+        custom double[] action:destinationRoadSs = [22]
+        custom bool[] action:destinationTargetLaneFlags = [1]
+        custom token action:name = "Ego"
+        custom bool action:processOnPlay = 1
+        custom int action:status = 1
+        custom token action_strict_type = "actionVehicleMoveTo"
+        custom uint64 controlId = 16
+        custom token startCondition:op = "greater_than"
+        custom double startCondition:seconds = -1
+        custom token startCondition:type = "conditionSimulationTime" (
+            allowedTokens = ["conditionSimulationTime"]
+        )
+    }
+
+    def Control "MaintainSpeed_17"
+    {
+        custom bool action:disregardLongitudinalSafety = 1
+        custom double action:kmPerHour = 15
+        custom token action:name = "Ego"
+        custom bool action:processOnPlay = 1
+        custom int action:status = 0
+        custom token action:type = "actionMaintainSpeed"
+        custom token action_strict_type = "actionMaintainSpeed"
+        custom uint64 controlId = 17
+        custom token startCondition:op = "greater_than"
+        custom double startCondition:seconds = -1
+        custom token startCondition:type = "conditionSimulationTime" (
+            allowedTokens = ["conditionSimulationTime"]
+        )
+    }
+}
+
+def "ScenarioParameters"
+{
+}
+

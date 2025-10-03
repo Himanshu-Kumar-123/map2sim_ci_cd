@@ -1,0 +1,8 @@
+{
+    "service_account": "svcovqa04@nvidia.com",
+    "drive_sim_cred": {
+        "username": "drivesim",
+        "password": "drivesim",
+        "host": "pod04-002.cloud.omniverse.nvidia.com"
+    }
+}

@@ -1,0 +1,252 @@
+[Assets]
+root = "{/app/drivesim/defaultNucleusRoot}/"
+sets = [
+    "ego.toml",
+    "static_traffic_vehicles.toml",
+    "static_public_vehicles.toml",
+    "static_oversize_vehicles.toml",
+]
+
+[Events.config]
+enable_script = true
+enable_periodic = true
+periodic_start_frame = 0
+collisions_enabled = true
+enable_ego_teleportation = true
+
+[[Events.setup]]
+type='EgoRand'
+func='setup'
+pop_name='ego'
+asset_file='ego.toml'
+asset_sel_type='index'
+asset_sel=[0]
+# spawn_pts=[[9, 4, 118]]
+
+[[Events.setup]]
+type= 'VehicleRandStat'
+func= 'setup'
+pop_name='traffic_vehicles'
+asset_file='static_traffic_vehicles.toml'
+asset_sel_type='all'
+total_count=5
+#asset_qty=5
+
+
+[[Events.setup]]
+type= 'VehicleRandStat'
+func= 'setup'
+pop_name='oversize_vehicles'
+asset_file='static_oversize_vehicles.toml'
+asset_sel_type='all'
+total_count=5
+#asset_qty=5
+#asset_sel_type='range'
+#asset_sel=[0,4]
+
+[[Events.setup]]
+type= 'VehicleRandStat'
+func= 'randomize_position'
+pop_name='traffic_vehicles'
+region_center='ahead_ego'
+region_diameter=30
+shuffle_order=true
+offset=5
+min_distance=5
+#num_placements=2
+num_placements='all'
+
+[[Events.setup]]
+type= 'VehicleRandStat'
+func= 'randomize_position'
+pop_name='oversize_vehicles'
+region_center='ahead_ego'
+region_diameter=30
+shuffle_order=true
+offset=5
+min_distance=5
+#num_placements=2
+num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandStat'
+func='randomize_color'
+pop_name='traffic_vehicles'
+
+[[Events.setup]]
+type='VehicleRandStat'
+func='randomize_color'
+pop_name='oversize_vehicles'
+
+# WEATHERRAND SETUP AND DEMO:
+# Setting up events can be done one of two ways:
+# If no preset_name is specified the Environment System defaults are populated
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+
+# Or if preset_name is specified, any existing preset name will be updated
+# with the parameters passed as arguments
+# WeatherRand setup define presets with 5 values in addition to preset_name:
+# azimuth:[0,360] elevation:[-20,?] cloudiness:[0.0,1.0],road_wetness:[0.0,1.0], fog:[0.0,1.0]
+# NOTE: Fog is only supported in PathTracing render mode
+
+#[[Events.setup]]
+#type='WorldRand.weather'
+#func='setup'
+#preset_name='_dawn_wet'
+#azimuth=180
+#elevation=0
+#cloudiness=0.25
+#road_wetness=1.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_noon_wet'
+azimuth=180
+elevation=10
+cloudiness=0.25
+road_wetness=0.5
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_stormday_wet'
+azimuth=150
+elevation=50
+cloudiness=1.0
+road_wetness=1.0
+fog=1.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_afternoon_wet'
+azimuth=270
+elevation=50
+cloudiness=0.5
+road_wetness=1.0
+fog=0.5
+
+#[[Events.setup]]
+#type='WorldRand.weather'
+#func='setup'
+#preset_name='_dawn_dry'
+#azimuth=180
+#elevation=0
+#cloudiness=0.25
+#road_wetness=0.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_noon_dry'
+azimuth=180
+elevation=10
+cloudiness=0.25
+road_wetness=0.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_stormday_dry'
+azimuth=150
+elevation=50
+cloudiness=1.0
+road_wetness=0.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_afternoon_dry'
+azimuth=270
+elevation=50
+cloudiness=0.25
+road_wetness=0.0
+
+# Once defined, presets can be set in one of three ways:
+# Either through randomize_environment, which selects from presets from a
+# seeded psuedorandom sequence
+# (called in setup here to start before frame 0)
+[[Events.setup]]
+type='WorldRand.weather'
+#func='randomize_environment'
+func='set_environment'
+preset_name='_stormday_wet'
+
+[[Events.setup]]
+type='EgoRand'
+func='set_light'
+light_type='head'
+enable=true
+
+[[Events.setup]]
+type='VehicleRandStat'
+func='set_all_lights'
+pop_name='traffic_vehicles'
+enable=true
+
+[[Events.setup]]
+type='VehicleRandStat'
+func='set_all_lights'
+pop_name='oversize_vehicles'
+enable=true
+
+[[Events.scripted.0]]
+type='EgoRand'
+func='set_light'
+light_type='head'
+enable=true
+
+[[Events.scripted.0]]
+type='VehicleRandStat'
+func='set_all_lights'
+pop_name='traffic_vehicles'
+enable=true
+
+[[Events.scripted.0]]
+type='VehicleRandStat'
+func='set_all_lights'
+pop_name='oversize_vehicles'
+enable=true
+
+#### PERIODIC EVENTS ####
+
+[[Events.periodic.5]]
+type='EgoRand'
+func='place_along_road'
+distance=5
+
+[[Events.periodic.5]]
+type='VehicleRandStat'
+func='randomize_position'
+pop_name='traffic_vehicles'
+region_center='ahead_ego'
+
+[[Events.periodic.5]]
+type='VehicleRandStat'
+func='randomize_color'
+pop_name='traffic_vehicles'
+
+[[Events.periodic.5]]
+type='VehicleRandStat'
+func='randomize_position'
+pop_name='oversize_vehicles'
+region_center='ahead_ego'
+#shuffle_order=true
+#num_placements=1
+
+[[Events.periodic.5]]
+type='VehicleRandStat'
+func='randomize_color'
+pop_name='oversize_vehicles'
+
+# Or through 'next_preset', which cycles to the next preset available
+# Wrapping around when the preset dict end is reached.
+# Set to happen every 20 frames
+# NOTE: Each WeatherRand call is perf-heavy, so moderation is advised.
+# Recommend no more often than every 15-30 frames depending on compute resources
+#[[Events.periodic.20]]
+#type='WorldRand.weather'
+#func='next_preset'

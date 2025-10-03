@@ -1,0 +1,138 @@
+[Assets]
+root = "{/app/drivesim/defaultNucleusRoot}/"
+sets = [
+    "ego.toml",
+    "dynamic_twowheel_with_riders.toml",
+    "road_signs.toml",
+    "cones.toml",
+    "props_ncap.toml",
+    "props_road_debris.toml",
+    "static_traffic_vehicles.toml",
+    "dynamic_traffic_vehicles.toml",   
+    "dynamic_traffic_large_vehicles.toml", 
+    "props_traffic.toml",
+]
+
+[Events.config]
+enable_script = true
+enable_periodic = true
+periodic_start_frame = 0
+collisions_enabled = true
+enable_ego_teleportation = false
+
+[[Events.setup]]
+type= 'VehicleRandStat'
+func= 'setup'
+pop_name='parked_vehicles'
+asset_file='static_traffic_vehicles.toml'
+asset_sel_type='all'
+asset_qty=30
+
+[[Events.scripted.1]]
+type='VehicleRandStat'
+func='randomize_position'
+region_diameter=150
+pop_name='parked_vehicles'
+surface_type='parking'
+region_center='ahead_ego' # 'ahead_ego', 'surround_ego', 'behind_ego'
+orientation='mixed'  # 'forward', 'reverse', 'mixed'
+num_placements='all'
+shuffle_order=true
+
+[[Events.setup]]
+type= 'VehicleRandDyn'
+func= 'setup'
+pop_name='traffic_vehicles'
+asset_file='dynamic_traffic_vehicles.toml'
+asset_sel_type='all'
+asset_qty=1
+#asset_sel_type='index'
+#asset_sel=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_position'
+pop_name='traffic_vehicles'
+region_center='surround_ego' # 'ahead_ego', 'surround_ego', 'behind_ego'
+region_diameter=100
+shuffle_order=true
+#offset=5
+min_distance=14
+num_placements=15
+#num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_speed'
+pop_name='traffic_vehicles'
+speed_range=[10, 15]
+
+[[Events.setup]]
+type= 'VehicleRandDyn'
+func= 'setup'
+pop_name='large_traffic_vehicles'
+asset_file='dynamic_traffic_large_vehicles.toml'
+asset_sel_type='index'
+#asset_qty=3
+#Projects/ds2_content/common_assets/vehicles/generic/bus_tour/2015/main.usd
+#Projects/ds2_content/common_assets/vehicles/generic/semi_tractor_medium/2016/main.usd
+#Projects/ds2_content/common_assets/vehicles/generic/fuel_truck/2000/main.usd
+#Projects/ds2_content/common_assets/vehicles/generic/caravan/2015/main.usd
+#Projects/ds2_content/common_assets/vehicles/generic/truck_walkin/2020/main.usd
+#Projects/ds2_content/common_assets/vehicles/generic/tow_truck/2000/main.usd
+#Projects/ds2_content/common_assets/vehicles/generic/campervan/2019/main.usd
+#
+#Projects/ds2_content/common_assets/vehicles/generic/bus_tour/2015/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/ambulance_emergency/2002/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/campervan/2019/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/truck_walkin/2020/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/semi_tractor_medium/2016/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/fuel_truck/2000/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/caravan/2015/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/tow_truck/2000/main_with_physx.usd
+#Projects/ds2_content/common_assets/vehicles/generic/truck_paramedic/2014/main_with_physx.usd
+#tested   [-,+,-,(+),T,T,T,T,(+)]
+asset_sel=[0,1,2,3,4,5,6,7,8]
+asset_qty=[1,2,1,2,1,1,1,2,2]
+##asset_sel=[0]
+##asset_qty=[5]
+
+## Sequential randomization is:
+## Load map -> do randomization -> play
+## Unlike non-sequential, no placement randomization occurs during simulation
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_position'
+pop_name='large_traffic_vehicles'
+region_center='ahead_ego' # 'ahead_ego', 'surround_ego', 'behind_ego'
+region_diameter=75
+shuffle_order=true
+offset=5
+min_distance=14
+num_placements=7
+#num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_speed'
+pop_name='large_traffic_vehicles'
+speed_range=[10, 15]
+
+[[Events.setup]]
+type= 'VehicleRandDyn'
+func= 'setup'
+pop_name='traffic_bikes'
+asset_file='dynamic_twowheel_with_riders.toml'
+asset_sel_type='range'
+asset_sel=[0,3]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_position'
+pop_name='traffic_bikes'
+region_center='ahead_ego'
+region_diameter=30
+shuffle_order=true
+offset=5
+min_distance=3

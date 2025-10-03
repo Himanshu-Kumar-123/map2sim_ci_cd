@@ -1,0 +1,549 @@
+# Configuration file for the automation framework
+
+# Automator Kit Server Settings
+# Contains application-specific configuration details along with defaults.
+# HOST: The IP address of the host machine where the application is running.
+#       Use localhost or 127.0.0.1 if the application is on the same machine as this framework.
+# PORT: The port on which the server listens for automation events from the client (Automation Test).
+#       Some applications have their default ports (e.g. 8111 for USD Composer).
+
+automator_kit_server:
+  default:  # Default configuration for any unspecified application
+    host: 127.0.0.1
+    port: 9682
+
+  usdc:  # Configuration for USD Composer
+    host: 127.0.0.1
+    port: 8111
+
+  usde:  # Configuration for USD Editor (example name)
+    host: 127.0.0.1
+    port: 8311
+
+  avatar_configurator:  # Configuration for Avatar Configurator
+    host: 127.0.0.1
+    port: 8511
+
+
+# Allure Server Configuration
+allure_server:
+  url: http://10.25.142.138:5050  # URL: The base address where the Allure server can be accessed.
+
+# Nucleus Server Configuration
+# Maps environment names to their respective Nucleus server addresses.
+# server_url:  URL of the Nucleus server for 'kit-test-content'.
+# token_name:  The token name used for authentication with the Nucleus server.
+nucleus_server:
+  # Configuration for the 'kit-test-content' environment.
+  kit-test-content: 
+    server_url: kit-test-content.ov.nvidia.com  
+    token_name: kit_test_nucleus_token          
+
+  # Configuration for the 'apollo_prod_nucleus' environment.
+  apollo_prod_nucleus: 
+    server_url: apollo-prod.ov.nvidia.com      
+    token_name: apollo_prod_nucleus_token       
+  # Default server configuration used when no specific environment is mentioned.
+  default: 
+    server_url: rc-r16.ov.nvidia.com           
+    token_name: nucleus_token                   
+
+  # Configuration for the 'ov_content' environment.
+  ov-content: 
+    server_url: content.ov.nvidia.com         
+    token_name: ov_content_nuc_token            
+
+  # Configuration for the 'automation' environment.
+  automation: 
+    server_url: rc-latest-qaautotestonly.ov.nvidia.com 
+    token_name: nucleus_token              
+ 
+ # Configuration for the 'rc15' environment.
+  rc15:
+    server_url: rc-r15.ov.nvidia.com           
+    token_name: nucleus_token 
+        
+  # Configuration for the 'workflows' environment.
+  workflows:
+    server_url: workflows.ov.nvidia.com
+    token_name: workflows_nuc_token
+
+  # Configuration for the 'simready' environment.
+  simready:
+    server_url: simready.ov.nvidia.com
+    token_name: simready_nuc_token 
+
+# Specifies the type of application being configured.
+app: 
+    type: standalone  # Indicates desktop application.
+    install_path: ""
+
+# Automation Service Account Configuration
+# Defines a list of service accounts for automation purposes, such as testing.
+automation_service_account:
+    user01: svcovqa01@nvidia.com      
+    user02: svcovqa02@nvidia.com      
+    user04: svcovqa04@nvidia.com      
+    ovqa_gmail: omniverse.qa@gmail.com
+
+
+# Paths Configuration
+# Contains various file system paths used by the automation system for extensions,
+# applications, and other resources.
+
+paths:
+  # Extension Paths Settings
+  # Contains paths to extension ZIP files and their descriptions.
+  extension_paths:
+    # NAME: Description of what the extension is for.
+    # ZIP_PATH: The Omniverse URI to the zip file for the extension.
+
+    # Settings for 'omni.kit.livestream.messaging' extension
+    omni.kit.livestream.messaging:
+      zip_path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Extensions/omni.kit.livestream.messaging/omni.kit.livestream.messaging-9.9.9.zip
+      name: ENABLE SETTINGS AND STRUCTURED MESSAGING FOR WEBRTC STREAMING
+
+    # Settings for 'omni.graph.action' extension
+    omni.graph.action:
+      zip_path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Extensions/omni.graph.action/omni.graph.action-1.58.1+105.1.wx64.r.cp310.zip
+      name: OMNIGRAPH ACTION GRAPH
+
+    # Settings for 'omni.kit.streamsdk.plugins' extension
+    omni.kit.streamsdk.plugins:
+      zip_path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Extensions/omni.kit.streamsdk.plugins/omni.kit.streamsdk.plugins-2.5.4+105.1.wx64.r.zip
+      name: STREAMSDK PLUGINS
+
+  # DSR App Paths Settings
+  # Contains paths for input folders and application installation.
+  dsrs_app:
+    props_input_folder_path: ""  # Path to the input folder for props.
+    vehicles_input_folder_path: ""  # Path to the input folder for vehicles.
+
+  # Framework Paths Settings
+  # Contains paths related to the testing framework.
+  framework:
+    images_dir: results/images  # Directory path for storing image results.
+
+  # System Paths Settings
+  # Contains system-specific paths for extensions on different operating systems.
+  system:
+      ext_win_path: C:\Users\{}\AppData\Local\ov\data\exts\v2\  # Path to the extensions folder on Windows.
+      ext_linux_path: /home/{}/.local/share/ov/data/exts/v2/  # Path to the extensions folder on Linux.
+
+
+#  Location of test files on nucleus server
+  asset_paths:
+    CATIA_V5_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/CATIA_V5/
+    STEP_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/STEP/
+    IFC_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/IFC/
+    JT_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/JT/
+    IGES_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/IGES/
+    NX_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/NX/
+    Parasolid_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Parasolid/
+    Solidworks_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Solidworks/
+    STL_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/STL/
+    AutoCAD_3D_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/AutoCAD_3D/
+    CATIA_V6_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/CATIA_V6/
+    CreoPro_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/CreoPro/
+    Revit_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Revit/
+    Solid_Edge_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Solid_Edge/
+    Autodesk_Inventor_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Autodesk_Inventor/
+    DGN_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/DGN/
+    CAD_Destination_Prim_path: omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter_Can_Delete/On_Prim_{}/
+    drag_drop_layer_test_path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/USD_Composer_Layer/
+    wrapp_root_folder_path: omniverse://rc-r15.ov.nvidia.com/Projects/QA/Wrapp/
+    wrapp_rc16_folder_path: omniverse://rc-r16.ov.nvidia.com/Projects/QA/Wrapp/
+    CATIA_V5_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/CATIA_V5/"
+    STEP_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/STEP/"
+    IFC_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/IFC/"
+    JT_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/JT/"
+    IGES_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/IGES/"
+    NX_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/NX/"
+    Parasolid_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Parasolid/"
+    Solidworks_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Solidworks/"
+    STL_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/STL/"
+    AutoCAD_3D_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/AutoCAD_3D/"
+    CATIA_V6_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/CATIA_V6/"
+    CreoPro_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/CreoPro/"
+    Revit_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Revit/"
+    Solid_Edge_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Solid_Edge/"
+    Autodesk_Inventor_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Autodesk_Inventor/"
+    DGN_usdc_path: "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/DGN/"
+    create_test_plan_path: "omniverse://rc-latest-qaautotestonly.ov.nvidia.com/Projects/CreateTestPlan/"
+    scripting_path: "omniverse://_server_name_/Projects/CreateTestPlan/Scripting/"
+#  Location of USD files used from nucleus server
+  usd_paths:
+    usdc_png_filepath: 
+      path: omniverse://rc-r15.ov.nvidia.com/Projects/QA/USD-C png/
+      file_name: material_pattern.png
+
+    apollo_usd_path:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_Env_Hall30_Assembly_Stations
+        file_name: Env_Hall30_Assembly_Stations.usd
+    
+    empty_test_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_lights
+        file_name: lights.usd
+    
+    sample_factory:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_Sample_Factory_1
+        file_name: Sample_Factory_1.usd
+    
+    biW_factory:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_BiW_OV_From_VC_Demo_Start_v2
+        file_name: BiW_OV_From_VC_Demo_Start_v2.usd
+    
+    giga_factory:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/Performance_Benchmarks/Tesla GigaFactory
+        file_name: world_GFTX_layers.usd
+    
+    computex_factory:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_ComputexFactory_02
+        file_name: ComputexFactory_02.usd
+    
+    high_polygon_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/High_Polygon_Scene/Mercedes H46 from September/BugRepro
+        file_name: BugReproOnCars.usd
+
+    MercedesH46_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/Performance_Benchmarks/Mercedes H46 from September
+        file_name: Factory_H46_1Sep2023.usda
+    
+    Animations_test_1000:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/animation
+        file_name: ts_test_10000.usd
+    
+    space_visualization:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/Apollo_Benchmark_Assets/Factory/Collected_DEMO_Space_Visualization_with_Pipes
+        file_name: DEMO_Space_Visualization_with_Pipes_inside.usd
+    
+    small_test_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/USDExplorerTestPlan/test_common_hotkeys
+        file_name: test.usd
+    
+    koenigsegg_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/NVIDIA/Samples/Showcases/2023_2_1/Ragnarok
+        file_name: Koenigsegg_Ragnarok.usd
+
+    koenigsegg_variant_editor:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Variant
+        file_name: Koenigsegg_Ragnarok.usd
+
+    koenigsegg_variant_editor_scene_:
+        path: omniverse://apollo-prod.ov.nvidia.com/Library/00_DND_QA/Koenigsegg/Ragnarok/Ragnarok_Authored
+        file_name: Koenigsegg_Ragnarok.usd
+    
+    koenigsegg_variant_editor_variant_scene_:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Variant/Koenigsegg/Ragnarok/Ragnarok_Authored/SubUSDs
+        file_name: Koenigsegg_Ragnarok_Variants_Scene.usd
+    
+    variant_switcher_scene:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Variant/variantSwitcher
+        file_name: variantSwitcher.usd
+    
+    bag_configurator_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Runway/Content/NVIDIA_Assets/Retail_Assets/Bag_A/Bag_A_Configurator
+        file_name: bag_configurator.usd
+
+    warehouse_xr_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/NVIDIA/Assets/XR/Stages/Indoor
+        file_name: Warehouse_XR.usd
+            
+    concept_car_scene:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/QA/Samples/Collected_Concept_Car/
+        file_name: Concept_Car.usd
+    
+    helmet_configurator_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Runway/Content/NVIDIA_Assets/Helmet/Helmet_Configurator
+        file_name: helmet_configurator.usd
+    
+    DND_test_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Library/00_DND_QA
+        folder: Test_DND
+        file_name: OVQA_Test_DND.usd
+    
+    tire_configurator_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Library/00_DND_QA/Variant_Configurator
+        file_name: Tires.usd
+    
+    sm_bag_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_Bag_A_Authored
+        file_name: SM_Bag_A05_01_Variants.usd
+    
+    stage_sort_scenarios:
+        path: omniverse://apollo-prod.ov.nvidia.com/NVIDIA/Samples/Astronaut
+        file_name: Astronaut.usd
+
+    Astronaut:
+        path: omniverse://_nucleus_/NVIDIA/Samples/Astronaut
+        file_name: Astronaut.usd
+    
+    EuclidVR:
+        path: omniverse://_nucleus_/NVIDIA/Samples/EuclidVR
+        file_name: EuclidVR_Stage.usd
+
+    Flight:
+        path: omniverse://_nucleus_/NVIDIA/Samples/Flight
+        file_name: Flight.usd
+
+    Old_Attic:
+        path: omniverse://_nucleus_/NVIDIA/Samples/OldAttic
+        file_name: Attic_NVIDIA.usd
+
+    Marbles:
+        path: omniverse://_nucleus_/NVIDIA/Samples/Marbles
+        file_name: Marbles_Assets.usd
+
+    Isaac_Warehouse:
+        path: omniverse://_nucleus_/NVIDIA/Samples/Showcases/2023_2_1/IsaacWarehouse
+        file_name: IsaacWarehouse.usd
+
+    helmet_configurator:
+        path: omniverse://ov-content/Users/dlafontaine@nvidia.com/Samples/3D_Widgets
+        file_name: helmet_widgetSample.usd
+    
+    omnigraph_slang:
+        path: omniverse://_server_name_/Projects/CreateTestPlan/Omnigraph/
+        file_name: Slang.usd
+    
+    omnigraph_set_variant_selection:
+        path: omniverse://_server_name_/Projects/CreateTestPlan/Variant/
+        file_name: VariantSetVariantSelection.usd
+    
+    omnigraph_variant_nodes_scene:
+        path: omniverse://apollo-prod.ov.nvidia.com/Library/AutomatedTests/SM_Bag_A05_01_Variants/
+        file_name: SM_Bag_A05_01_Variants.usd
+    
+    omnigraph_script_node:
+        path: omniverse://_server_name_/Projects/CreateTestPlan/Omnigraph/WarningDialog/scriptnode_test/
+        file_name: scriptnode_test.usda
+    
+    test4_usd_file:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/TestSceneOpt_Reg
+        file_name: test4.usd
+    
+    so_python_operations:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_Factory_Assets/
+        file_name: Factory_Assets.usd
+
+    decimation_QA:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/scene_optimizer/
+        file_name: decimation_QA.usd
+
+    cd1_psup_01:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/scene_optimizer/
+        file_name: CD1_PSUP_01.usd
+    
+    BMW_52_A_ARCH:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/omniverse/
+        file_name: _20_1258_BMW_52_A_ARCH_230622_095116.usd
+    
+    asset_validator_file_name:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Asset_Validator
+        file_name: JET_Engine_noEnv.usd
+    
+    test_move_assets_in_debrecen:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/USDExplorerTestPlan/Collected_Env_Hall30_Assembly_Stations
+        file_name: Env_Hall30_Assembly_Stations.usd
+    
+    Turning_Machine:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/
+        file_name: Turning_Machine_Layout.usd
+    
+    test_kuka_file:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/
+        file_name: KUKA_KR160_R1570.usd
+    
+    test_performance_workflow:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/USDExplorerTestPlan/PerformanceWorkflow/Collected_Env_Hall30_Assembly_Stations
+        file_name: Env_Hall30_Assembly_Stations.usd
+    
+    uv_projection:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_uv_projection_demo/
+        file_name: uv_projection_demo.usd
+    
+    concidingMesh:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/
+        file_name: concidingMesh.usd
+    
+    MFC_for_NvidiaAnimated:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_MFC/
+        file_name: MFC_for_NvidiaAnimated.usd
+    
+    MFC_for_NvidiaAnimated_save_as:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_MFC/
+        file_name: MFC_for_NvidiaAnimated_save_as.usd
+    
+    666_5th_Avenue:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Turner_666_5th/
+        file_name: 666_5th_Avenue.usdc
+    
+    666_5th_Avenue_save_as:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Turner_666_5th/
+        file_name: 666_5th_Avenue_save_as.usdc
+    
+    helmet_assembly:
+        path: omniverse://workflows.ov.nvidia.com/Runway/Content/NVIDIA_Assets/Helmet/Helmet_Authored/
+        file_name: helmet_assembly.usd
+    
+    deduplicateWithTransforms:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/
+        file_name: deduplicateWithTransforms.usda
+      
+    byd_configurator:
+        path: omniverse://content.ov.nvidia.com/Projects/Content_Workflow/Product_Configurator/BYDConfigurator/
+        file_name: product_configurator_base.usd
+    
+    gtc_step_3:
+        path: omniverse://apollo-prod.ov.nvidia.com/Library/Configurator_Workshop/
+        file_name: Step3_Graphs_Savepoint.usd
+    
+    
+    gtc_workflow_scenes_step2:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Configurator_Workshop/
+        file_name: Step2_Variants_Savepoint.usd
+    
+    gtc_workflow_scenes_step4:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Configurator_Workshop/
+        file_name: Step4_Web_Savepoint.usd
+    
+    hello_world:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/Connectors/ISV Apps/Connect Sample/Golden USD/3127435/
+        file_name: helloworld.usd
+
+    hello_world_live: 
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/Connectors/ISV Apps/Connect Sample/Golden USD/3127441/,
+        file_name: helloworld.live,
+    
+    replicator_script_path:
+        path: omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/Replicator_scripts/
+        file_name: CoreFunctionsHelloWorld.py
+    
+    issac_sim_full_warehouse:
+        path: omniverse://content.ov.nvidia.com/NVIDIA/Assets/Isaac/4.1/Isaac/Environments/Simple_Warehouse/
+        file_name: full_warehouse.usd
+
+    issac_sim_event_simulation:
+        path: omniverse://content.ov.nvidia.com/NVIDIA/Assets/Isaac/4.1/Isaac/Samples/PeopleDemo/SimpleEventSimulation/
+        file_name: simple_event_simulation.usd
+    
+    issac_sim_carter_warehouse:
+        path: omniverse://content.ov.nvidia.com/NVIDIA/Assets/Isaac/4.1/Isaac/Samples/ROS2/Scenario/
+        file_name: carter_warehouse_apriltags_worker.usd
+    
+    # Data fpr Mercedes_Benz USD files
+    Mercedes_Benz_Master_Factory:
+        path: _mercedes_base_path_
+        file_name: Factory_Master.usda
+    
+    Mercedes_Benz_Factory_K1E:
+        path: _mercedes_base_path_
+        file_name: Factory_K1E_WorkingModel_214.usda
+
+    Mercedes_Benz_Montage_electro:
+        path: _mercedes_base_path_/Faplis_InternalConversion/W371_240_0_MONTAGE_TGA_ELEKTRO_PLANUNG_KO/geo
+        file_name: 100000000713470-1000.usd
+
+    Mercedes_Benz_Montage_Mechanic:
+        path: _mercedes_base_path_/Faplis_InternalConversion/W371_240_0_MONTAGE_TGA_MECHANIK_PLANUNG_KO/geo
+        file_name: 100000000713875-1000.usd
+
+    Mercedes_Benz_Montage_TGA_Mechanic:
+        path: _mercedes_base_path_/Faplis_Dec23/USD_W371_240_0_MONTAGE_TGA_MECHANIK_PLANUNG_KO_MASS/USD_PART_FILES
+        file_name: KECS_240_0_EG_0_br100000000713501_000_prw_dgn_P8.usd
+    
+    Mercedes_Benz_Montage_TGA_Mechanic_planung:
+        path: _mercedes_base_path_/V3_K1e_POC_Faplis_Data_Pipeline_20240323/w371_240_0_montage_tga-mechanik_planung/geo
+        file_name: 100000000714313-1000.usd
+
+    Mercedes_Benz_Working_model_1:
+        path: _mercedes_base_path_/Product/214/WorkingModel_With_SubAssy_214_K1E/parts/DataItems/P_214
+        file_name: 8ec90fc2507c11ee8867005056bceb56----.jt.payload.usda
+
+    Mercedes_Benz_Working_model_2:
+        path: _mercedes_base_path_/Product/214/WorkingModel_With_SubAssy_214_K1E/parts/DataItems/P_214
+        file_name: a82a549e9c5611eb83e6005056bc75e0----.jt.payload.usda
+
+    Mercedes_Benz_Working_model_3:
+        path: _mercedes_base_path_/Product/214/WorkingModel_With_SubAssy_214_K1E
+        file_name: B06___014.usdc
+    
+    Mercedes_Benz_Working_model_4:
+        path: _mercedes_base_path_/Product/214/WorkingModel_With_SubAssy_214_K1E/parts/DataItems/P_214
+        file_name: f7ebc3709ce011eb8bf5005056bceb56----.jt.payload.usda
+    
+    Mercedes_Benz_Working_model_5:
+        path: _mercedes_base_path_/Product/214/WorkingModel_With_SubAssy_214_K1E/parts/DataItems/P_214
+        file_name: 2f879bc8c83411eb9895005056bced09----.jt.payload.usd
+
+    Create_USD_Paths:
+        path: omniverse://rc-latest-qaautotestonly.ov.nvidia.com/Projects/CreateTestPlan/USDPath/Collected_USDPathTest
+        file_name: USDPathTest.usd
+    
+    Extreme_Mesh_Count_USD:
+        path : omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/Extreme_Mesh_Count/Test_Kevin_anim/
+        file_name : character_anim_100.usda
+
+    Domelight_Multiplier_USD:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/3977483/Collected_domelight_mul_translu/
+        file_name: domelight_mul_translu.usd
+
+    Collected_NoisyFog_USD:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/Collected_NoisyFog/
+        file_name: World1.usd
+
+    Collected_Factory_AllConfigs:
+        path: omniverse://apollo-prod.ov.nvidia.com/Projects/Apollo_Benchmark_Assets/Factory/Factory_Sizing
+        file_name: Debrecen_7_Factories_Instanced.usd
+
+    Collected_ElectraConfigurator:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/QA/Variants/Collected_ElectraConfigurator/Z/Authored
+        file_name: MY25_Buick_Electra_csb_variants_AxF.usdc
+
+    Franka_Robot_Scene:
+        path: omniverse://rc-r15.ov.nvidia.com/Projects/OVSWQA_Automation/OMPE-25852/
+        file_name: franka_robot.usd
+
+# The automation_extension section provides information about the remote UI automator extension.
+automation_extension:
+  name: omni.kit.remote_ui_automator  # Unique identifier for the automator extension.
+  version: 0.1.56                      # Version number of the automator extension.
+
+# The automation_client_library section specifies the details of the client library used for automation.
+automation_client_library:
+  name: omni-remote-ui-automator  # Name of the client library package.
+  version: 0.2.10               # Version number of the client library.
+
+# SwiftStack configuration for cloud storage and access.
+swiftstack_config: 
+    endpoint_url: https://pbss.s8k.io               # Endpoint URL for the SwiftStack storage.
+    aws_access_key_id: omniverse-qa                 # AWS access key ID for authentication.
+    region_name: us-east-1                          # AWS region where the SwiftStack is hosted.
+    golden_images:                                  # Golden images are reference images used for various purposes.
+        USD Composer:                              # Configuration for the USD Composer's golden images.
+            container: usd_composer                # Name of the container where the images are stored.
+            base_path: golden_images               # Base path within the container for these images.
+        Factory Explorer:                          # Configuration for the Factory Explorer's golden images.
+            container: factory_explorer            # Name of the container where the images are stored.
+            base_path: golden_images               # Base path within the container for these images.
+        USD Presenter:                             # Configuration for the USD Presenter's golden images.
+            container: usd_presenter               # Name of the container where the images are stored.
+            base_path: golden_images               # Base path within the container for these images.
+        Code:                                      # Configuration for the Code's golden images.
+            container: code                        # Name of the container where the images are stored.
+            base_path: golden_images               # Base path within the container for these images.
+        KIT :                                      # Configuration for the KIT base editor's golden images.
+            container: kit                         # Name of the container where the images are stored.
+            base_path: golden_images               # Base path within the container for these images.
+        Isaac Sim:                                  # Configuration for the Isaac Sim's golden images.
+            container: isaac_sim                    # Name of the container where the images are stored.
+            base_path: golden_images                # Base path within the container for these images.
+# Identifier for a particular build of the Omniverse wrapp.
+wrapp:
+    build_name: 1.0.0-b1  # Version identifier for the wrapper build, typically following semantic versioning.
+    batch_file: ""
+    install_path: ""
+
+bat_database: 
+    host: 10.127.21.88
+    

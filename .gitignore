@@ -1,0 +1,5 @@
+*.py[cod]
+/dependencies/secrets/share_point_api_token_access.json
+/dependencies/secrets/one_drive_api_token_access.json
+Outputs/
+TOML/dev_trials.toml

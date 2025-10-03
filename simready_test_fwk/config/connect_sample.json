@@ -1,0 +1,32 @@
+{
+  "connect_sample_build_path":{
+    "github_url": "https://github.com/NVIDIA-Omniverse/connect-samples.git"
+  },
+  "test_run_hello_world_command": {
+    "usd_name": "helloworld",
+    "golden": {
+      "file_path": "omniverse://_server_name_/Projects/Connectors/ISV Apps/Connect Sample/Golden USD/_connector_version_/3127434/"
+    },
+    "export": {
+      "file_path": "omniverse://_server_name_/Projects/Connectors/ISV Apps/Connect Sample/Export USD/_connector_version_/3127434/"
+    }
+  },
+    "test_run_py_hello_world_command": {
+      "usd_name": "helloworld_py",
+      "golden": {
+        "file_path": "omniverse://_server_name_/Projects/Connectors/ISV Apps/Connect Sample/Golden USD/_connector_version_/3127439/"
+      },
+      "export": {
+        "file_path": "omniverse://_server_name_/Projects/Connectors/ISV Apps/Connect Sample/Export USD/_connector_version_/3127439/"
+      }
+    },
+  "test_simple_sensor_connect_sample": {
+     "export": {
+        "file_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/Connect_Sample/Export_USD/_connector_version_/3127442/"
+      },
+    "number_of_cube": 2,
+    "time_to_run": 120,
+    "usd_name": "SimpleSensorExample.live",
+    "script_to_fetch_color": "from pxr import Usd, UsdGeom\nimport omni.usd\nimport time\n\nstage = omni.usd.get_context().get_stage()\nprim = stage.GetPrimAtPath('__prim_path__')\ndisplay_color = UsdGeom.Gprim(prim).GetDisplayColorAttr()\ncolor = display_color.Get()\nprint(f'Fetched Color for __prim_path__: {color}')"
+  }
+}

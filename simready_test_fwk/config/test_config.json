@@ -1,0 +1,342 @@
+{
+    "connection_details": {
+        "host": "127.0.0.1",
+        "port": "9682"
+    },
+    "connection_details_usdc": {
+        "host": "127.0.0.1",
+        "port": "8111"
+    },
+    "connection_details_usde": {
+        "host": "127.0.0.1",
+        "port": "8311"
+    },
+    "connection_details_avatar_configurator": {
+        "host": "127.0.0.1",
+        "port": "8511"
+    },
+    "connection_details_usd_player": {
+        "host": "127.0.0.1",
+        "port": "9682"
+    },
+    "allure_server": "http://10.25.142.138:5050",
+    "nucleus_server": {
+        "r13": "rc-r13.ov.nvidia.com",
+        "r12": "rc-r12.ov.nvidia.com",
+        "kit-test-content": "kit-test-content.ov.nvidia.com",
+        "Default": "rc-r15.ov.nvidia.com",
+        "soft-delete": "can-softdelete.ov.nvidia.com",
+        "dcomo": "nuctest.dcomo.omniverse.nvidia.com",
+        "automation": "rc-latest-qaautotestonly.ov.nvidia.com",
+        "apollo_prod_nucleus": "apollo-prod.ov.nvidia.com",
+        "rc16": "rc-r16.ov.nvidia.com",
+        "ov-content": "content.ov.nvidia.com",
+        "rc15": "rc-r15.ov.nvidia.com",
+        "workflows": "workflows.ov.nvidia.com",
+        "simready": "simready.ov.nvidia.com"
+    },
+    "nucleus_connection_token_name": {
+        "apollo_prod_nucleus": "apollo_prod_nucleus_token",
+        "kit-test-content": "kit_test_nucleus_token",
+        "Default": "nucleus_token",
+        "rc16": "nucleus_token",
+        "ov-content": "ov_content_nuc_token",
+        "workflows": "workflows_nuc_token",
+        "simready": "simready_nuc_token"
+    },
+    "database": {
+        "host": "10.127.21.88"
+    },
+    "props_input_folder_path": "",
+    "vehicles_input_folder_path": "",
+    "srs_app_install_path": "",
+    "props": "omni.drivesim.studio.props.bat",
+    "vehicles": "omni.drivesim.studio.vehicles.bat",
+    "images_dir": "results/images",
+    "app_type": "standalone",
+    "user": "svcovqa01@nvidia.com",
+    "user02": "svcovqa02@nvidia.com",
+    "app_install_path": "",
+    "app_batch_file": "",
+    "automator_version": "0.1.56",
+    "apollo_usd_path": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_Env_Hall30_Assembly_Stations",
+        "file": "Env_Hall30_Assembly_Stations.usd"
+    },
+    "empty_test_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_lights",
+        "file": "lights.usd"
+    },
+    "sample_factory": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_Sample_Factory_1",
+        "file": "Sample_Factory_1.usd"
+    },
+    "biW_factory": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_BiW_OV_From_VC_Demo_Start_v2",
+        "file": "BiW_OV_From_VC_Demo_Start_v2.usd"
+    },
+    "giga_factory": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/Performance_Benchmarks/Tesla GigaFactory",
+        "file": "world_GFTX_layers.usd"
+    },
+    "computex_factory": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/Collected_ComputexFactory_02",
+        "file": "ComputexFactory_02.usd"
+    },
+    "high_polygon_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVQA/High_Polygon_Scene/Mercedes H46 from September/BugRepro",
+        "file": "BugReproOnCars.usd"
+    },
+    "small_test_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/USDExplorerTestPlan/test_common_hotkeys",
+        "file": "test.usd"
+    },
+    "koenigsegg_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Runway/Content/Customer_Assets/Koenigsegg/Ragnarok/Ragnarok_Authored",
+        "file": "Koenigsegg_Ragnarok.usd"
+    },
+    "koenigsegg_variant_editor_scene_": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/00_DND_QA/Koenigsegg/Ragnarok/Ragnarok_Authored",
+        "file": "Koenigsegg_Ragnarok.usd"
+    },
+    "koenigsegg_variant_editor_variant_scene_": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Variant/Koenigsegg/Ragnarok/Ragnarok_Authored/SubUSDs",
+        "file": "Koenigsegg_Ragnarok_Variants_Scene.usd"
+    },
+    "variant_switcher_scene": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Variant/variantSwitcher",
+        "file": "variantSwitcher.usd"
+    },
+    "bag_configurator_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Runway/Content/NVIDIA_Assets/Retail_Assets/Bag_A/Bag_A_Configurator",
+        "file": "bag_configurator.usd"
+    },
+    "concept_car_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Runway/Content/NVIDIA_Assets/ConceptCar",
+        "file": "Concept_Car.usd"
+    },
+    "helmet_configurator_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Runway/Content/NVIDIA_Assets/Helmet/Helmet_Configurator",
+        "file": "helmet_configurator.usd"
+    },
+    "DND_test_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/00_DND_QA",
+        "folder": "Test_DND",
+        "file": "OVQA_Test_DND.usd"
+    },
+    "tire_configurator_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/00_DND_QA/Variant_Configurator",
+        "file": "Tires.usd"
+    },
+    "sm_bag_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Runway/Content/NVIDIA_Assets/Retail_Assets/Bag_A/Bag_A_Authored/",
+        "file": "SM_Bag_A05_01_Variants.usd"
+    },
+    "stage_sort_scenarios": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/NVIDIA/Samples/Astronaut",
+        "file": "Astronaut.usd"
+    },
+    "CATIA_V5_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/CATIA_V5/",
+    "STEP_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/STEP/",
+    "IFC_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/IFC/",
+    "JT_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/JT/",
+    "IGES_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/IGES/",
+    "NX_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/NX/",
+    "Parasolid_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Parasolid/",
+    "Solidworks_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Solidworks/",
+    "STL_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/STL/",
+    "AutoCAD_3D_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/AutoCAD_3D/",
+    "CATIA_V6_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/CATIA_V6/",
+    "CreoPro_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/CreoPro/",
+    "Revit_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Revit/",
+    "Solid_Edge_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Solid_Edge/",
+    "Autodesk_Inventor_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/Autodesk_Inventor/",
+    "DGN_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/DGN/",
+    "CAD_Destination_Prim_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter_Can_Delete/On_Prim_{}/",
+    "helmet_configurator": {
+        "path": "omniverse://ov-content/Users/dlafontaine@nvidia.com/Samples/3D_Widgets",
+        "file": "helmet_widgetSample.usd"
+    },
+    "omnigraph_slang": {
+        "path": "omniverse://_server_name_/Projects/CreateTestPlan/Omnigraph/",
+        "file": "Slang.usd"
+    },
+    "omnigraph_set_variant_selection": {
+        "path": "omniverse://_server_name_/Projects/CreateTestPlan/Variant/",
+        "file": "VariantSetVariantSelection.usd"
+    },
+    "omnigraph_variant_nodes_scene": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/AutomatedTests/SM_Bag_A05_01_Variants/",
+        "file": "SM_Bag_A05_01_Variants.usd"
+    },
+    "omnigraph_script_node": {
+        "path": "omniverse://_server_name_/Projects/CreateTestPlan/Omnigraph/WarningDialog/scriptnode_test/",
+        "file": "scriptnode_test.usda"
+    },
+    "test4_usd_file": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/TestSceneOpt_Reg",
+        "file": "test4.usd"
+    },
+    "so_python_operations": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_Factory_Assets/",
+        "file": "Factory_Assets.usd"
+    },
+    "BMW_52_A_ARCH": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/omniverse/",
+        "file": "_20_1258_BMW_52_A_ARCH_230622_095116.usd"
+    },
+    "ext_win_path": "C:\\Users\\{}\\AppData\\Local\\ov\\data\\exts\\v2\\",
+    "ext_linux_path": "/home/{}/.local/share/ov/data/exts/v2/",
+    "asset_validator_file": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Asset_Validator",
+        "file": "JET_Engine_noEnv.usd"
+    },
+    "test_move_assets_in_debrecen": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/USDExplorerTestPlan/Collected_Env_Hall30_Assembly_Stations",
+        "file": "Env_Hall30_Assembly_Stations.usd"
+    },
+    "Turning_Machine": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/",
+        "file": "Turning_Machine_Layout.usd"
+    },
+    "test_kuka_file": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/",
+        "file": "KUKA_KR160_R1570.usd"
+    },
+    "test_performance_workflow": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/USDExplorerTestPlan/PerformanceWorkflow/Collected_Env_Hall30_Assembly_Stations",
+        "file": "Env_Hall30_Assembly_Stations.usd"
+    },
+    "uv_projection": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_uv_projection_demo/",
+        "file": "uv_projection_demo.usd"
+    },
+    "concidingMesh": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/",
+        "file": "concidingMesh.usd"
+    },
+    "MFC_for_NvidiaAnimated": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_MFC/",
+        "file": "MFC_for_NvidiaAnimated.usd"
+    },
+    "MFC_for_NvidiaAnimated_save_as": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Collected_MFC/",
+        "file": "MFC_for_NvidiaAnimated_save_as.usd"
+    },
+    "666_5th_Avenue": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Turner_666_5th/",
+        "file": "666_5th_Avenue.usdc"
+    },
+    "666_5th_Avenue_save_as": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/Turner_666_5th/",
+        "file": "666_5th_Avenue_save_as.usdc"
+    },
+    "helmet_assembly": {
+        "path": "omniverse://workflows.ov.nvidia.com/Runway/Content/NVIDIA_Assets/Helmet/Helmet_Authored/",
+        "file": "helmet_assembly.usd"
+    },
+    "deduplicateWithTransforms": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Scene_Optimizer/",
+        "file": "deduplicateWithTransforms.usda"
+    },
+    "extension_paths": {
+        "omni.kit.livestream.messaging": {
+            "zip_path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Extensions/omni.kit.livestream.messaging/omni.kit.livestream.messaging-9.9.9.zip",
+            "name": "ENABLE SETTINGS AND STRUCTURED MESSAGING FOR WEBRTC STREAMING"
+        },
+        "omni.graph.action": {
+            "zip_path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Extensions/omni.graph.action/omni.graph.action-1.58.1+105.1.wx64.r.cp310.zip",
+            "name": "OMNIGRAPH ACTION GRAPH"
+        },
+        "omni.kit.streamsdk.plugins": {
+            "zip_path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/Extensions/omni.kit.streamsdk.plugins/omni.kit.streamsdk.plugins-2.5.4+105.1.wx64.r.zip",
+            "name": "STREAMSDK PLUGINS"
+        }
+    },
+    "wrapp_root_folder_path": "omniverse://rc-r15.ov.nvidia.com/Projects/QA/Wrapp/",
+    "wrapp_rc16_folder_path": "omniverse://rc-r16.ov.nvidia.com/Projects/QA/Wrapp/",
+    "wrapp_build_name": "1.0.0-b1",
+    "usdc_png_filepath": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/QA/USD-C png/",
+        "file": "material_pattern.png"
+    },
+    "swiftstack": {
+        "endpoint_url": "https://pbss.s8k.io",
+        "aws_access_key_id": "omniverse-qa",
+        "region_name": "us-east-1"
+    },
+    "swiftstack_user": "svcovqa01@nvidia.com",
+    "swiftstack_user02": "svcovqa02@nvidia.com",
+    "swiftstack_user04": "svcovqa04@nvidia.com",
+    "omniverseqa": "omniverse.qa@gmail.com",
+    "golden_images": {
+        "USD Composer": {
+            "container": "usd_composer",
+            "base_path": "golden_images"
+        },
+        "Factory Explorer": {
+            "container": "factory_explorer",
+            "base_path": "golden_images"
+        },
+        "USD Presenter": {
+            "container": "usd_presenter",
+            "base_path": "golden_images"
+        },
+        "Code": {
+            "container": "code",
+            "base_path": "golden_images"
+        }
+    },
+    "byd_configurator": {
+        "path": "omniverse://content.ov.nvidia.com/Projects/Content_Workflow/Product_Configurator/BYDConfigurator/",
+        "file": "product_configurator_base.usd"
+    },
+    "gtc_step_3": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/Configurator_Workshop/",
+        "file": "Step3_Graphs_Savepoint.usd"
+    },
+    "drag_drop_layer_test_path": "omniverse://apollo-prod.ov.nvidia.com/Projects/OVSWQA_Automation/USD_Composer_Layer/",
+    "gtc_workflow_scenes_step2": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Configurator_Workshop/",
+        "file": "Step2_Variants_Savepoint.usd"
+    },
+    "gtc_workflow_scenes_step4": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/CreateTestPlan/Configurator_Workshop/",
+        "file": "Step4_Web_Savepoint.usd"
+    },
+    "hello_world": {
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/Connectors/ISV Apps/Connect Sample/Golden USD/3127435/",
+        "file": "helloworld.usd"
+    },
+    "replicator_script_path": {
+        "path": "omniverse://apollo-prod.ov.nvidia.com/Library/OVSWQA_Test/Replicator_scripts/",
+        "default_file": "CoreFunctionsHelloWorld.py"
+    },
+    "app_batch_file_wrapp": "",
+    "app_install_path_wrapp": "",
+    "hello_world_live": {
+        "file": "helloworld.live",
+        "path": "omniverse://rc-r15.ov.nvidia.com/Projects/Connectors/ISV Apps/Connect Sample/Golden USD/3127441/"
+    },
+    "CATIA_V5_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/CATIA_V5/",
+    "STEP_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/STEP/",
+    "IFC_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/IFC/",
+    "JT_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/JT/",
+    "IGES_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/IGES/",
+    "NX_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/NX/",
+    "Parasolid_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Parasolid/",
+    "Solidworks_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Solidworks/",
+    "STL_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/STL/",
+    "AutoCAD_3D_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/AutoCAD_3D/",
+    "CATIA_V6_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/CATIA_V6/",
+    "CreoPro_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/CreoPro/",
+    "Revit_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Revit/",
+    "Solid_Edge_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Solid_Edge/",
+    "Autodesk_Inventor_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/Autodesk_Inventor/",
+    "DGN_usdc_path": "omniverse://_server_name_/Projects/OVSWQA_Automation/CAD_Converter/USDC/DGN/",
+    "create_test_plan_path": "omniverse://rc-latest-qaautotestonly.ov.nvidia.com/Projects/CreateTestPlan/",
+    "kitchen_set_path": "{}/Projects/Dev/Kitchen_set/",
+    "allow_icmp": "true",
+    "machinima_models":"omniverse://rc-r15.ov.nvidia.com/NVIDIA/Assets/Machinima/Squad/Characters/Models/",
+    "machinima_animations":"omniverse://rc-r15.ov.nvidia.com/NVIDIA/Assets/Machinima/Squad/Characters/Animations/Emote"
+}

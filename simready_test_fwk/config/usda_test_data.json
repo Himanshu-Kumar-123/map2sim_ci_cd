@@ -1,0 +1,398 @@
+{
+  "test_fe_cad_converter_catia_v5_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_catia_v5_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_step_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_step_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_ifc_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_ifc_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_jt_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_jt_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_iges_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_iges_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_nx_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_nx_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_parasolid_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_parasolid_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_solidworks_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_solidworks_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_stl_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_stl_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_catia_v6_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_catia_v6_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_creopro_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_creopro_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_revit_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_revit_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_solid_edge_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_solid_edge_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_autodesk_inventor_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_autodesk_inventor_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_microstation_dgn_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_microstation_dgn_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_autocad_3d_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_autocad_3d_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_fe_cad_converter_tessellation_level_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_catia_v5_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_catia_v5_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_step_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_step_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_ifc_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_ifc_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_jt_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_jt_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_iges_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_iges_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_nx_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_nx_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_parasolid_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_parasolid_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_solidworks_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_solidworks_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_stl_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_stl_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_catia_v6_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_catia_v6_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_creopro_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_creopro_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_revit_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_revit_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_solid_edge_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_solid_edge_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_autodesk_inventor_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_autodesk_inventor_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_dgn_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_dgn_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_autocad_3d_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_autocad_3d_from_nucleus": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  },
+  "test_usdc_cad_converter_tessellation_level_from_local": {
+    "attribute": [
+      "texCoord2f[] primvars:st",
+      "int[] primvars:st:indices"
+    ]
+  }
+}

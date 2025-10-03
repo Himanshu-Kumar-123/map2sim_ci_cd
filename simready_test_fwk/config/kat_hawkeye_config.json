@@ -1,0 +1,116 @@
+{
+    "test_usdc_custom_viewport_resolution_default_templates": {
+        "scene_results": {
+            "prompt": "Verify if there is any corruption,flicker or any visual diffect preset in the scene the change in size and resolution of image in expected also scene contains the grid and lines also light symbols it can be ignored as image is from the viewport of editing software,also ignore all the road lane lines",
+            "json_schema": {
+                "name": "visual_defects_present",
+                "description": "There should not be any visual defect in the scene change in the size of scene should be expected",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "visual_defects_present": {
+                            "type": "boolean",
+                            "description": "Verify if there is any corruption,flicker or any visual diffect preset in the scene the size or resolution change is expected"
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "Description of the visual defect present in the scene"
+                        }
+                    },
+                    "required": [
+                        "visual_defects_present","description"
+                    ]
+                }
+            }
+        }
+    },
+    "test_usdc_viewport_inertia": {
+        "scene_results": {
+            "prompt": "The images contains attic scene with various objects present in the scene and can have differente exposure to light over the sofa which is expected we nned to verify if there is any corruption,flicker or any visual diffect preset in the scene or not",
+            "json_schema": {
+                "name": "visual_defects_present",
+                "description": "There should not be any visual defect in the scene change in the size of scene should be expected",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "visual_defects_present": {
+                            "type": "boolean",
+                            "description": "Verify if there is any corruption,flicker or any visual diffect preset in the scene the size or resolution change is expected"
+                        }
+                    },
+                    "required": [
+                        "visual_defects_present"
+                    ]
+                }
+            }
+        }
+    },
+    "test_kat_usdc_asset_drag_drop_viewport":{
+        "scene_results": {
+            "prompt": "The scene contains the image of the viewport we need to verify if any asset or prim is present in the viewport or not",
+            "json_schema": {
+                "name": "is_asset_present",
+                "description": "Verify if any asset or prim is present in the scene or not",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_asset_present": {
+                            "type": "boolean",
+                            "description": "Verify if any asset or prim is present in the scene or not"
+                        }
+                    },
+                    "required": [
+                        "is_asset_present"
+                    ]
+                }
+            }
+        }
+    },
+    "test_kat_usdc_sequencer":{
+        "scene_results": {
+            "prompt": "The scene shows the animation of soldier doing animation of clapping we need to verify if the soldier is clapping or not its a image so it might be the any frame from the animation",
+            "json_schema": {
+                "name": "is_clapping",
+                "description": "Verify if soldier in the scene is clapping or not",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "is_clapping": {
+                            "type": "boolean",
+                            "description": "Verify if soldier in the scene is clapping or not"
+                        }
+                    },
+                    "required": [
+                        "is_clapping"
+                    ]
+                }
+            }
+        }
+    },
+    "test_editor_graph_node":{
+        "scene_results": {
+            "prompt": "The scene contains the image of light bulb which has multiple colors we need to verify the colors of the light its inttensity and also need to veify if any visual defect is present in the scene we need to ignore the selection lines which are present around the bulb also the 3d selection lines present around the selected part only consider corruption ,tearing or any defect occuring due to rendering",
+            "json_schema": {
+                "name": "color",
+                "description": "Give the color of the light bulb and the visual defects present in the scene",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "color": {
+                            "type": "string",
+                            "description": "Gives the color of the light bulb"
+                        },
+                        "visual_defects_present": {
+                            "type": "boolean",
+                            "description": "Verify if any visual defect is present in the scene"
+                        }
+                    },
+                    "required": [
+                        "color",
+                        "visual_defects_present"
+                    ]
+                }
+            }
+        }
+    }
+}

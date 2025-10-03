@@ -1,0 +1,7 @@
+{
+    "cli_binary": "gfndev",
+    "instance_type": "gl40g_1.br25_2xlarge",
+    "zone_name": "NP-SOF-02",
+    "default_configure_parameters": "-z NP-SOF-02 --format json",
+    "pass_key_dir": "results"
+}

@@ -1,0 +1,283 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            string boundCamera = "/Entities/Ego/Sensors/camera_front_wide_120fov"
+        }
+        dictionary omni_layer = {
+            dictionary locked = {
+                bool "ds2-nucleus-root://Projects/ds2_scenarios/production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda" = 1
+            }
+        }
+    }
+    defaultPrim = "World"
+    endTimeCode = 100
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @ds2-nucleus-root://Projects/ds2_scenarios/production/ego/SDG/Generic/generic_sedan_sdg_1cam.usda@
+    ]
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Scope "Scenario"
+    {
+        custom token app_build_version = "106.0+drivesim.202492.ec540416.tc"
+    }
+
+    def "WaypointGraphs"
+    {
+        custom bool ds_graph_changed = 1
+
+        def "main"
+        {
+            custom token ds_waypoint_graph = "f44105ac-6cee-4371-9e4a-3decf13b9234"
+
+            def Xform "mapPedWaypoint_835_0"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_835_1"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_835_1"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_835/pedgate_0"
+                custom float width = 1
+                double3 xformOp:translate = (-22.092052459716797, -66.06277465820312, 426.7393493652344)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_835_1"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_835_0"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_835_0"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_835/pedgate_1"
+                custom float width = 1
+                double3 xformOp:translate = (-5.985328674316406, -58.649818420410156, 426.8006591796875)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_835_2"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_835_3"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_835_3"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_835/pedgate_2"
+                custom float width = 1
+                double3 xformOp:translate = (-22.515108108520508, -36.32475280761719, 426.844970703125)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_835_3"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_835_2"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_835_2"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_835/pedgate_3"
+                custom float width = 1
+                double3 xformOp:translate = (-50.331199645996094, -56.70195007324219, 427.12493896484375)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_0"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_1"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_1"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_0"
+                custom float width = 1
+                double3 xformOp:translate = (217.89915466308594, 80.67926788330078, 433.19293212890625)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_1"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_0"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_0"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_1"
+                custom float width = 1
+                double3 xformOp:translate = (234.84910583496094, 91.78077697753906, 433.2149658203125)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_2"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_3"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_3"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_2"
+                custom float width = 1
+                double3 xformOp:translate = (233.7498016357422, 97.10824584960938, 432.8783874511719)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_3"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_2"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_2"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_3"
+                custom float width = 1
+                double3 xformOp:translate = (220.83863830566406, 118.98802185058594, 432.58001708984375)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_4"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_5"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_5"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_4"
+                custom float width = 1
+                double3 xformOp:translate = (215.42391967773438, 118.80134582519531, 432.41888427734375)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_5"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_4"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_4"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_5"
+                custom float width = 1
+                double3 xformOp:translate = (199.10775756835938, 108.445556640625, 432.2654724121094)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_6"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_7"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_7"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_6"
+                custom float width = 1
+                double3 xformOp:translate = (199.87924194335938, 103.99825286865234, 432.34857177734375)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_458_7"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_458_6"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_458_6"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_458/pedgate_7"
+                custom float width = 1
+                double3 xformOp:translate = (215.45013427734375, 82.3520736694336, 433.0063781738281)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_410_0"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_410_1"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_410_1"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_410/pedgate_0"
+                custom float width = 1
+                double3 xformOp:translate = (-188.8769989013672, -358.1578063964844, 427.1048278808594)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_410_1"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_410_0"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_410_0"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_410/pedgate_1"
+                custom float width = 1
+                double3 xformOp:translate = (-200.1436767578125, -379.964599609375, 426.85479736328125)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+        }
+    }
+}
+
+def Xform "EntityPoolSpec"
+{
+    custom token[] assets
+    custom token[] poolNames
+    custom uint[] poolSizes
+    custom token[] poolTypes
+}
+
+def Xform "Actions"
+{
+    def Control "SetMap_1"
+    {
+        custom token[] action:enabledPayloads = ["/World/fences", "/World/foliage", "/World/grass/field_grass", "/World/grass/island_grass", "/World/props", "/World/signs"]
+        custom bool action:forceReload = 0
+        custom token action:map = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/germany/scene_stuttgart_urban_east/levels/main/main.usd"
+        custom int action:status = 1
+        custom token action:type = "actionSetMap"
+        custom token action:xodr = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/germany/scene_stuttgart_urban_east/levels/main/main.xodr"
+        custom token action_strict_type = "actionSetMap"
+        custom uint64 controlId = 1
+    }
+
+    over "Generic_Sedan___ego"
+    {
+        custom double action:driverModel:aggressiveness = 1.0445584599343682
+        custom double action:driverModel:desiredTimeGap = 2.9108830801312635
+        custom double action:driverModel:freeRoadExponent = 6.178233839737473
+        custom double action:driverModel:interactionExponent = 6.178233839737473
+        custom double action:driverModel:laneOffset = 0
+        custom bool action:driverModel:laneOffsetClampToLaneWidth = 1
+        custom double action:driverModel:minimumDistance = 1.9554415400656318
+        custom bool action:driverModel:olcEnabled = 1
+        custom double action:driverModel:olcSpeedupThresholdKPH = 16.9430192508204
+        custom double action:driverModel:speedLimitRatio = 1.1327977304885144
+        custom bool action:driverModel:unlinkAggressiveness = 0
+        custom double action:initialSpeedKph = 0
+        custom int action:status = 1
+        custom double3 action:transform:coordinate = (48.69860873312509, 9.002045910107439, 428.3941669224225)
+        custom int action:transform:laneId = -1
+        custom double action:transform:laneS = 45.19795837062876
+        custom quatd action:transform:orientation = (1, 0, 0, 0)
+        custom int action:transform:roadId = 315
+        custom double3 action:transform:translation = (-99.55491235170362, -35.38732711883942, 428.3941669224225)
+        custom token action:transform:type = "transformRls"
+    }
+
+    over "CreateCameraSystem_1000003"
+    {
+        custom uint64 action:id = 1000003
+        custom int action:status = 1
+    }
+
+    over "AddCAMECU1"
+    {
+        custom int action:status = 1
+    }
+
+    def Control "MaintainSpeed_1000017"
+    {
+        custom bool action:disregardLongitudinalSafety = 0
+        custom double action:kmPerHour = 5
+        custom token action:name = "Ego"
+        custom bool action:processOnPlay = 1
+        custom int action:status = 0
+        custom token action:type = "actionMaintainSpeed"
+        custom token action_strict_type = "actionMaintainSpeed"
+        custom uint64 controlId = 1000017
+    }
+}
+
+def "ScenarioParameters"
+{
+    custom uint version = 0
+}

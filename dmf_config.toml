@@ -1,0 +1,42 @@
+#platform_name_dict contains nvidia-smi gpu names with simplified gpu name mapping. it is used to highlight gpu platform used in reports
+[platform_name_dict] #Note: For new platforms(when we do nvidia-smi), below list needs to be expanded
+"NVIDIA RTX A6000" = "Local A6000"
+"NVIDIA A10G" = "AWS A10G"
+"NVIDIA A40" = "Constellation/OVX/Local A40"
+"NVIDIA L40" = "OVC L40"
+
+[logs]
+#When string available in this list is encountered, it asserts logs issue and the same is highlighted in report
+p0_functional_list = ['Open USD error: Failed to open:omniverse://','Open USD error',"Can't find extension with name: omni.kit.remote_ui_automator"]
+#When string available in this list is encountered, it asserts logs issue and the same is highlighted in report. Along with this, if --iterate flag is not used in toml, re-run is performed. Max retry after first issue occurance is 2. Also all the data related to such testcases is made available in outputs/isolated_dump/p0_functional_iter_issue_logs
+p0_functional_iter_list = ['A crash has occurred']
+#When string available in this list is encountered, it asserts logs issue and the same is highlighted in report. Along with this, if --iterate flag is not used in toml, then re-run is performed. Max retry after first issue occurance is 2.  Also all the data related to such testcases is made available in outputs/isolated_dump/p0_platform_issue_logs
+p0_platform_list = ['SIGTERM','GPU crash','VkResult: ERROR_OUT_OF_DEVICE_MEMORY']
+#When string available in this list is encountered, it asserts logs issue and the same is highlighted in report
+p1_list = ['Could not open asset','OPTIX_ERROR_INTERNAL_ERROR', 'AssetLoadingEventTracker: Asset loading aborted.']
+#When string available in this list is encountered, no further log check is done and run is treated as normal with p1 ignored issue
+p1_ignore_issue_list = ['CUDA error 700: cudaErrorIllegalAddress - an illegal memory access was encountered']
+#check_words contains list of strings that can be used to kill a testcase run when encountered, this is to help come out of testcases which are freezed
+check_words=['Waiting to change to eStopping 1566666666 / 1567000000','malloc(): unsorted double linked list corrupted']
+#When string available in this list is encountered, it asserts pytest logs issue and the same is highlighted in report
+pytest_p0_functional_list=['short test summary info']
+#When string available in this list is encountered, it asserts pytest logs issue and the same is highlighted in report
+pytest_p1_list=[]
+
+[settings]
+verdict_decider_list = [
+  "P0 logs issue found",
+  "p0_iter logs issue found",
+  "p0_iter issue occurred while frame generation",
+  "p0_functional_iter logs issue found",
+  "p0_functional_iter issue occurred while frame generation",
+  "Post processing failed",
+  "Timeout occured",
+  "pytest P0 functional issue found here"
+]
+#control_block can be used to control execution of different blocks, this setting is loaded from dmf_config.toml
+[settings.control_block]
+post_processing = true
+pp_directory_check = true
+pp_data_transfer = true
+pp_ffmpeg = true

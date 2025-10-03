@@ -1,0 +1,642 @@
+{
+    "test_ogc_empty_image_download_url": {
+        "log_to_verify": "Please pass in valid inputs"
+    },
+    "test_ogc_folder_does_not_exist": {
+        "path": "This is a non existent path",
+        "log_to_verify": "Please pass in valid inputs"
+    },
+    "test_ogc_out_of_bound_coordinates_latitude": {
+        "log_to_verify": "Please pass in valid inputs"
+    },
+    "test_ogc_out_of_bound_coordinates_longitude": {
+        "log_to_verify": "Please pass in valid inputs"
+    },
+    "test_ogc_out_of_bound_dimensions_northing": {
+        "log_to_verify": "Please pass in valid inputs"
+    },
+    "test_ogc_out_of_bound_dimensions_easting": {
+        "log_to_verify": "Please pass in valid inputs"
+    },
+    "test_ogc_map_imagery_selection_preset": {
+        "latitude": "37.3",
+        "longitude": "-121.9",
+        "northing": 100,
+        "easting": 100,
+        "far_clipping": "1000000000.0",
+        "asset": "/World/Geospatial",
+        "tile_name": "N37p30_W121p90_100p00_100p00"
+    },
+    "test_ogc_elevation_data_selection_custom_server": {
+        "latitude": "36.4",
+        "longitude": "-120.1",
+        "northing": 100,
+        "easting": 100,
+        "base_url": "https://maps.ecere.com/ogcapi/collections/SRTM_ViewFinderPanorama/coverage?f=tiff",
+        "tile_name": "N36p40_W120p10_100p00_100p00"
+    },
+    "test_ogc_elevation_data_selection_ogc_api": {
+        "latitude": "36.4",
+        "longitude": "-121.0",
+        "northing": 100,
+        "easting": 100,
+        "base_url": "https://maps.ecere.com/ogcapi",
+        "collection_id": "SRTM_ViewFinderPanorama",
+        "tile_name": "N36p40_W121p00_100p00_100p00"
+    },
+    "test_map_imagery_selection_ogc_api": {
+        "latitude": "37.3",
+        "longitude": "-121.0",
+        "northing": 100,
+        "easting": 100,
+        "base_url": "https://maps.ecere.com/ogcapi",
+        "collection_id": "blueMarble",
+        "tile_name": "N37p30_W121p00_100p00_100p00"
+    },
+    "test_map_imagery_selection_custom_server": {
+        "latitude": "37.3",
+        "longitude": "-120.1",
+        "northing": 100,
+        "easting": 100,
+        "tile_name": "N37p30_W120p10_100p00_100p00",
+        "base_url": "https://maps.ecere.com/ogcapi/collections/SRTM_ViewFinderPanorama/map?f=png&bgcolor=0xFFFFFF&transparent=true"
+    },
+    "test_ogc_elevation_data_selection_preset": {
+        "latitude": "36.4",
+        "longitude": "-121.9",
+        "northing": 100,
+        "easting": 100,
+        "tile_name": "N36p40_W121p90_100p00_100p00"
+    },
+    "test_isaac_sim_usd_paths": {
+        "path": "omniverse-content-production.s3-us-west-2.amazonaws.com"
+    },
+    "test_isaac_sim_hotkeys_setup": {
+        "ext_name": "HOTKEYS WINDOW.",
+        "ext_id": "omni.kit.hotkeys.window",
+        "ext_help_link": "https://docs.omniverse.nvidia.com/kit/docs/omni.kit.hotkeys.window/latest/Overview.html"
+    },
+    "test_isaac_sim_change_hotkey": {
+        "action": "Edit->Focus Prim"
+    },
+    "test_isaac_sim_add_hotkey": {
+        "action": "menu_toggle_window_helper_hotkeys",
+        "window_name": "Hotkeys"
+    },
+    "test_isaac_sim_add_existing_hotkey": {
+        "action": "menu_toggle_window_helper_hotkeys",
+        "window_name": "Hotkeys",
+        "warning_window_name": "###Hotkey_WARNING_Action Conflict Warning"
+    },
+    "test_isaac_sim_add_hotkey_window":{
+        "action": "Create->Create Prim Cube",
+        "window_name": "Stage"
+    },
+    "test_validate_categories": {
+        "All": 1029,
+        "Building Component": 4,
+        "Container": 286,
+        "Equipment": 212,
+        "Fence": 6,
+        "Fruit": 8,
+        "Furniture": 305,
+        "Inclined plane": 22,
+        "Plant container": 3,
+        "Podium": 5,
+        "Sculpture": 3,
+        "Seat": 12,
+        "Tape": 59,
+        "Tool": 4,
+        "Transport Unit": 68,
+        "Utensil": 29,
+        "Vegetable": 3
+    },
+    "test_asset_category_navigation": {
+        "categories": [
+            {
+                "name": "Building Component",
+                "count": 4,
+                "subcategories": [
+                    {
+                        "name": "Architectural Element",
+                        "count": 4,
+                        "subcategories": [
+                            {
+                                "name": "Platform",
+                                "count": 4,
+                                "subcategories": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Container",
+                "count": 286,
+                "subcategories": [
+                    {
+                        "name": "Barrel",
+                        "count": 21,
+                        "subcategories": [
+                            {
+                                "name": "Drum",
+                                "count": 21,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bucket",
+                        "count": 3,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Crate",
+                        "count": 101,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Fuel Container",
+                        "count": 8,
+                        "subcategories": [
+                            {
+                                "name": "Jerry Can 20 L",
+                                "count": 8,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pail",
+                        "count": 13,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Pencil",
+                        "count": 1,
+                        "subcategories": [
+                            {
+                                "name": "Pen holder",
+                                "count": 1,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Product Packaging",
+                        "count": 118,
+                        "subcategories": [
+                            {
+                                "name": "Box",
+                                "count": 118,
+                                "subcategories": [
+                                    {
+                                        "name": "Cardboard Box",
+                                        "count": 106,
+                                        "subcategories": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shipping Container",
+                        "count": 5,
+                        "subcategories": [
+                            {
+                                "name": "Intermediate Bulk Container",
+                                "count": 5,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Vase",
+                        "count": 5,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Vessel",
+                        "count": 11,
+                        "subcategories": [
+                            {
+                                "name": "Bottle",
+                                "count": 7,
+                                "subcategories": []
+                            },
+                            {
+                                "name": "Jug",
+                                "count": 4,
+                                "subcategories": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Equipment",
+                "count": 212,
+                "subcategories": [
+                    {
+                        "name": "Tool",
+                        "count": 193,
+                        "subcategories": [
+                            {
+                                "name": "Container",
+                                "count": 193,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Traffic Cone",
+                        "count": 19,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Fence",
+                "count": 6,
+                "subcategories": [
+                    {
+                        "name": "Railing",
+                        "count": 6,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Fruit",
+                "count": 8,
+                "subcategories": [
+                    {
+                        "name": "Avocado",
+                        "count": 1,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Citrus Fruit",
+                        "count": 2,
+                        "subcategories": [
+                            {
+                                "name": "Lemon",
+                                "count": 2,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lime",
+                        "count": 1,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Lychee",
+                        "count": 1,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Orange",
+                        "count": 2,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Pomegranate",
+                        "count": 1,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Furniture",
+                "count": 305,
+                "subcategories": [
+                    {
+                        "name": "Cabinet",
+                        "count": 17,
+                        "subcategories": [
+                            {
+                                "name": "Couch",
+                                "count": 7,
+                                "subcategories": [
+                                    {
+                                        "name": "Loveseat",
+                                        "count": 1,
+                                        "subcategories": []
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Footstool",
+                                "count": 1,
+                                "subcategories": [
+                                    {
+                                        "name": "Ottoman",
+                                        "count": 1,
+                                        "subcategories": []
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Seat",
+                                "count": 8,
+                                "subcategories": [
+                                    {
+                                        "name": "Bench",
+                                        "count": 2,
+                                        "subcategories": []
+                                    },
+                                    {
+                                        "name": "Chair",
+                                        "count": 3,
+                                        "subcategories": [
+                                            {
+                                                "name": "Armchair",
+                                                "count": 3,
+                                                "subcategories": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Stool",
+                                        "count": 3,
+                                        "subcategories": [
+                                            {
+                                                "name": "Footstool",
+                                                "count": 3,
+                                                "subcategories": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelf",
+                        "count": 250,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Stool",
+                        "count": 1,
+                        "subcategories": [
+                            {
+                                "name": "Bar Stool",
+                                "count": 1,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Table",
+                        "count": 21,
+                        "subcategories": [
+                            {
+                                "name": "Coffee Table",
+                                "count": 4,
+                                "subcategories": []
+                            },
+                            {
+                                "name": "Desk",
+                                "count": 1,
+                                "subcategories": []
+                            },
+                            {
+                                "name": "Dining Tablefurniture",
+                                "count": 2,
+                                "subcategories": []
+                            },
+                            {
+                                "name": "End Table",
+                                "count": 1,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Inclined Plane",
+                        "count": 22,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Plant Container",
+                "count": 3,
+                "subcategories": [
+                    {
+                        "name": "Flower Box",
+                        "count": 3,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Podium",
+                "count": 5,
+                "subcategories": []
+            },
+            {
+                "name": "Sculpture",
+                "count": 3,
+                "subcategories": [
+                    {
+                        "name": "Statue",
+                        "count": 3,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Seat",
+                "count": 12,
+                "subcategories": [
+                    {
+                        "name": "Chair",
+                        "count": 12,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Tape",
+                "count": 59,
+                "subcategories": [
+                    {
+                        "name": "Barricade Tape",
+                        "count": 59,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Tool",
+                "count": 4,
+                "subcategories": [
+                    {
+                        "name": "Ladder",
+                        "count": 4,
+                        "subcategories": []
+                    }
+                ]
+            },
+            {
+                "name": "Transport Unit",
+                "count": 68,
+                "subcategories": [
+                    {
+                        "name": "Product Packaging",
+                        "count": 68,
+                        "subcategories": [
+                            {
+                                "name": "Pallet",
+                                "count": 68,
+                                "subcategories": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Utensil",
+                "count": 29,
+                "subcategories": [
+                    {
+                        "name": "Kitchenware",
+                        "count": 29,
+                        "subcategories": [
+                            {
+                                "name": "Cutlery",
+                                "count": 4,
+                                "subcategories": [
+                                    {
+                                        "name": "Fork",
+                                        "count": 2,
+                                        "subcategories": []
+                                    },
+                                    {
+                                        "name": "Spoon",
+                                        "count": 2,
+                                        "subcategories": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cutting Board",
+                        "count": 1,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Dish",
+                        "count": 2,
+                        "subcategories": [
+                            {
+                                "name": "Plate",
+                                "count": 2,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Kitchen Utensil",
+                        "count": 19,
+                        "subcategories": [
+                            {
+                                "name": "Spatula",
+                                "count": 19,
+                                "subcategories": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Tableware",
+                        "count": 3,
+                        "subcategories": [
+                            {
+                                "name": "Bowl",
+                                "count": 3,
+                                "subcategories": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Vegetable",
+                "count": 3,
+                "subcategories": [
+                    {
+                        "name": "Onion",
+                        "count": 1,
+                        "subcategories": []
+                    },
+                    {
+                        "name": "Pumpkin",
+                        "count": 2,
+                        "subcategories": []
+                    }
+                ]
+            }
+        ]
+    },
+    "test_searchbar_asset_filters": {
+        "fields": [
+            "furniture",
+            "couch",
+            "residential"
+        ],
+        "key": "Q131514",
+        "suggestion_list": [
+            "Loveseat",
+            "couch",
+            "furniture",
+            "residential",
+            "Q131514",
+            "Q72200"
+        ],
+        "new_category": "Container"
+    },
+    "test_asset_properties_window": {
+        "name": "blockpallet_a02",
+        "image_url": "https://omniverse-content-staging.s3.us-west-2.amazonaws.com/Assets/simready_content/common_assets/props/blockpallet_a02//.thumbs/256x256/blockpallet_a02.usd.png",
+        "qcode": "Q505996",
+        "dimensions": "1.0x1.2x0.14",
+        "tags": [
+            "warehouse",
+            "transport unit",
+            "product packaging",
+            "pallet",
+            "Q505996"
+        ],
+        "hierarchy": [
+            "transport unit",
+            "product packaging",
+            "pallet"
+        ],
+        "physics_behavior": "RigidBody"
+    },
+    "test_copy_asset_url": {
+        "assets": [
+            "aluminumpallet_a02",
+            "blockpallet_a01",
+            "blockpallet_a02"
+        ],
+        "urls": [
+            "https://omniverse-content-staging.s3.us-west-2.amazonaws.com/Assets/simready_content/common_assets/props/aluminumpallet_a02/aluminumpallet_a02.usd",
+            "https://omniverse-content-staging.s3.us-west-2.amazonaws.com/Assets/simready_content/common_assets/props/blockpallet_a01/blockpallet_a01.usd",
+            "https://omniverse-content-staging.s3.us-west-2.amazonaws.com/Assets/simready_content/common_assets/props/blockpallet_a02/blockpallet_a02.usd"
+        ]
+    },
+    "test_multi_asset_selection": {
+        "asset_names": [
+            "aluminumpallet_a01",
+            "aluminumpallet_a02",
+            "blockpallet_a01",
+            "blockpallet_a02"
+        ]
+    }
+}

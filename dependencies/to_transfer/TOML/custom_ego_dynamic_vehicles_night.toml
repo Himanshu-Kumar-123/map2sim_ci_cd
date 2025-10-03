@@ -1,0 +1,162 @@
+[Assets]
+root = "{/app/drivesim/defaultNucleusRoot}/"
+sets = [
+    "ego.toml",
+    "dynamic_traffic_vehicles.toml",
+    "dynamic_traffic_large_vehicles.toml"
+]
+
+[Events.config]
+enable_script = true
+enable_periodic = true
+periodic_start_frame = 0
+collisions_enabled = true
+enable_ego_teleportation = false
+
+[[Events.setup]]
+type='EgoRand'
+func='setup'
+pop_name='ego'
+asset_file='ego.toml'
+asset_sel_type='index'
+asset_sel=[0]
+# spawn_pts=[[9, 4, 118]]
+
+[[Events.setup]]
+type= 'VehicleRandDyn'
+func= 'setup'
+pop_name='traffic_vehicles'
+asset_file='dynamic_traffic_vehicles.toml'
+asset_sel_type='all'
+asset_qty=1
+#asset_sel_type='index'
+#asset_sel=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
+
+[[Events.setup]]
+type= 'VehicleRandDyn'
+func= 'setup'
+pop_name='large_traffic_vehicles'
+asset_file='dynamic_traffic_large_vehicles.toml'
+asset_sel_type='index'
+asset_sel=[0,1,2,3,4,5,6,7,8]
+asset_qty=[2,2,2,2,2,2,2,2,2]
+
+## Sequential randomization is:
+## Load map -> do randomization -> play
+## Unlike non-sequential, no placement randomization occurs during simulation
+
+[[Events.setup]]
+type='EgoRand'
+func='set_pop_speed'
+pop_name='ego'
+speed=15
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_speed'
+pop_name='traffic_vehicles'
+speed_range=[10, 15]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_speed'
+pop_name='large_traffic_vehicles'
+speed_range=[10, 15]
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_position'
+pop_name='traffic_vehicles'
+region_center='surround_ego'
+region_diameter=40
+shuffle_order=true
+offset=5
+min_distance=10
+num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_position'
+pop_name='large_traffic_vehicles'
+region_center='ahead_ego'
+region_diameter=30
+shuffle_order=true
+offset=5
+min_distance=14
+#num_placements=2
+num_placements='all'
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='traffic_vehicles'
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='large_traffic_vehicles'
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='setup'
+preset_name='_night_wet'
+azimuth=360
+elevation=-20
+cloudiness=0.25 
+road_wetness=1.0
+
+[[Events.setup]]
+type='WorldRand.weather'
+func='set_environment'
+preset_name='_night_wet'
+
+## Currently, due to limitations with content python API and event scheduling,
+## when turning on multiple lights in one func call, it may need to be repeated to take effect.
+## This is why below, we execute light funcs multiple times in setup and on frame 0
+[[Events.setup]]
+type='EgoRand'
+func='set_light'
+light_type='head'
+enable=true
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='set_all_lights'
+pop_name='traffic_vehicles'
+enable=true
+
+[[Events.setup]]
+type='VehicleRandDyn'
+func='set_all_lights'
+pop_name='large_traffic_vehicles'
+enable=true
+
+[[Events.scripted.0]]
+type='EgoRand'
+func='set_light'
+light_type='head'
+enable=true
+
+[[Events.scripted.0]]
+type='VehicleRandDyn'
+func='set_all_lights'
+pop_name='traffic_vehicles'
+enable=true
+
+[[Events.scripted.0]]
+type='VehicleRandDyn'
+func='set_all_lights'
+pop_name='large_traffic_vehicles'
+enable=true
+
+#### PERIODIC EVENTS ####
+
+[[Events.periodic.2]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='traffic_vehicles'
+
+[[Events.periodic.2]]
+type='VehicleRandDyn'
+func='randomize_color'
+pop_name='large_traffic_vehicles'

@@ -1,0 +1,249 @@
+{
+  "USD Composer": {
+    "windows_build": "Omniverse_OvCreate_Master_BuildAndPackaging_LauncherPackageWindowsX8664",
+    "linux_build": "Omniverse_OvCreate_Master_BuildAndPackaging_LauncherPackageLinuxX8664",
+    "search_string": "Extracted Directory Path : "
+  },
+  "USD Explorer": {
+    "windows_build": "Omniverse_KitApps_FactoryExplorer_Main_Building_BuildWindowsX8664",
+    "windows_build_branch": "release/2023.2",
+    "linux_build": "Omniverse_KitApps_FactoryExplorer_Main_Building_BuildLinuxX8664",
+    "linux_build_branch": "release/2023.2",
+    "search_string": "Extracted Directory Path : "
+  },
+  "USD Presenter": {
+    "windows_build": "Omniverse_USD_Presenter_Main_Building_BuildWindowsX8664",
+    "linux_build": "Omniverse_USD_Presenter_Main_Building_BuildLinuxX8664",
+    "search_string": "Extracted Directory Path : "
+  },
+  "Avatar Configurator": {
+    "windows_build": "Omniverse_KitApps_AvatarStudio_Master_Building_BuildWindowsX8664",
+    "linux_build": "Omniverse_KitApps_AvatarStudio_Master_Building_BuildLinuxX8664",
+    "search_string": "Extracted Directory Path : "
+  },
+  "Graphisoft Archicad": {
+    "windows_build": "Omniverse_ArchicadPlugin_BuildAndPackaging_BuildLauncherPackageWindows",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "archicad-connector_",
+    "reg_ex": "^(\\d+\\.\\d+_main\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Autodesk Revit": {
+    "windows_build": "Omniverse_RevitPlugin_Master_BuildAndPackaging_BuildLauncherPackage",
+    "windows_build_branch": "master",
+    "version_search_string": "Extracted Directory Name : revit-connector-launcher_",
+    "reg_ex": "^(\\d+\\.\\d+_master\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Trimble SketchUp": {
+    "windows_build": "Omniverse_SketchupPlugin_Master_BuildAndPackaging_BuildLauncherPackage",
+    "windows_build_branch": "master",
+    "version_search_string": "Extracted Directory Name : sketchup-connector-launcher_",
+    "reg_ex": "^(\\d+\\.\\d+_master\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Autodesk 3ds Max": {
+    "windows_build": "Omniverse_MaxPlugin_Master_BuildAndPackaging_BuildMaxLauncherPackage",
+    "windows_build_branch": "master",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Adobe Substance 3D Painter": {
+    "windows_build": "Omniverse_Substance3dPainterConnector_Master_BuildAndPackaging_BuildSketchUpPlugin",
+    "windows_build_branch": "main",
+    "version_search_string": "Extracted Directory Name : substance3dpainter-connector_",
+    "reg_ex": "^(\\d+\\.\\d+_main\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Epic Games Unreal Engine 5.2": {
+    "windows_build": "Omniverse_Ue4plugin_52Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Epic Games Unreal Engine 5.1": {
+    "windows_build": "Omniverse_Ue4plugin_51Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Epic Games Unreal Engine 5.0": {
+    "windows_build": "Omniverse_Ue4plugin_50Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Epic Games Unreal Engine 4.27": {
+    "windows_build": "Omniverse_Ue4plugin_427Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Connect Sample": {
+    "windows_build": "Omniverse_ConnectSample_BuildAndValidation",
+    "linux_build": "Omniverse_ConnectSample_LinuxX8664BuildAndValidation",
+    "windows_build_branch": "refs/heads/main",
+    "linux_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": ",
+    "reg_ex": "(\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "Omniverse Wrapp": {
+    "windows_build": "omni_wrapp_windows-x86_64",
+    "linux_build": "omni_wrapp_linux-x86_64",
+    "search_string": "Extracted Directory Path : ",
+    "windows_build_branch": "Default",
+    "linux_build_branch": "Default"
+  },
+  "usd_composer": {
+    "windows_build": "create-launcher",
+    "linux_build": "create-launcher",
+    "search_string": "Extracted Directory Path : ",
+    "downloadFrom": "omnipackages"
+  },
+  "usd_explorer": {
+    "windows_build": "usd-explorer",
+    "windows_build_branch": "release/2024.1",
+    "linux_build": "usd-explorer",
+    "linux_build_branch": "release/2024.1",
+    "search_string": "Extracted Directory Path : ",
+    "downloadFrom": "omnipackages"
+  },
+  "usd_presenter": {
+    "windows_build": "Omniverse_USD_Presenter_Main_Building_BuildWindowsX8664",
+    "linux_build": "Omniverse_USD_Presenter_Main_Building_BuildLinuxX8664",
+    "search_string": "Extracted Directory Path : "
+  },
+  "avatar_configurator": {
+    "windows_build": "Omniverse_KitApps_AvatarStudio_Master_Building_BuildWindowsX8664",
+    "linux_build": "Omniverse_KitApps_AvatarStudio_Master_Building_BuildLinuxX8664",
+    "search_string": "Extracted Directory Path : "
+  },
+  "graphisoft_archicad": {
+    "windows_build": "Omniverse_ArchicadPlugin_BuildAndPackaging_BuildLauncherPackageWindows",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "archicad-connector_",
+    "reg_ex": "^(\\d+\\.\\d+_main\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "autodesk_revit": {
+    "windows_build": "Omniverse_RevitPlugin_Master_BuildAndPackaging_BuildLauncherPackage",
+    "windows_build_branch": "master",
+    "version_search_string": "Extracted Directory Name : revit-connector-launcher_",
+    "reg_ex": "^(\\d+\\.\\d+_master\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "trimble_sketchUp": {
+    "windows_build": "Omniverse_SketchupPlugin_Master_BuildAndPackaging_BuildLauncherPackage",
+    "windows_build_branch": "master",
+    "version_search_string": "Extracted Directory Name : sketchup-connector-launcher_",
+    "reg_ex": "^(\\d+\\.\\d+_master\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "autodesk_3ds_max": {
+    "windows_build": "Omniverse_MaxPlugin_Master_BuildAndPackaging_BuildMaxLauncherPackage",
+    "windows_build_branch": "master",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "adobe_substance_3D_painter": {
+    "windows_build": "Omniverse_Substance3dPainterConnector_Master_BuildAndPackaging_BuildSketchUpPlugin",
+    "windows_build_branch": "main",
+    "version_search_string": "Extracted Directory Name : substance3dpainter-connector_",
+    "reg_ex": "^(\\d+\\.\\d+_main\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "epic_games_unreal_engine_5.2": {
+    "windows_build": "Omniverse_Ue4plugin_52Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "epic_games_unreal_engine_5.1": {
+    "windows_build": "Omniverse_Ue4plugin_51Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "epic_games_unreal_engine_5.0": {
+    "windows_build": "Omniverse_Ue4plugin_50Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "epic_games_unreal_engine_4.27": {
+    "windows_build": "Omniverse_Ue4plugin_427Main_Publishing_BuildAndSignPluginInstaller",
+    "windows_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": \"",
+    "reg_ex": "^(\\d+\\.\\d+\\.\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "connect_sample": {
+    "windows_build": "Omniverse_ConnectSample_BuildAndValidation",
+    "linux_build": "Omniverse_ConnectSample_LinuxX8664BuildAndValidation",
+    "windows_build_branch": "refs/heads/main",
+    "linux_build_branch": "refs/heads/main",
+    "version_search_string": "\"ApplicationVersion\": ",
+    "reg_ex": "(\\d+)",
+    "build_number": true,
+    "search_string": "Extracted Directory Path : "
+  },
+  "omniverse_wrapp": {
+    "windows_build": "omni_wrapp_windows-x86_64",
+    "linux_build": "omni_wrapp_linux-x86_64",
+    "search_string": "Extracted Directory Path : ",
+    "windows_build_branch": "Default",
+    "linux_build_branch": "Default"
+  },
+  "usd_player": {
+    "windows_build": "configurator",
+    "linux_build": "configurator",
+    "search_string": "Extracted Directory Path : ",
+    "downloadFrom": "omnipackages"
+  },
+  "kit": {
+    "windows_build": "kit-sdk-public",
+    "linux_build": "kit-sdk-public",
+    "windows_build_branch": "Default",
+    "linux_build_branch": "Default",
+    "search_string": "Extracted Directory Path : ",
+    "downloadFrom": "omnipackages",
+    "buildName": "106.0%2Brelease"
+  },
+  "isaac_sim": {
+    "windows_build": "isaac-sim-standalone",
+    "linux_build": "isaac-sim-standalone",
+    "windows_build_branch": "Default",
+    "linux_build_branch": "Default",
+    "search_string": "Extracted Directory Path : ",
+    "downloadFrom": "omnipackages"
+  }
+}

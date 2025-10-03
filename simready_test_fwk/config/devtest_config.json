@@ -1,0 +1,35 @@
+{
+    "default_gpu_ev": "",
+    "default_platform_ev": "",
+    "default_os_ev": "",
+    "default_display_ev": "",
+    "default_driver_build_type": "",
+    "gpu_config": {
+        "NVIDIA RTX 6000 Ada Generation": {
+            "gpu_ev": "WS AD102_L6000_PG133_SKU510_[P][C]",
+            "platform_ev": "Generic",
+            "display_ev": "Generic"
+        },
+        "NVIDIA L40": {
+            "gpu_ev": "WS AD102_L40_PG133_SKU250_[P][C]",
+            "platform_ev": "Generic",
+            "display_ev": "Generic"
+        }
+    },
+    "driver_branch_config": {
+        "529.11": "r529_03",
+        "525.125.06": "r529_03",
+        "537.99": "r537_94",
+        "546.01": "r545_96",
+        "537.70": "r537_68",
+        "535.129.03": "r537_68",
+        "528.49": "r528_37",
+        "535.179": "r535_00",
+        "535.161.08": "r538_27"
+    },
+    "fallback_gpu_ev": "RTX_Generic",
+    "fallback_platform_ev": "Generic",
+    "fallback_os_ev": "",
+    "fallback_display_ev": "Generic",
+    "fallback_driver_build_type": ""
+}

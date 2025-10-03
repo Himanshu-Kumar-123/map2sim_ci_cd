@@ -1,0 +1,10 @@
+{
+  "version": "1.0.43",
+  "build_info": {
+    "build_date": "2025-09-24T07:47:10.846373",
+    "commit_hash": "7d9c47cb331d29d4d03476b377fff07ee7db49f2",
+    "branch": "HEAD",
+    "mr_number": null,
+    "is_release": true
+  }
+}

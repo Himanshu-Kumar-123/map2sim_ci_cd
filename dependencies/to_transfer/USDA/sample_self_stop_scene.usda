@@ -1,0 +1,648 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    endTimeCode = 0
+    metersPerUnit = 1
+    startTimeCode = 0
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Scope "Scenario"
+    {
+        custom token app_build_version = "107.0.0+mr34193.147350.3d28bab5.gl"
+    }
+
+    def "WaypointGraphs"
+    {
+        custom bool ds_graph_changed = 1
+
+        def "main"
+        {
+            custom token ds_waypoint_graph = "ed5628de-f74f-4f73-8902-d660c6313254"
+
+            def Xform "mapPedWaypoint_734_0"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_734_1"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_734_1"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_734/pedgate_0"
+                custom float width = 1
+                double3 xformOp:translate = (311.81976318359375, -251.78004455566406, 0.24212898313999176)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_734_1"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_734_0"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_734_0"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_734/pedgate_1"
+                custom float width = 1
+                double3 xformOp:translate = (325.726318359375, -242.25177001953125, 0.22307075560092926)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_734_2"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_734_3"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_734_3"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_734/pedgate_2"
+                custom float width = 1
+                double3 xformOp:translate = (325.6117248535156, -241.92063903808594, 0.24697056412696838)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_734_3"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_734_2"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_734_2"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_734/pedgate_3"
+                custom float width = 1
+                double3 xformOp:translate = (326.454345703125, -257.2904052734375, 3.8959800008342427e-7)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_734_4"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_734_5"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_734_5"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_734/pedgate_4"
+                custom float width = 1
+                double3 xformOp:translate = (325.68603515625, -257.9291076660156, 0.0000010540863968344638)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_734_5"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_734_4"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_734_4"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_734/pedgate_5"
+                custom float width = 1
+                double3 xformOp:translate = (311.64404296875, -251.62466430664062, 0.25414666533470154)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_0"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_1"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_1"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_0"
+                custom float width = 1
+                double3 xformOp:translate = (148.78756713867188, -324.65283203125, 0.0351058766245842)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_1"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_0"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_0"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_1"
+                custom float width = 1
+                double3 xformOp:translate = (162.37176513671875, -322.32489013671875, 0.013748339377343655)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_2"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_3"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_3"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_2"
+                custom float width = 1
+                double3 xformOp:translate = (161.5519561767578, -322.3569641113281, 0.01829211786389351)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_3"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_2"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_2"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_3"
+                custom float width = 1
+                double3 xformOp:translate = (162.21420288085938, -337.9815368652344, -0.0000012629727734747576)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_4"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_5"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_5"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_4"
+                custom float width = 1
+                double3 xformOp:translate = (161.18630981445312, -340.07269287109375, 8.942867566474888e-7)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_5"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_4"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_4"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_5"
+                custom float width = 1
+                double3 xformOp:translate = (149.0339813232422, -341.6067199707031, -5.938756686418856e-8)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_6"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_7"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_7"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_6"
+                custom float width = 1
+                double3 xformOp:translate = (149.67535400390625, -341.8419494628906, -7.247959956657724e-7)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_596_7"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_596_6"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_596_6"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_596/pedgate_7"
+                custom float width = 1
+                double3 xformOp:translate = (149.0959014892578, -324.34771728515625, 0.03962444141507149)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_568_0"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_568_1"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_568_1"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_568/pedgate_0"
+                custom float width = 1
+                double3 xformOp:translate = (763.3785400390625, -408.80072021484375, -2.61202984574993e-7)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_568_1"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_568_0"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_568_0"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_568/pedgate_1"
+                custom float width = 1
+                double3 xformOp:translate = (779.4425659179688, -408.55914306640625, -0.0000021685516458092025)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_568_2"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_568_3"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_568_3"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_568/pedgate_2"
+                custom float width = 1
+                double3 xformOp:translate = (779.265380859375, -408.09613037109375, -0.000001016916257867706)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_568_3"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_568_2"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_568_2"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_568/pedgate_3"
+                custom float width = 1
+                double3 xformOp:translate = (770.4136962890625, -422.2129821777344, 8.90432374944794e-7)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_568_4"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_568_5"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_568_5"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_568/pedgate_4"
+                custom float width = 1
+                double3 xformOp:translate = (770.9688720703125, -422.0665283203125, -0.0000015695676438554074)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Xform "mapPedWaypoint_568_5"
+            {
+                custom bool ds_waypoint = 1
+                custom token ds_waypoint_type = "waypointTypeInertial"
+                custom token[] neighbors = ["mapPedWaypoint_568_4"]
+                custom token[] waypointControlledNeighbors = ["mapPedWaypoint_568_4"]
+                custom token waypointPedGate = "/LoadedMap/sub_intersections/network/junction_568/pedgate_5"
+                custom float width = 1
+                double3 xformOp:translate = (763.3966064453125, -408.681396484375, -6.158933274491574e-7)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+        }
+    }
+}
+
+def Xform "EntityPoolSpec"
+{
+    custom token[] assets
+    custom token[] poolNames
+    custom uint[] poolSizes
+    custom token[] poolTypes
+}
+
+def Xform "Actions"
+{
+    def Control "SetMap"
+    {
+        custom token[] action:enabledPayloads = ["*"]
+        custom bool action:forceReload = 0
+        custom token action:map = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/germany/scene_hamburg_stgeorge_intersection/levels/main/main.usd"
+        custom int action:status = 1
+        custom token action:type = "actionSetMap"
+        custom token action:xodr = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/germany/scene_hamburg_stgeorge_intersection/levels/main/main.xodr"
+        custom token action_strict_type = "actionSetMap"
+        custom uint64 controlId = 2
+        custom token type = "control"
+    }
+
+    def Control "Mercedes_S_Class_2021___ego"
+    {
+        custom token action:addEntityActionPath = "/Actions/AddEgoVehicleEntity"
+        custom token action:asset = "ds2-rig-lib://vehicle/mb/ego_config/rig_hyperion-81_1_cam.ego_config.usda"
+        custom double action:driverModel:aggressiveness = 1.6712935358949892
+        custom double action:driverModel:desiredTimeGap = 1.6574129282100216
+        custom double action:driverModel:freeRoadExponent = 8.685174143579957
+        custom double action:driverModel:interactionExponent = 8.685174143579957
+        custom double action:driverModel:laneOffset = 0.0027540121160022357
+        custom bool action:driverModel:laneOffsetClampToLaneWidth = 1
+        custom double action:driverModel:minimumDistance = 1.3287064641050108
+        custom bool action:driverModel:olcEnabled = 1
+        custom double action:driverModel:olcSpeedupThresholdKPH = 12.465298480787581
+        custom double action:driverModel:speedLimitRatio = 1.2424763687816232
+        custom double action:driverModel:throttleOvershootCorrection = 1
+        custom bool action:driverModel:unlinkAggressiveness = 0
+        custom token action:forward:paint_color = "Amber_Yellow" (
+            allowedTokens = ["Amber_Yellow", "Atomic_Teal", "Chalky_Blue", "Dark_Grey", "Johnny_Silverhand", "Magenta", "Midnight_Black", "Soul_Red", "Synergy_Green", "White"]
+        )
+        custom bool action:forward:physics:disableCollisionReports = 1
+        custom double action:forward:refTrafficModelVehicle:driverModel:aggressiveness = 0
+        custom double action:forward:refTrafficModelVehicle:driverModel:laneOffset = 0
+        custom token action:forward:refTrafficModelVehicle:drivingState = "drive"
+        custom uint64 action:forward:spawnerSourceId = 0
+        custom uint64 action:id = 1000001
+        custom double action:initialSpeedKph = 0
+        custom token action:name = "Ego"
+        custom int action:status = 1
+        custom double3 action:transform:coordinate = (0.0032502763, -140.000365616, 0)
+        custom quatd action:transform:orientation = (0.7073119905, 0, 0, -0.7069015122)
+        custom double3 action:transform:translation = (0, 0, 0)
+        custom token action:transform:type = "transformWgs" (
+            allowedTokens = ["transformRls", "transformWgs", "transformWaypoint", "transformCartesian"]
+        )
+        custom token action:transform:waypointGraph
+        custom token action:type = "actionAddEgo"
+        custom token action_strict_type = "actionAddEgo"
+        custom token asset_name = "Mercedes_S_Class_2021"
+        custom token asset_type = "ego_config_vehicle"
+        custom uint64 controlId = 1000001
+
+        def OmniGraph "ScenarioGraph"
+        {
+            token evaluationMode = "Automatic"
+            token evaluator:type = "execution"
+            token fabricCacheBacking = "Shared"
+            int2 fileFormatVersion = (1, 9)
+            token pipelineStage = "pipelineStageSimulation"
+
+            def OmniGraphNode "on_scenario_play" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                token node:type = "omni.drivesim.scenario_graph.OnScenarioPlay"
+                int node:typeVersion = 1
+                custom uint outputs:execOut (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform float2 ui:nodegraph:node:pos = (-1429.8413, 24.541702)
+            }
+
+            def OmniGraphNode "maintain_speed" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom bool inputs:disregardLongitudinalSafety = 0
+                custom bool inputs:enabled = 1
+                custom uint inputs:execIn (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:execIn.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/on_scenario_play.outputs:execOut>
+                custom token inputs:relativeEntity = ""
+                custom token inputs:relativeSpeedValueType = "Delta" (
+                    allowedTokens = ["Delta", "Factor"]
+                )
+                custom double inputs:speedKph = 10
+                custom double inputs:targetAccelerationMpsps
+                custom token inputs:vehicle
+                prepend token inputs:vehicle.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/vehicle.inputs:value>
+                token node:type = "omni.drivesim.ref_traffic_model.MaintainSpeed"
+                int node:typeVersion = 1
+                custom uint outputs:execOut (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform float2 ui:nodegraph:node:pos = (-1073.9485, -247.6993)
+            }
+
+            def OmniGraphNode "test_result" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom uint inputs:execIn (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:execIn.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/group_conditions_all.outputs:onSuccess>
+                custom token inputs:result = "Succeeded" (
+                    allowedTokens = ["Succeeded", "Failed", "Pending"]
+                )
+                token node:type = "omni.drivesim.scenario_graph.TestResult"
+                int node:typeVersion = 1
+                custom uint outputs:execOut (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform float2 ui:nodegraph:node:pos = (-439.79156, -87.732285)
+            }
+
+            def OmniGraphNode "simulation_time" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom uint inputs:execIn (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:execIn.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/on_scenario_play.outputs:execOut>
+                custom double inputs:simulationTime = 100
+                token node:type = "omni.drivesim.scenario_graph.SimulationTime"
+                int node:typeVersion = 1
+                custom uint outputs:onSuccess (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform float2 ui:nodegraph:node:pos = (-1106.4918, 30.888638)
+            }
+
+            def OmniGraphNode "simulation_state" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom uint inputs:execIn (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:execIn.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/group_conditions_any.outputs:onSuccess>
+                custom token inputs:state = "Stop" (
+                    allowedTokens = ["Pause", "Stop", "Play", "CloseStage", "Quit"]
+                )
+                token node:type = "omni.drivesim.scenario_graph.SetSimulationState"
+                int node:typeVersion = 2
+                custom uint outputs:execOut (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform float2 ui:nodegraph:node:pos = (240.08528, -9.440914)
+            }
+
+            def OmniGraphNode "test_result_01" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom uint inputs:execIn (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:execIn.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/delay_until_time_passed.outputs:onSuccess>
+                custom token inputs:result = "Failed" (
+                    allowedTokens = ["Succeeded", "Failed", "Pending"]
+                )
+                token node:type = "omni.drivesim.scenario_graph.TestResult"
+                int node:typeVersion = 1
+                custom uint outputs:execOut (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform float2 ui:nodegraph:node:pos = (-419.79617, 147.91351)
+            }
+
+            def OmniGraphNode "vehicle" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom token inputs:value = "/Actions/Mercedes_S_Class_2021___ego"
+                token node:type = "omni.drivesim.scenario_graph.Vehicle"
+                int node:typeVersion = 1
+                uniform token ui:nodegraph:node:expansionState = "open"
+                uniform float2 ui:nodegraph:node:pos = (-1413.3082, -140.10161)
+            }
+
+            def OmniGraphNode "group_conditions_any" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom uint inputs:condition_1 (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:condition_1.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/test_result.outputs:execOut>
+                custom uint inputs:condition_2 (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:condition_2.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/test_result_01.outputs:execOut>
+                token node:type = "omni.drivesim.scenario_graph.ConditionAny"
+                int node:typeVersion = 1
+                custom uint outputs:onSuccess (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform token ui:nodegraph:node:expansionState = "open"
+                uniform float2 ui:nodegraph:node:pos = (-94.24959, -2.7127068)
+            }
+
+            def OmniGraphNode "group_conditions_all" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom uint inputs:condition_1 (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:condition_1.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/maintain_speed.outputs:execOut>
+                custom uint inputs:condition_2 (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:condition_2.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/simulation_time.outputs:onSuccess>
+                token node:type = "omni.drivesim.scenario_graph.ConditionAll"
+                int node:typeVersion = 1
+                custom uint outputs:onSuccess (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform token ui:nodegraph:node:expansionState = "open"
+                uniform float2 ui:nodegraph:node:pos = (-719.2095, -119.88034)
+            }
+
+            def OmniGraphNode "delay_until_time_passed" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                custom double inputs:durationInSeconds = 105
+                custom uint inputs:execIn (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:execIn.connect = </Actions/Mercedes_S_Class_2021___ego/ScenarioGraph/on_scenario_play.outputs:execOut>
+                token node:type = "omni.drivesim.scenario_graph.Delay"
+                int node:typeVersion = 1
+                custom uint outputs:onSuccess (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                uniform token ui:nodegraph:node:expansionState = "open"
+                uniform float2 ui:nodegraph:node:pos = (-1136.6964, 182.61768)
+            }
+        }
+    }
+
+    def Control "AddEntity_target"
+    {
+        custom token action:asset = "{/app/drivesim/defaultNucleusRoot}/Projects/dsready_content/nv_content/common_assets/vehicles/generic/car_electric/2018/main_with_physx.usd"
+        custom double action:driverModel:aggressiveness = 0.4028193144153924
+        custom double action:driverModel:desiredTimeGap = 4.194361371169215
+        custom double action:driverModel:freeRoadExponent = 3.6112772576615697
+        custom double action:driverModel:interactionExponent = 3.6112772576615697
+        custom double action:driverModel:laneOffset = 0
+        custom bool action:driverModel:laneOffsetClampToLaneWidth = 1
+        custom double action:driverModel:minimumDistance = 2.5971806855846076
+        custom bool action:driverModel:olcEnabled = 1
+        custom double action:driverModel:olcSpeedupThresholdKPH = 24.964758569807593
+        custom double action:driverModel:speedLimitRatio = 1.0204933800226936
+        custom double action:driverModel:throttleOvershootCorrection = 1
+        custom bool action:driverModel:unlinkAggressiveness = 0
+        custom token[] action:entity:owners = ["ReferenceTrafficModel"]
+        custom uint64 action:id = 2
+        custom double action:initialSpeedKph = 0
+        custom token action:name = "target"
+        custom int action:status = 1
+        custom double3 action:transform:coordinate = (0.0030694024, -140.0003655117, 0)
+        custom int action:transform:laneId = -1
+        custom double action:transform:laneS = 103.8
+        custom quatd action:transform:orientation = (0.7073119905, 0, 0, -0.7069015122)
+        custom int action:transform:roadId = 39
+        custom double3 action:transform:translation = (-40.6885762676, 339.3969475952, 0)
+        custom token action:transform:type = "transformWgs"
+        custom token action:type = "actionAddEntity"
+        custom token action_strict_type = "actionAddEntity"
+        custom uint64 controlId = 5
+        custom token type = "control"
+
+        def OmniGraph "ScenarioGraph"
+        {
+            token evaluationMode = "Automatic"
+            token evaluator:type = "execution"
+            token fabricCacheBacking = "Shared"
+            int2 fileFormatVersion = (1, 9)
+            token pipelineStage = "pipelineStageSimulation"
+
+            def OmniGraphNode "on_scenario_play"
+            {
+                token node:type = "omni.drivesim.scenario_graph.OnScenarioPlay"
+                int node:typeVersion = 1
+                custom uint outputs:execOut (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+            }
+
+            def OmniGraphNode "maintain_speed"
+            {
+                custom bool inputs:disregardLongitudinalSafety = 0
+                custom bool inputs:enabled = 1
+                custom uint inputs:execIn (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+                prepend uint inputs:execIn.connect = </Actions/AddEntity_target/ScenarioGraph/on_scenario_play.outputs:execOut>
+                custom token inputs:relativeEntity = ""
+                custom token inputs:relativeSpeedValueType = "Delta" (
+                    allowedTokens = ["Delta", "Factor"]
+                )
+                custom double inputs:speedKph = 10
+                custom double inputs:targetAccelerationMpsps
+                custom token inputs:vehicle
+                token node:type = "omni.drivesim.ref_traffic_model.MaintainSpeed"
+                int node:typeVersion = 1
+                custom uint outputs:execOut (
+                    customData = {
+                        bool isExecution = 1
+                    }
+                )
+            }
+        }
+    }
+}
+
+def "ScenarioParameters" (
+    hide_in_stage_window = true
+    prepend references = @scenario-parameters:scenarioParameters.usda@</ScenarioParameters>
+)
+{
+}
