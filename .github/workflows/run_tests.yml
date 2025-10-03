@@ -14,30 +14,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Removed actions/setup-python — we will use system-installed Python 3.9.13
-
-      - name: Verify Python and dependencies
-        run: |
-          echo "Using Python version:"
-          python --version
-          echo "Installed dependencies:"
-          pip list
-
-      - name: Check required dependencies
-        run: |
-          missing=0
-          for pkg in pytest toml numpy pandas; do
-            if ! python -c "import $pkg" 2>/dev/null; then
-              echo "❌ Missing dependency: $pkg"
-              missing=1
-            fi
-          done
-          if [ $missing -eq 1 ]; then
-            echo "Some dependencies are missing. Please install them on the runner."
-            exit 1
-          fi
-          echo "✅ All required dependencies are available."
+      - name: Verify Python version
+        shell: powershell
+        run: python --version
 
       - name: Run tests
-        run: |
-          python -m pytest
+        shell: powershell
+        run: python main_runner.py map2sim_asset_mapping_table.toml --component MAP2SIM
