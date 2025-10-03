@@ -27,7 +27,7 @@ jobs:
         run: python main_runner.py map2sim_asset_mapping_table.toml --component MAP2SIM
 
       - name: Upload test outputs
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-outputs
           path: Outputs/
