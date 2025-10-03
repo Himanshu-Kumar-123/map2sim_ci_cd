@@ -1,4 +1,4 @@
-name: Run Map2Sim Tests
+name: Python Tests
 
 on:
   push:
@@ -7,24 +7,40 @@ on:
     branches: [ main ]
 
 jobs:
-  run-tests:
-    runs-on: self-hosted  # your Windows machine
+  test:
+    runs-on: self-hosted
+
     steps:
-      # 1️⃣ Checkout repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 2️⃣ Setup Python
-      - name: Setup Python 3.9.13
-        uses: actions/setup-python@v4
+      - name: Set up Python 3.9.13
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.9.13"
+          python-version: 3.9.13
 
-      # 3️⃣ Install dependencies from requirements.txt
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Verify Python and dependencies
+        run: |
+          echo "Using Python version:"
+          python --version
+          echo "Installed dependencies:"
+          pip list
 
-      # 4️⃣ Run Map2Sim test
-      - name: Run Map2Sim Test
-        working-directory: simready_test_fwk/ui_tests/map2sim
-        run: python main_runner.py ../../../map2sim_asset_mapping_table.toml --component MAP2SIM
+      - name: Check required dependencies
+        run: |
+          missing=0
+          for pkg in pytest toml numpy pandas; do
+            if ! python -c "import $pkg" 2>/dev/null; then
+              echo "❌ Missing dependency: $pkg"
+              missing=1
+            fi
+          done
+          if [ $missing -eq 1 ]; then
+            echo "Some dependencies are missing. Please install them on the runner."
+            exit 1
+          fi
+          echo "✅ All required dependencies are available."
+
+      - name: Run tests
+        run: |
+          python -m pytest
