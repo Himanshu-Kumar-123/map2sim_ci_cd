@@ -18,6 +18,17 @@ jobs:
         shell: powershell
         run: python --version
 
+      - name: Create Outputs folder
+        shell: powershell
+        run: New-Item -ItemType Directory -Force -Path Outputs
+
       - name: Run tests
         shell: powershell
         run: python main_runner.py map2sim_asset_mapping_table.toml --component MAP2SIM
+
+      - name: Upload test outputs
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-outputs
+          path: Outputs/
+          retention-days: 7
