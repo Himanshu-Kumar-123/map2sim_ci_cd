@@ -1,0 +1,28 @@
+app = "omni.drivesim.map2sim.app"
+
+[BUILD]
+name = "DSReady_Studio_Software_169413798"
+local_build_path = "C:\\simstudio\\DSReady_Studio_Software_166929622\\_build\\packages\\dsrs\\_build\\windows-x86_64\\release"
+project_config_file = "C:\\AWS_2025-2_map2sim\\dsready_content\\nv_content\\project_config.toml"
+
+[AUTOMATION_SUITE]
+automation_files_dump_path = ""
+automation_suite_flags = [""]
+kit_suite_flags = [""]
+
+[SERVER]
+# This section is not needed as of now, ignore
+s3_bucket = "https://us-east-1.console.aws.amazon.com/s3/home?region=us-east-1#"
+username = "pass"
+password = "pass"
+
+[ENVIRONMENT]
+# Keep this empty if you are using the default python environment
+PYTHONEXE = ''
+
+[MAP2SIM]
+    [CREATE_SCENE.terrain_elevation_hint]
+    script_path = "ui_tests\\map2sim\\create_scene"
+    scenario  = "test_terrain_elevation_hint.py"
+    automation_flags = ["--windows-develop-mode"]
+    kit_flags = [""]
