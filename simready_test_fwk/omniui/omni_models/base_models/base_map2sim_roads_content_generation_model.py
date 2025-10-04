@@ -346,6 +346,18 @@ class BaseMap2simRoadsContentGenerationModel(BaseModel):
         "Stage//Frame/Frame[0]/VStack[0]/ScrollingFrame[0]/ZStack[0]/TreeView[1]/Frame[108]/ZStack[0]/HStack[0]/HStack[0]/Label[1]"
     )
 
+    _generate_parking_label = (
+        "Map2Sim Content Generation//Frame/ScrollingFrame[0]/VStack[0]/VStack[1]/VStack[0]/CollapsableFrame[0]/Frame[0]/ZStack[0]/VStack[0]/Frame[0]/VStack[0]/VStack[0]/CollapsableFrame[1]/Frame[0]/ZStack[0]/VStack[0]/Frame[0]/VStack[0]/VStack[1]/ZStack[0]/HStack[0]/Label[0]"
+    )
+
+    _road_max_resolution_combobox = (
+        "Map2Sim Content Generation//Frame/ScrollingFrame[0]/VStack[0]/VStack[1]/VStack[0]/CollapsableFrame[0]/Frame[0]/ZStack[0]/VStack[0]/Frame[0]/VStack[0]/VStack[0]/CollapsableFrame[1]/Frame[0]/ZStack[0]/VStack[0]/Frame[0]/VStack[0]/VStack[0]/ZStack[3]/HStack[0]/ComboBox[0]"
+    )
+
+    _terrain_elevation_hint_stage = (
+        "Stage//Frame/Frame[0]/VStack[0]/ScrollingFrame[0]/ZStack[0]/TreeView[1]/Frame[0]/ZStack[0]/HStack[0]/HStack[0]/Label[1]"
+    )
+
     def select_country_name(self, country_name):
         """Clicks on ComboBox button to select a country by name
         Args:
@@ -885,3 +897,21 @@ class BaseMap2simRoadsContentGenerationModel(BaseModel):
          
           self.omni_driver.emulate_key_press(button="F")
           self.omni_driver.wait(2)
+
+    def terrain_road_max_resolution(self, value):
+        """Selects a value from ComboBox button for terrain road max resolution
+        Args:
+            value (int): Value to select
+            0 - 0.25 meter, 1 - 0.5 meter, 2 - 1 meter, 3 - 2 meter, 4 - 4 meter, 5 - 8 meter
+        """
+        
+        self.select_item_by_index_from_combo_box(self._road_max_resolution_combobox, value)
+
+    def terrain_elevation_hint_stage(self):
+        """Clicks on terrain elevation hint stage"""
+
+        self.find_and_click(self._terrain_elevation_hint_stage, refresh=True)
+        self.omni_driver.wait(1)
+
+        self.omni_driver.emulate_key_press(button="F")
+        self.omni_driver.wait(2)

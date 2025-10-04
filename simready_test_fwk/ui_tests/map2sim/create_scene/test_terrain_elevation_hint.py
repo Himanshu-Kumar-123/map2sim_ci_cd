@@ -92,7 +92,7 @@ class TestMap2Sim_Test():
         self.omni_driver.wait(40)
         
         self.map2sim_roads_content_generation.start_preprocessing()
-        self.omni_driver.wait(300)
+        self.omni_driver.wait(400)
         
         self.map2sim_roads_content_generation.select_scene_composition()
         self.omni_driver.wait(2)        
@@ -100,11 +100,11 @@ class TestMap2Sim_Test():
         self.map2sim_roads_content_generation.select_setup_world_tiles()
         self.omni_driver.wait(4)
 
-        self.map2sim_roads_content_generation.terrain_road_max_resolution(0)
-        self.omni_driver.wait(2)
-
         self.map2sim_roads_content_generation.select_all_assets()
         self.omni_driver.wait(4)
+
+        self.map2sim_roads_content_generation.terrain_road_max_resolution(0)
+        self.omni_driver.wait(2)
         
         self.map2sim_roads_content_generation.select_start_content_generation()
         self.omni_driver.wait(650)
