@@ -104,7 +104,7 @@ class TestMap2Sim_Test():
         self.omni_driver.wait(4)
 
         self.map2sim_roads_content_generation.terrain_road_max_resolution(0)
-        self.omni_driver.wait(2)
+        self.omni_driver.wait(4)
         
         self.map2sim_roads_content_generation.select_start_content_generation()
         self.omni_driver.wait(650)
